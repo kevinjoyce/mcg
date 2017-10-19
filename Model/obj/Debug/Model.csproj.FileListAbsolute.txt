@@ -1,0 +1,4 @@
+C:\CodematicDemo\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.dll
+C:\CodematicDemo\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.pdb
+C:\CodematicDemo\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.dll
+C:\CodematicDemo\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.pdb

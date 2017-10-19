@@ -1,0 +1,12 @@
+C:\CodematicDemo\MaterialCodeGenerator\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DAL.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DAL.pdb
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DBUtility.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.Model.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\Maticsoft.Common.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MySql.Data.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\System.Data.SQLite.DLL
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DBUtility.pdb
+C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.Model.pdb
+C:\CodematicDemo\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.dll
+C:\CodematicDemo\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.pdb

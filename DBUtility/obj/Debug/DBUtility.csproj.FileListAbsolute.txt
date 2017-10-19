@@ -1,0 +1,7 @@
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\bin\Debug\MaterialCodeGenerator.DBUtility.dll
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\bin\Debug\MaterialCodeGenerator.DBUtility.pdb
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\bin\Debug\MySql.Data.dll
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\bin\Debug\System.Data.SQLite.DLL
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\obj\Debug\MaterialCodeGenerator.DBUtility.dll
+C:\CodematicDemo\MaterialCodeGenerator\DBUtility\obj\Debug\MaterialCodeGenerator.DBUtility.pdb
