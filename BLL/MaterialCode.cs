@@ -85,9 +85,10 @@ namespace MaterialCodeGenerator.BLL
 		/// </summary>
 		public List<MaterialCodeGenerator.Model.MaterialCode> GetModelList(string strWhere)
 		{
-			DataSet ds = dal.GetList(strWhere);
+            DataSet ds = dal.GetList(strWhere);
 			return DataTableToList(ds.Tables[0]);
 		}
+        
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>

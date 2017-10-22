@@ -207,6 +207,9 @@ namespace MaterialCodeGenerator.DAL
 			return DbHelperSQLite.Query(strSql.ToString());
 		}
 
+        
+
+
 		/// <summary>
 		/// 获取记录总数
 		/// </summary>

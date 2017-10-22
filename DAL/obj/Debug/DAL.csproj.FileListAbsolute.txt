@@ -10,3 +10,15 @@ C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DBUti
 C:\CodematicDemo\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.Model.pdb
 C:\CodematicDemo\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.dll
 C:\CodematicDemo\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.pdb
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DAL.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DAL.pdb
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DBUtility.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.Model.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\Maticsoft.Common.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MySql.Data.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\System.Data.SQLite.DLL
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.DBUtility.pdb
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\bin\Debug\MaterialCodeGenerator.Model.pdb
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.dll
+D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\DAL\obj\Debug\MaterialCodeGenerator.DAL.pdb

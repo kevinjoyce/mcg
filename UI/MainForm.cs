@@ -19,14 +19,71 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string strWhere = "iLevel1ID = 1";
-            MaterialCodeGenerator.BLL.MaterialCode tab = new MaterialCodeGenerator.BLL.MaterialCode();
-            List<MaterialCodeGenerator.Model.MaterialCode> list = tab.GetModelList(strWhere);
-
-            this.comboBox1.DataSource = list;
-            this.comboBox1.DisplayMember = "cLevel1Name";
-            this.comboBox1.ValueMember = "iLevel1ID";
-            this.comboBox1.Text = "";
+            LoadDataToCmbRawFirst();
+            this.SetComponentDisabled();
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
+
+        private void tbControlMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (this.tbControlMaterial.SelectedIndex)
+            {
+                case 0:
+                    //MessageBox.Show("tabPage1 is Selected");
+                    LoadDataToCmbRawFirst();
+                    break;
+                case 1:
+                    //MessageBox.Show("tabPage2 is Selected");
+                    //LoadDataTocmbStdFirst();
+                    break;
+                case 2:
+                    //MessageBox.Show("tabPage3 is Selected");
+                    //LoadDataTocmbElecFirst();
+                    break;
+                case 3:
+                    //MessageBox.Show("tabPage4 is Selected");
+                    //LoadDataTocmbLineFirst();
+                    break;
+                case 4:
+                    //MessageBox.Show("tabPage5 is Selected");
+                    //LoadDataTocmbMetalFirst();
+                    break;
+                case 5:
+                    //MessageBox.Show("tabPage5 is Selected");
+                    //LoadDataTocmbEquipFirst();
+                    break;
+                case 8:
+                    //LoadDataTocmbProductionFirst();
+                    break;
+            }
+        }
+
+        private void LoadDataToCmbRawFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbRawFirst, 1);
+        }
+
+       
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        
     }
 }
