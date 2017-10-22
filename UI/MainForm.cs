@@ -40,7 +40,7 @@ namespace UI
                     break;
                 case 1:
                     //MessageBox.Show("tabPage2 is Selected");
-                    //LoadDataTocmbStdFirst();
+                    LoadDataTocmbStdFirst();
                     break;
                 case 2:
                     //MessageBox.Show("tabPage3 is Selected");
@@ -68,21 +68,14 @@ namespace UI
         {
             LevelSearchor.searchAndSetLevel1(this.cmbRawFirst, 1);
         }
-
-       
-
-        
-
-        
-
-        
-
-        
-
-        
+        private void LoadDataTocmbStdFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbStdFirst, 2);
+        }
 
         
         
+
 
         
     }

@@ -69,6 +69,10 @@
             this.tabStandardComponent = new System.Windows.Forms.TabPage();
             this.btnCopyStandard = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.txtStdDM = new System.Windows.Forms.TextBox();
+            this.lblStdDM = new System.Windows.Forms.Label();
+            this.lblStdLength = new System.Windows.Forms.Label();
+            this.txtStdLength = new System.Windows.Forms.TextBox();
             this.txtStdSerialNum = new System.Windows.Forms.TextBox();
             this.lblSerialNum = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -103,11 +107,6 @@
             this.rdoNC = new System.Windows.Forms.RadioButton();
             this.rdoC = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rdoNJQ = new System.Windows.Forms.RadioButton();
-            this.rdoQ = new System.Windows.Forms.RadioButton();
             this.rdoJ = new System.Windows.Forms.RadioButton();
             this.lblProcessFlow = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -760,12 +759,50 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.txtStdDM);
+            this.panel8.Controls.Add(this.lblStdDM);
+            this.panel8.Controls.Add(this.lblStdLength);
+            this.panel8.Controls.Add(this.txtStdLength);
             this.panel8.Controls.Add(this.txtStdSerialNum);
             this.panel8.Controls.Add(this.lblSerialNum);
             this.panel8.Location = new System.Drawing.Point(8, 326);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(746, 48);
             this.panel8.TabIndex = 20;
+            // 
+            // txtStdDM
+            // 
+            this.txtStdDM.Location = new System.Drawing.Point(485, 10);
+            this.txtStdDM.MaxLength = 3;
+            this.txtStdDM.Name = "txtStdDM";
+            this.txtStdDM.Size = new System.Drawing.Size(85, 29);
+            this.txtStdDM.TabIndex = 17;
+            // 
+            // lblStdDM
+            // 
+            this.lblStdDM.AutoSize = true;
+            this.lblStdDM.Location = new System.Drawing.Point(398, 13);
+            this.lblStdDM.Name = "lblStdDM";
+            this.lblStdDM.Size = new System.Drawing.Size(42, 21);
+            this.lblStdDM.TabIndex = 14;
+            this.lblStdDM.Text = "端面";
+            // 
+            // lblStdLength
+            // 
+            this.lblStdLength.AutoSize = true;
+            this.lblStdLength.Location = new System.Drawing.Point(599, 13);
+            this.lblStdLength.Name = "lblStdLength";
+            this.lblStdLength.Size = new System.Drawing.Size(42, 21);
+            this.lblStdLength.TabIndex = 15;
+            this.lblStdLength.Text = "长度";
+            // 
+            // txtStdLength
+            // 
+            this.txtStdLength.Location = new System.Drawing.Point(647, 9);
+            this.txtStdLength.MaxLength = 3;
+            this.txtStdLength.Name = "txtStdLength";
+            this.txtStdLength.Size = new System.Drawing.Size(85, 29);
+            this.txtStdLength.TabIndex = 16;
             // 
             // txtStdSerialNum
             // 
@@ -774,7 +811,7 @@
             this.txtStdSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtStdSerialNum.Location = new System.Drawing.Point(95, 12);
             this.txtStdSerialNum.Name = "txtStdSerialNum";
-            this.txtStdSerialNum.Size = new System.Drawing.Size(639, 26);
+            this.txtStdSerialNum.Size = new System.Drawing.Size(256, 26);
             this.txtStdSerialNum.TabIndex = 13;
             // 
             // lblSerialNum
@@ -836,9 +873,9 @@
             this.groupBox6.Controls.Add(this.rdoNM);
             this.groupBox6.Controls.Add(this.rdoM);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox6.Location = new System.Drawing.Point(578, 114);
+            this.groupBox6.Location = new System.Drawing.Point(57, 123);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(165, 51);
+            this.groupBox6.Size = new System.Drawing.Size(212, 51);
             this.groupBox6.TabIndex = 32;
             this.groupBox6.TabStop = false;
             // 
@@ -846,7 +883,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label14.Location = new System.Drawing.Point(105, 20);
+            this.label14.Location = new System.Drawing.Point(133, 20);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(58, 21);
             this.label14.TabIndex = 17;
@@ -856,7 +893,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label13.Location = new System.Drawing.Point(36, 20);
+            this.label13.Location = new System.Drawing.Point(43, 20);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(42, 21);
             this.label13.TabIndex = 16;
@@ -866,7 +903,7 @@
             // 
             this.rdoNM.AutoSize = true;
             this.rdoNM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.rdoNM.Location = new System.Drawing.Point(77, 19);
+            this.rdoNM.Location = new System.Drawing.Point(100, 18);
             this.rdoNM.Name = "rdoNM";
             this.rdoNM.Size = new System.Drawing.Size(37, 25);
             this.rdoNM.TabIndex = 0;
@@ -878,7 +915,7 @@
             // 
             this.rdoM.AutoSize = true;
             this.rdoM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.rdoM.Location = new System.Drawing.Point(0, 19);
+            this.rdoM.Location = new System.Drawing.Point(7, 19);
             this.rdoM.Name = "rdoM";
             this.rdoM.Size = new System.Drawing.Size(44, 25);
             this.rdoM.TabIndex = 0;
@@ -893,7 +930,7 @@
             this.groupBox5.Controls.Add(this.rdoNH);
             this.groupBox5.Controls.Add(this.rdoH);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox5.Location = new System.Drawing.Point(366, 114);
+            this.groupBox5.Location = new System.Drawing.Point(520, 57);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(206, 51);
             this.groupBox5.TabIndex = 31;
@@ -952,7 +989,7 @@
             this.groupBox4.Controls.Add(this.rdoD);
             this.groupBox4.Controls.Add(this.rdoP);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox4.Location = new System.Drawing.Point(51, 114);
+            this.groupBox4.Location = new System.Drawing.Point(292, 126);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(303, 51);
             this.groupBox4.TabIndex = 30;
@@ -1031,7 +1068,7 @@
             this.groupBox3.Controls.Add(this.rdoNZ);
             this.groupBox3.Controls.Add(this.rdoZ);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.Location = new System.Drawing.Point(574, 43);
+            this.groupBox3.Location = new System.Drawing.Point(307, 54);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(169, 54);
             this.groupBox3.TabIndex = 28;
@@ -1088,7 +1125,7 @@
             this.groupBox2.Controls.Add(this.rdoNC);
             this.groupBox2.Controls.Add(this.rdoC);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(360, 42);
+            this.groupBox2.Location = new System.Drawing.Point(57, 54);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(212, 54);
             this.groupBox2.TabIndex = 29;
@@ -1140,79 +1177,23 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.rdoNJQ);
-            this.groupBox1.Controls.Add(this.rdoQ);
             this.groupBox1.Controls.Add(this.rdoJ);
-            this.groupBox1.Location = new System.Drawing.Point(51, 41);
+            this.groupBox1.Location = new System.Drawing.Point(615, 123);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(303, 54);
+            this.groupBox1.Size = new System.Drawing.Size(111, 54);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 21);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "不切不锯";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 21);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "切锯";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "剪板";
-            // 
-            // rdoNJQ
-            // 
-            this.rdoNJQ.AutoSize = true;
-            this.rdoNJQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNJQ.Location = new System.Drawing.Point(185, 27);
-            this.rdoNJQ.Name = "rdoNJQ";
-            this.rdoNJQ.Size = new System.Drawing.Size(33, 21);
-            this.rdoNJQ.TabIndex = 2;
-            this.rdoNJQ.TabStop = true;
-            this.rdoNJQ.Text = "0";
-            this.rdoNJQ.UseVisualStyleBackColor = true;
-            // 
-            // rdoQ
-            // 
-            this.rdoQ.AutoSize = true;
-            this.rdoQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoQ.Location = new System.Drawing.Point(91, 27);
-            this.rdoQ.Name = "rdoQ";
-            this.rdoQ.Size = new System.Drawing.Size(36, 21);
-            this.rdoQ.TabIndex = 3;
-            this.rdoQ.TabStop = true;
-            this.rdoQ.Text = "Q";
-            this.rdoQ.UseVisualStyleBackColor = true;
             // 
             // rdoJ
             // 
             this.rdoJ.AutoSize = true;
-            this.rdoJ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoJ.Location = new System.Drawing.Point(6, 28);
+            this.rdoJ.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoJ.Location = new System.Drawing.Point(6, 18);
             this.rdoJ.Name = "rdoJ";
-            this.rdoJ.Size = new System.Drawing.Size(31, 21);
+            this.rdoJ.Size = new System.Drawing.Size(102, 25);
             this.rdoJ.TabIndex = 1;
             this.rdoJ.TabStop = true;
-            this.rdoJ.Text = "J";
+            this.rdoJ.Text = "B（备用）";
             this.rdoJ.UseVisualStyleBackColor = true;
             // 
             // lblProcessFlow
@@ -1242,6 +1223,7 @@
             this.cmbStdSecond.Name = "cmbStdSecond";
             this.cmbStdSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbStdSecond.TabIndex = 3;
+            this.cmbStdSecond.SelectedIndexChanged += new System.EventHandler(this.cmbStdSecond_SelectedIndexChanged);
             // 
             // lblStdFirst
             // 
@@ -1268,6 +1250,7 @@
             this.cmbStdFirst.Name = "cmbStdFirst";
             this.cmbStdFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbStdFirst.TabIndex = 0;
+            this.cmbStdFirst.SelectedIndexChanged += new System.EventHandler(this.cmbStdFirst_SelectedIndexChanged);
             // 
             // tabElectricComponent
             // 
@@ -3038,13 +3021,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rdoNC;
         private System.Windows.Forms.RadioButton rdoC;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rdoNJQ;
-        private System.Windows.Forms.RadioButton rdoQ;
-        private System.Windows.Forms.RadioButton rdoJ;
         private System.Windows.Forms.Label lblProcessFlow;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox cmbStdSecond;
@@ -3229,6 +3205,12 @@
         private System.Windows.Forms.Label lblRoundWidth;
         private System.Windows.Forms.Label lblNull;
         private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox txtStdDM;
+        private System.Windows.Forms.Label lblStdDM;
+        private System.Windows.Forms.Label lblStdLength;
+        private System.Windows.Forms.TextBox txtStdLength;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdoJ;
 
 
     }
