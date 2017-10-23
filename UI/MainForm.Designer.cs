@@ -756,6 +756,7 @@
             this.btnCopyStandard.TabIndex = 21;
             this.btnCopyStandard.Text = "复制";
             this.btnCopyStandard.UseVisualStyleBackColor = true;
+            this.btnCopyStandard.Click += new System.EventHandler(this.btnCopyStandard_Click);
             // 
             // panel8
             // 
@@ -773,10 +774,11 @@
             // txtStdDM
             // 
             this.txtStdDM.Location = new System.Drawing.Point(485, 10);
-            this.txtStdDM.MaxLength = 3;
+            this.txtStdDM.MaxLength = 2;
             this.txtStdDM.Name = "txtStdDM";
             this.txtStdDM.Size = new System.Drawing.Size(85, 29);
             this.txtStdDM.TabIndex = 17;
+            this.txtStdDM.TextChanged += new System.EventHandler(this.txtStdDM_TextChanged);
             // 
             // lblStdDM
             // 
@@ -799,10 +801,11 @@
             // txtStdLength
             // 
             this.txtStdLength.Location = new System.Drawing.Point(647, 9);
-            this.txtStdLength.MaxLength = 3;
+            this.txtStdLength.MaxLength = 4;
             this.txtStdLength.Name = "txtStdLength";
             this.txtStdLength.Size = new System.Drawing.Size(85, 29);
             this.txtStdLength.TabIndex = 16;
+            this.txtStdLength.TextChanged += new System.EventHandler(this.txtStdLength_TextChanged);
             // 
             // txtStdSerialNum
             // 
@@ -813,6 +816,8 @@
             this.txtStdSerialNum.Name = "txtStdSerialNum";
             this.txtStdSerialNum.Size = new System.Drawing.Size(256, 26);
             this.txtStdSerialNum.TabIndex = 13;
+            this.txtStdSerialNum.Click += new System.EventHandler(this.txtStdSerialNum_Click);
+            this.txtStdSerialNum.TextChanged += new System.EventHandler(this.txtStdSerialNum_TextChanged);
             // 
             // lblSerialNum
             // 
@@ -845,11 +850,11 @@
             // txtStdCode
             // 
             this.txtStdCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtStdCode.Font = new System.Drawing.Font("SimSun", 26.25F, System.Drawing.FontStyle.Bold);
+            this.txtStdCode.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtStdCode.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtStdCode.Location = new System.Drawing.Point(91, 9);
             this.txtStdCode.Name = "txtStdCode";
-            this.txtStdCode.Size = new System.Drawing.Size(639, 47);
+            this.txtStdCode.Size = new System.Drawing.Size(639, 41);
             this.txtStdCode.TabIndex = 12;
             // 
             // panel5
@@ -910,6 +915,7 @@
             this.rdoNM.TabStop = true;
             this.rdoNM.Text = "0";
             this.rdoNM.UseVisualStyleBackColor = true;
+            this.rdoNM.CheckedChanged += new System.EventHandler(this.rdoNM_CheckedChanged);
             // 
             // rdoM
             // 
@@ -922,6 +928,7 @@
             this.rdoM.TabStop = true;
             this.rdoM.Text = "M";
             this.rdoM.UseVisualStyleBackColor = true;
+            this.rdoM.CheckedChanged += new System.EventHandler(this.rdoM_CheckedChanged);
             // 
             // groupBox5
             // 
@@ -967,6 +974,7 @@
             this.rdoNH.TabStop = true;
             this.rdoNH.Text = "0";
             this.rdoNH.UseVisualStyleBackColor = true;
+            this.rdoNH.CheckedChanged += new System.EventHandler(this.rdoNH_CheckedChanged);
             // 
             // rdoH
             // 
@@ -979,6 +987,7 @@
             this.rdoH.TabStop = true;
             this.rdoH.Text = "H";
             this.rdoH.UseVisualStyleBackColor = true;
+            this.rdoH.CheckedChanged += new System.EventHandler(this.rdoH_CheckedChanged);
             // 
             // groupBox4
             // 
@@ -1036,6 +1045,7 @@
             this.rdoNPD.TabStop = true;
             this.rdoNPD.Text = "0";
             this.rdoNPD.UseVisualStyleBackColor = true;
+            this.rdoNPD.CheckedChanged += new System.EventHandler(this.rdoNPD_CheckedChanged);
             // 
             // rdoD
             // 
@@ -1048,6 +1058,7 @@
             this.rdoD.TabStop = true;
             this.rdoD.Text = "D";
             this.rdoD.UseVisualStyleBackColor = true;
+            this.rdoD.CheckedChanged += new System.EventHandler(this.rdoD_CheckedChanged);
             // 
             // rdoP
             // 
@@ -1060,6 +1071,7 @@
             this.rdoP.TabStop = true;
             this.rdoP.Text = "P";
             this.rdoP.UseVisualStyleBackColor = true;
+            this.rdoP.CheckedChanged += new System.EventHandler(this.rdoP_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -1105,6 +1117,7 @@
             this.rdoNZ.TabStop = true;
             this.rdoNZ.Text = "0";
             this.rdoNZ.UseVisualStyleBackColor = true;
+            this.rdoNZ.CheckedChanged += new System.EventHandler(this.rdoNZ_CheckedChanged);
             // 
             // rdoZ
             // 
@@ -1117,6 +1130,7 @@
             this.rdoZ.TabStop = true;
             this.rdoZ.Text = "Z";
             this.rdoZ.UseVisualStyleBackColor = true;
+            this.rdoZ.CheckedChanged += new System.EventHandler(this.rdoZ_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -1162,6 +1176,7 @@
             this.rdoNC.TabStop = true;
             this.rdoNC.Text = "0";
             this.rdoNC.UseVisualStyleBackColor = true;
+            this.rdoNC.CheckedChanged += new System.EventHandler(this.rdoNC_CheckedChanged);
             // 
             // rdoC
             // 
@@ -1174,6 +1189,7 @@
             this.rdoC.TabStop = true;
             this.rdoC.Text = "C";
             this.rdoC.UseVisualStyleBackColor = true;
+            this.rdoC.CheckedChanged += new System.EventHandler(this.rdoC_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -1187,6 +1203,7 @@
             // rdoJ
             // 
             this.rdoJ.AutoSize = true;
+            this.rdoJ.Enabled = false;
             this.rdoJ.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.rdoJ.Location = new System.Drawing.Point(6, 18);
             this.rdoJ.Name = "rdoJ";

@@ -29,9 +29,53 @@ namespace UI
             GenerateStdLevelCode();
         }
 
+        //端面、长度填好后编码生成
+
+        private void GenerateStdDMLength() 
+        {
+            GenerateStdLevelCode();
+            GenerateStdWorkFlowCode();
+            GenerateStdFlowNo();
+            this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdDM.Text + "." + this.txtStdLength.Text;
+        }
+
+        //流水号填好后的编码生成
+        private void GenerateStdFlowNo() 
+        {
+            GenerateStdLevelCode();
+            GenerateStdWorkFlowCode();
+            this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdSerialNum.Text;
+        }
+
+        private void txtStdSerialNum_Click(object sender, EventArgs e)
+        {
+            StdFlowNoGenerator stdFlowNoGenerator = new StdFlowNoGenerator();
+            this.txtStdSerialNum.Text = Utility.getFlowNoCode(stdFlowNoGenerator);
+        }
+
+
+        //工艺流程编码生成
+        private void GenerateStdWorkFlowCode() 
+        {
+            GenerateStdLevelCode();
+            this.txtStdCode.Text = this.txtStdCode.Text + "."
+                + Utility.getRadioButtonCode(this.rdoC, "C")
+                + Utility.getRadioButtonCode(this.rdoNC, "0")
+                + Utility.getRadioButtonCode(this.rdoZ, "Z")
+                + Utility.getRadioButtonCode(this.rdoNZ, "0")
+                + Utility.getRadioButtonCode(this.rdoH, "H")
+                + Utility.getRadioButtonCode(this.rdoNH, "0")
+                + Utility.getRadioButtonCode(this.rdoM, "M")
+                + Utility.getRadioButtonCode(this.rdoNM, "0")
+                + Utility.getRadioButtonCode(this.rdoP, "P")
+                + Utility.getRadioButtonCode(this.rdoD, "D")
+                + Utility.getRadioButtonCode(this.rdoNPD, "0");
+        }
+
+        //一级、二级编码生成
         private void GenerateStdLevelCode() 
         {
-            this.txtStdCode.Text = this.cmbStdSecond.SelectedValue.ToString() + ".";
+            this.txtStdCode.Text = this.cmbStdSecond.SelectedValue.ToString();
         }
 
         private void setStdComponentDisable() 
@@ -45,6 +89,78 @@ namespace UI
             this.txtStdDM.Enabled = true;
             this.txtStdLength.Enabled = true;
         }
+
+        private void rdoC_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoNC_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoZ_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoNZ_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoH_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoNH_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoM_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoNM_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoP_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoD_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void rdoNPD_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateStdWorkFlowCode();
+        }
+
+        private void txtStdSerialNum_TextChanged(object sender, EventArgs e)
+        {
+            GenerateStdFlowNo();
+        }
+
+        private void txtStdDM_TextChanged(object sender, EventArgs e)
+        {
+            GenerateStdDMLength();
+        }
+
+        private void txtStdLength_TextChanged(object sender, EventArgs e)
+        {
+            GenerateStdDMLength();
+        }
+
         
+
     }
 }

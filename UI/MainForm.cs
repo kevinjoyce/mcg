@@ -74,6 +74,16 @@ namespace UI
         }
 
         
+
+        private void btnCopyStandard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(txtStdCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        
+        
+        
         
 
 
