@@ -1,8 +1,4 @@
-C:\CodematicDemo\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.dll
-C:\CodematicDemo\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.pdb
-C:\CodematicDemo\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.dll
-C:\CodematicDemo\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.pdb
-D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.dll
-D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.pdb
-D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.dll
-D:\工作\项目\CodeGenVersion2\生成的3层代码\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.pdb
+C:\CodematicDemo2\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.dll
+C:\CodematicDemo2\MaterialCodeGenerator\Model\bin\Debug\MaterialCodeGenerator.Model.pdb
+C:\CodematicDemo2\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.dll
+C:\CodematicDemo2\MaterialCodeGenerator\Model\obj\Debug\MaterialCodeGenerator.Model.pdb

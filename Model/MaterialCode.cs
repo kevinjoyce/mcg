@@ -10,77 +10,77 @@ namespace MaterialCodeGenerator.Model
 		public MaterialCode()
 		{}
 		#region Model
-		private int? _imainclassid;
-		private string _cmainclassname;
-		private int? _ilevel1id;
-		private string _clevel1name;
-		private int? _ilevel2id;
-		private string _clevel2name;
-		private int? _ilevel3id;
-		private string _clevel3name;
+		private string _mainclassid= "null";
+		private string _mainclassname= "null";
+		private string _level1id= "null";
+		private string _level1name= "null";
+		private string _level2id= "null";
+		private string _level2name= "null";
+		private string _level3id= "null";
+		private string _level3name= "null";
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? iMainClassID
+		public string MainClassID
 		{
-			set{ _imainclassid=value;}
-			get{return _imainclassid;}
+			set{ _mainclassid=value;}
+			get{return _mainclassid;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string cMainClassName
+		public string MainClassName
 		{
-			set{ _cmainclassname=value;}
-			get{return _cmainclassname;}
+			set{ _mainclassname=value;}
+			get{return _mainclassname;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? iLevel1ID
+		public string Level1ID
 		{
-			set{ _ilevel1id=value;}
-			get{return _ilevel1id;}
+			set{ _level1id=value;}
+			get{return _level1id;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string cLevel1Name
+		public string Level1Name
 		{
-			set{ _clevel1name=value;}
-			get{return _clevel1name;}
+			set{ _level1name=value;}
+			get{return _level1name;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? iLevel2ID
+		public string Level2ID
 		{
-			set{ _ilevel2id=value;}
-			get{return _ilevel2id;}
+			set{ _level2id=value;}
+			get{return _level2id;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string cLevel2Name
+		public string Level2Name
 		{
-			set{ _clevel2name=value;}
-			get{return _clevel2name;}
+			set{ _level2name=value;}
+			get{return _level2name;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public int? iLevel3ID
+		public string Level3ID
 		{
-			set{ _ilevel3id=value;}
-			get{return _ilevel3id;}
+			set{ _level3id=value;}
+			get{return _level3id;}
 		}
 		/// <summary>
 		/// 
 		/// </summary>
-		public string cLevel3Name
+		public string Level3Name
 		{
-			set{ _clevel3name=value;}
-			get{return _clevel3name;}
+			set{ _level3name=value;}
+			get{return _level3name;}
 		}
 		#endregion Model
 

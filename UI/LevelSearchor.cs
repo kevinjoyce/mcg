@@ -12,39 +12,39 @@ namespace UI
         public static void searchAndSetLevel1(ComboBox cbox, int mainClassID)
         {
             //查询1级类别, mainClassID指明顶级类1-9
-            string strWhere = "iMainClassID = " + mainClassID;            
+            string strWhere = "MainClassID = " + mainClassID;            
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 1);
                         
             cbox.DataSource = list;
-            cbox.DisplayMember = "cLevel1Name";
-            cbox.ValueMember = "iLevel1ID";
+            cbox.DisplayMember = "Level1Name";
+            cbox.ValueMember = "Level1ID";
             cbox.Text = "";
         }
         
         public static void searchAndSetLevel2(ComboBox cbox, int mainClassID, int level1ID)
         {
             //查询2级类别, mainClassID指明顶级类1-9
-            string strWhere = "iMainClassID = " + mainClassID + " and iLevel1ID = " + level1ID;
+            string strWhere = "MainClassID = " + mainClassID + " and Level1ID = " + level1ID;
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 2);
 
             cbox.DataSource = list;
-            cbox.DisplayMember = "cLevel2Name";
-            cbox.ValueMember = "iLevel2ID";
+            cbox.DisplayMember = "Level2Name";
+            cbox.ValueMember = "Level2ID";
             cbox.Text = "";
         }
 
         public static void searchAndSetLevel3(ComboBox cbox, int mainClassID, int level1ID, int level2ID)
         {
             //查询2级类别, mainClassID指明顶级类1-9
-            string strWhere = "iMainClassID = " + mainClassID + " and iLevel1ID = " + level1ID + " and iLevel2ID = " + level2ID;
+            string strWhere = "MainClassID = " + mainClassID + " and Level1ID = " + level1ID + " and Level2ID = " + level2ID;
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 3);
 
             cbox.DataSource = list;
-            cbox.DisplayMember = "cLevel3Name";
-            cbox.ValueMember = "iLevel3ID";
+            cbox.DisplayMember = "Level3Name";
+            cbox.ValueMember = "Level3ID";
             cbox.Text = "";
         }
 
@@ -59,13 +59,13 @@ namespace UI
                     switch(level)
                     {
                         case 1:
-                            doesEqual = list.ElementAt(i).iLevel1ID.ToString() == list.ElementAt(s).iLevel1ID.ToString().ToString();
+                            doesEqual = list.ElementAt(i).Level1ID.ToString() == list.ElementAt(s).Level1ID.ToString().ToString();
                             break;
                         case 2:
-                            doesEqual = list.ElementAt(i).iLevel2ID.ToString() == list.ElementAt(s).iLevel2ID.ToString().ToString();
+                            doesEqual = list.ElementAt(i).Level2ID.ToString() == list.ElementAt(s).Level2ID.ToString().ToString();
                             break;
                         case 3:
-                            doesEqual = list.ElementAt(i).iLevel3ID.ToString() == list.ElementAt(s).iLevel3ID.ToString().ToString();
+                            doesEqual = list.ElementAt(i).Level3ID.ToString() == list.ElementAt(s).Level3ID.ToString().ToString();
                             break;
                     }
                     if (doesEqual)

@@ -119,7 +119,7 @@
       <Name>System.Data</Name>
     </Reference>
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\DBUtility\bin\Debug\System.Data.SQLite.DLL</HintPath>
+      <HintPath>..\..\..\MaterialCodeGenerator\MaterialCodeGenerator\Lib\System.Data.SQLite.DLL</HintPath>
     </Reference>
     <Reference Include="System.Web.Services">
       <Name>System.Web.Services</Name>

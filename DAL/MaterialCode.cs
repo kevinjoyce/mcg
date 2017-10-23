@@ -23,26 +23,26 @@ namespace MaterialCodeGenerator.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into MaterialCode(");
-			strSql.Append("iMainClassID,cMainClassName,iLevel1ID,cLevel1Name,iLevel2ID,cLevel2Name,iLevel3ID,cLevel3Name)");
+			strSql.Append("MainClassID,MainClassName,Level1ID,Level1Name,Level2ID,Level2Name,Level3ID,Level3Name)");
 			strSql.Append(" values (");
-			strSql.Append("@iMainClassID,@cMainClassName,@iLevel1ID,@cLevel1Name,@iLevel2ID,@cLevel2Name,@iLevel3ID,@cLevel3Name)");
+			strSql.Append("@MainClassID,@MainClassName,@Level1ID,@Level1Name,@Level2ID,@Level2Name,@Level3ID,@Level3Name)");
 			SQLiteParameter[] parameters = {
-					new SQLiteParameter("@iMainClassID", DbType.Int32,8),
-					new SQLiteParameter("@cMainClassName", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel1ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel1Name", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel2ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel2Name", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel3ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel3Name", DbType.String,2147483647)};
-			parameters[0].Value = model.iMainClassID;
-			parameters[1].Value = model.cMainClassName;
-			parameters[2].Value = model.iLevel1ID;
-			parameters[3].Value = model.cLevel1Name;
-			parameters[4].Value = model.iLevel2ID;
-			parameters[5].Value = model.cLevel2Name;
-			parameters[6].Value = model.iLevel3ID;
-			parameters[7].Value = model.cLevel3Name;
+					new SQLiteParameter("@MainClassID", DbType.String,2147483647),
+					new SQLiteParameter("@MainClassName", DbType.String,2147483647),
+					new SQLiteParameter("@Level1ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level1Name", DbType.String,2147483647),
+					new SQLiteParameter("@Level2ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level2Name", DbType.String,2147483647),
+					new SQLiteParameter("@Level3ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level3Name", DbType.String,2147483647)};
+			parameters[0].Value = model.MainClassID;
+			parameters[1].Value = model.MainClassName;
+			parameters[2].Value = model.Level1ID;
+			parameters[3].Value = model.Level1Name;
+			parameters[4].Value = model.Level2ID;
+			parameters[5].Value = model.Level2Name;
+			parameters[6].Value = model.Level3ID;
+			parameters[7].Value = model.Level3Name;
 
 			int rows=DbHelperSQLite.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -61,32 +61,32 @@ namespace MaterialCodeGenerator.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update MaterialCode set ");
-			strSql.Append("iMainClassID=@iMainClassID,");
-			strSql.Append("cMainClassName=@cMainClassName,");
-			strSql.Append("iLevel1ID=@iLevel1ID,");
-			strSql.Append("cLevel1Name=@cLevel1Name,");
-			strSql.Append("iLevel2ID=@iLevel2ID,");
-			strSql.Append("cLevel2Name=@cLevel2Name,");
-			strSql.Append("iLevel3ID=@iLevel3ID,");
-			strSql.Append("cLevel3Name=@cLevel3Name");
+			strSql.Append("MainClassID=@MainClassID,");
+			strSql.Append("MainClassName=@MainClassName,");
+			strSql.Append("Level1ID=@Level1ID,");
+			strSql.Append("Level1Name=@Level1Name,");
+			strSql.Append("Level2ID=@Level2ID,");
+			strSql.Append("Level2Name=@Level2Name,");
+			strSql.Append("Level3ID=@Level3ID,");
+			strSql.Append("Level3Name=@Level3Name");
 			strSql.Append(" where ");
 			SQLiteParameter[] parameters = {
-					new SQLiteParameter("@iMainClassID", DbType.Int32,8),
-					new SQLiteParameter("@cMainClassName", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel1ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel1Name", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel2ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel2Name", DbType.String,2147483647),
-					new SQLiteParameter("@iLevel3ID", DbType.Int32,8),
-					new SQLiteParameter("@cLevel3Name", DbType.String,2147483647)};
-			parameters[0].Value = model.iMainClassID;
-			parameters[1].Value = model.cMainClassName;
-			parameters[2].Value = model.iLevel1ID;
-			parameters[3].Value = model.cLevel1Name;
-			parameters[4].Value = model.iLevel2ID;
-			parameters[5].Value = model.cLevel2Name;
-			parameters[6].Value = model.iLevel3ID;
-			parameters[7].Value = model.cLevel3Name;
+					new SQLiteParameter("@MainClassID", DbType.String,2147483647),
+					new SQLiteParameter("@MainClassName", DbType.String,2147483647),
+					new SQLiteParameter("@Level1ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level1Name", DbType.String,2147483647),
+					new SQLiteParameter("@Level2ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level2Name", DbType.String,2147483647),
+					new SQLiteParameter("@Level3ID", DbType.String,2147483647),
+					new SQLiteParameter("@Level3Name", DbType.String,2147483647)};
+			parameters[0].Value = model.MainClassID;
+			parameters[1].Value = model.MainClassName;
+			parameters[2].Value = model.Level1ID;
+			parameters[3].Value = model.Level1Name;
+			parameters[4].Value = model.Level2ID;
+			parameters[5].Value = model.Level2Name;
+			parameters[6].Value = model.Level3ID;
+			parameters[7].Value = model.Level3Name;
 
 			int rows=DbHelperSQLite.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)
@@ -130,7 +130,7 @@ namespace MaterialCodeGenerator.DAL
 		{
 			//该表无主键信息，请自定义主键/条件字段
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select iMainClassID,cMainClassName,iLevel1ID,cLevel1Name,iLevel2ID,cLevel2Name,iLevel3ID,cLevel3Name from MaterialCode ");
+			strSql.Append("select MainClassID,MainClassName,Level1ID,Level1Name,Level2ID,Level2Name,Level3ID,Level3Name from MaterialCode ");
 			strSql.Append(" where ");
 			SQLiteParameter[] parameters = {
 			};
@@ -156,37 +156,37 @@ namespace MaterialCodeGenerator.DAL
 			MaterialCodeGenerator.Model.MaterialCode model=new MaterialCodeGenerator.Model.MaterialCode();
 			if (row != null)
 			{
-				if(row["iMainClassID"]!=null && row["iMainClassID"].ToString()!="")
+				if(row["MainClassID"]!=null)
 				{
-					model.iMainClassID=int.Parse(row["iMainClassID"].ToString());
+					model.MainClassID=row["MainClassID"].ToString();
 				}
-				if(row["cMainClassName"]!=null)
+				if(row["MainClassName"]!=null)
 				{
-					model.cMainClassName=row["cMainClassName"].ToString();
+					model.MainClassName=row["MainClassName"].ToString();
 				}
-				if(row["iLevel1ID"]!=null && row["iLevel1ID"].ToString()!="")
+				if(row["Level1ID"]!=null)
 				{
-					model.iLevel1ID=int.Parse(row["iLevel1ID"].ToString());
+					model.Level1ID=row["Level1ID"].ToString();
 				}
-				if(row["cLevel1Name"]!=null)
+				if(row["Level1Name"]!=null)
 				{
-					model.cLevel1Name=row["cLevel1Name"].ToString();
+					model.Level1Name=row["Level1Name"].ToString();
 				}
-				if(row["iLevel2ID"]!=null && row["iLevel2ID"].ToString()!="")
+				if(row["Level2ID"]!=null)
 				{
-					model.iLevel2ID=int.Parse(row["iLevel2ID"].ToString());
+					model.Level2ID=row["Level2ID"].ToString();
 				}
-				if(row["cLevel2Name"]!=null)
+				if(row["Level2Name"]!=null)
 				{
-					model.cLevel2Name=row["cLevel2Name"].ToString();
+					model.Level2Name=row["Level2Name"].ToString();
 				}
-				if(row["iLevel3ID"]!=null && row["iLevel3ID"].ToString()!="")
+				if(row["Level3ID"]!=null)
 				{
-					model.iLevel3ID=int.Parse(row["iLevel3ID"].ToString());
+					model.Level3ID=row["Level3ID"].ToString();
 				}
-				if(row["cLevel3Name"]!=null)
+				if(row["Level3Name"]!=null)
 				{
-					model.cLevel3Name=row["cLevel3Name"].ToString();
+					model.Level3Name=row["Level3Name"].ToString();
 				}
 			}
 			return model;
@@ -198,7 +198,7 @@ namespace MaterialCodeGenerator.DAL
 		public DataSet GetList(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select iMainClassID,cMainClassName,iLevel1ID,cLevel1Name,iLevel2ID,cLevel2Name,iLevel3ID,cLevel3Name ");
+			strSql.Append("select MainClassID,MainClassName,Level1ID,Level1Name,Level2ID,Level2Name,Level3ID,Level3Name ");
 			strSql.Append(" FROM MaterialCode ");
 			if(strWhere.Trim()!="")
 			{
@@ -206,9 +206,6 @@ namespace MaterialCodeGenerator.DAL
 			}
 			return DbHelperSQLite.Query(strSql.ToString());
 		}
-
-        
-
 
 		/// <summary>
 		/// 获取记录总数
