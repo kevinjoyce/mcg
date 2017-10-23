@@ -374,5 +374,10 @@ namespace UI
         {
             this.rdoNoTinning.Enabled = false;
         }
+
+        private void cmbRawFirst_Click(object sender, EventArgs e)
+        {
+            //LoadDataToCmbRawFirst();
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace UI
 {
@@ -160,7 +161,11 @@ namespace UI
             GenerateStdDMLength();
         }
 
-        
+        private void btnCopyStandard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(txtStdCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
 
     }
 }

@@ -19,7 +19,7 @@ namespace UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LoadDataToCmbRawFirst();
+            
             this.SetComponentDisabled();
         }
 
@@ -44,7 +44,7 @@ namespace UI
                     break;
                 case 2:
                     //MessageBox.Show("tabPage3 is Selected");
-                    //LoadDataTocmbElecFirst();
+                    LoadDataTocmbElecFirst();
                     break;
                 case 3:
                     //MessageBox.Show("tabPage4 is Selected");
@@ -64,6 +64,8 @@ namespace UI
             }
         }
 
+        
+
         private void LoadDataToCmbRawFirst()
         {
             LevelSearchor.searchAndSetLevel1(this.cmbRawFirst, 1);
@@ -73,13 +75,14 @@ namespace UI
             LevelSearchor.searchAndSetLevel1(this.cmbStdFirst, 2);
         }
 
+        private void LoadDataTocmbElecFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbElecFirst, 3);
+        }
+
         
 
-        private void btnCopyStandard_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetDataObject(txtStdCode.Text);
-            MessageBox.Show("编码复制成功");
-        }
+        
 
         
         
