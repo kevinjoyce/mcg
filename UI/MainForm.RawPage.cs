@@ -18,7 +18,7 @@ namespace UI
      
 
 			//设置下级下拉框的级联变化
-            LevelSearchor.searchAndSetLevel2(this.cmbRawSecond, 1, int.Parse(this.cmbRawFirst.SelectedValue.ToString()));
+            LevelSearchor.searchAndSetLevel2(this.cmbRawSecond, "1", this.cmbRawFirst.SelectedValue.ToString());
             SetTxtCodeNull();
         }
 
@@ -39,9 +39,9 @@ namespace UI
 
             //级联变化
             LevelSearchor.searchAndSetLevel3(this.cmbRawThird, 
-                1, 
-                int.Parse(this.cmbRawFirst.SelectedValue.ToString()),
-                int.Parse(this.cmbRawSecond.SelectedValue.ToString()));
+                "1", 
+                this.cmbRawFirst.SelectedValue.ToString(),
+                this.cmbRawSecond.SelectedValue.ToString());
 
             SetTxtCodeNull();
         }

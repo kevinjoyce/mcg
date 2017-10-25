@@ -115,11 +115,13 @@
             this.lblStdSecnd = new System.Windows.Forms.Label();
             this.cmbStdFirst = new System.Windows.Forms.ComboBox();
             this.tabElectricComponent = new System.Windows.Forms.TabPage();
-            this.panel35 = new System.Windows.Forms.Panel();
             this.txtElecSerialNum = new System.Windows.Forms.TextBox();
             this.lblElecSeiralNum = new System.Windows.Forms.Label();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.cmbACDC = new System.Windows.Forms.ComboBox();
             this.lblElecDist = new System.Windows.Forms.Label();
             this.lblColNum = new System.Windows.Forms.Label();
+            this.lblACDC = new System.Windows.Forms.Label();
             this.txtElecDist = new System.Windows.Forms.TextBox();
             this.txtColNum = new System.Windows.Forms.TextBox();
             this.lblElecSupportPointNum = new System.Windows.Forms.Label();
@@ -131,6 +133,10 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.rdoElecOff = new System.Windows.Forms.RadioButton();
             this.rdoElecOn = new System.Windows.Forms.RadioButton();
+            this.txtElecPower = new System.Windows.Forms.TextBox();
+            this.lblElecPower = new System.Windows.Forms.Label();
+            this.txtCap = new System.Windows.Forms.TextBox();
+            this.lblCap = new System.Windows.Forms.Label();
             this.txtElecU = new System.Windows.Forms.TextBox();
             this.lblElecU = new System.Windows.Forms.Label();
             this.txtElecNull = new System.Windows.Forms.TextBox();
@@ -1301,6 +1307,8 @@
             // tabElectricComponent
             // 
             this.tabElectricComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabElectricComponent.Controls.Add(this.txtElecSerialNum);
+            this.tabElectricComponent.Controls.Add(this.lblElecSeiralNum);
             this.tabElectricComponent.Controls.Add(this.panel35);
             this.tabElectricComponent.Controls.Add(this.btnElecCopy);
             this.tabElectricComponent.Controls.Add(this.panel11);
@@ -1310,14 +1318,35 @@
             this.tabElectricComponent.Name = "tabElectricComponent";
             this.tabElectricComponent.Size = new System.Drawing.Size(776, 527);
             this.tabElectricComponent.TabIndex = 2;
-            this.tabElectricComponent.Text = "电器原件";
+            this.tabElectricComponent.Text = "电器元件";
+            // 
+            // txtElecSerialNum
+            // 
+            this.txtElecSerialNum.BackColor = System.Drawing.SystemColors.Window;
+            this.txtElecSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtElecSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtElecSerialNum.Location = new System.Drawing.Point(109, 278);
+            this.txtElecSerialNum.Name = "txtElecSerialNum";
+            this.txtElecSerialNum.Size = new System.Drawing.Size(236, 26);
+            this.txtElecSerialNum.TabIndex = 13;
+            this.txtElecSerialNum.Click += new System.EventHandler(this.txtElecSerialNum_Click);
+            this.txtElecSerialNum.TextChanged += new System.EventHandler(this.txtElecSerialNum_TextChanged);
+            // 
+            // lblElecSeiralNum
+            // 
+            this.lblElecSeiralNum.AutoSize = true;
+            this.lblElecSeiralNum.Location = new System.Drawing.Point(16, 280);
+            this.lblElecSeiralNum.Name = "lblElecSeiralNum";
+            this.lblElecSeiralNum.Size = new System.Drawing.Size(58, 21);
+            this.lblElecSeiralNum.TabIndex = 10;
+            this.lblElecSeiralNum.Text = "流水号";
             // 
             // panel35
             // 
-            this.panel35.Controls.Add(this.txtElecSerialNum);
-            this.panel35.Controls.Add(this.lblElecSeiralNum);
+            this.panel35.Controls.Add(this.cmbACDC);
             this.panel35.Controls.Add(this.lblElecDist);
             this.panel35.Controls.Add(this.lblColNum);
+            this.panel35.Controls.Add(this.lblACDC);
             this.panel35.Controls.Add(this.txtElecDist);
             this.panel35.Controls.Add(this.txtColNum);
             this.panel35.Controls.Add(this.lblElecSupportPointNum);
@@ -1327,29 +1356,23 @@
             this.panel35.Size = new System.Drawing.Size(360, 139);
             this.panel35.TabIndex = 24;
             // 
-            // txtElecSerialNum
+            // cmbACDC
             // 
-            this.txtElecSerialNum.BackColor = System.Drawing.SystemColors.Window;
-            this.txtElecSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtElecSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecSerialNum.Location = new System.Drawing.Point(101, 13);
-            this.txtElecSerialNum.Name = "txtElecSerialNum";
-            this.txtElecSerialNum.Size = new System.Drawing.Size(236, 26);
-            this.txtElecSerialNum.TabIndex = 13;
-            // 
-            // lblElecSeiralNum
-            // 
-            this.lblElecSeiralNum.AutoSize = true;
-            this.lblElecSeiralNum.Location = new System.Drawing.Point(8, 15);
-            this.lblElecSeiralNum.Name = "lblElecSeiralNum";
-            this.lblElecSeiralNum.Size = new System.Drawing.Size(58, 21);
-            this.lblElecSeiralNum.TabIndex = 10;
-            this.lblElecSeiralNum.Text = "流水号";
+            this.cmbACDC.FormattingEnabled = true;
+            this.cmbACDC.Items.AddRange(new object[] {
+            "ACO",
+            "DCO",
+            "ADC"});
+            this.cmbACDC.Location = new System.Drawing.Point(251, 51);
+            this.cmbACDC.Name = "cmbACDC";
+            this.cmbACDC.Size = new System.Drawing.Size(86, 29);
+            this.cmbACDC.TabIndex = 3;
+            this.cmbACDC.SelectedIndexChanged += new System.EventHandler(this.cmbACDC_SelectedIndexChanged);
             // 
             // lblElecDist
             // 
             this.lblElecDist.AutoSize = true;
-            this.lblElecDist.Location = new System.Drawing.Point(8, 62);
+            this.lblElecDist.Location = new System.Drawing.Point(8, 13);
             this.lblElecDist.Name = "lblElecDist";
             this.lblElecDist.Size = new System.Drawing.Size(58, 21);
             this.lblElecDist.TabIndex = 14;
@@ -1358,36 +1381,47 @@
             // lblColNum
             // 
             this.lblColNum.AutoSize = true;
-            this.lblColNum.Location = new System.Drawing.Point(203, 62);
+            this.lblColNum.Location = new System.Drawing.Point(188, 13);
             this.lblColNum.Name = "lblColNum";
             this.lblColNum.Size = new System.Drawing.Size(42, 21);
             this.lblColNum.TabIndex = 14;
             this.lblColNum.Text = "排数";
+            // 
+            // lblACDC
+            // 
+            this.lblACDC.AutoSize = true;
+            this.lblACDC.Location = new System.Drawing.Point(188, 57);
+            this.lblACDC.Name = "lblACDC";
+            this.lblACDC.Size = new System.Drawing.Size(58, 21);
+            this.lblACDC.TabIndex = 1;
+            this.lblACDC.Text = "交直流";
             // 
             // txtElecDist
             // 
             this.txtElecDist.BackColor = System.Drawing.SystemColors.Window;
             this.txtElecDist.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecDist.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecDist.Location = new System.Drawing.Point(101, 61);
+            this.txtElecDist.Location = new System.Drawing.Point(101, 12);
             this.txtElecDist.Name = "txtElecDist";
             this.txtElecDist.Size = new System.Drawing.Size(78, 26);
             this.txtElecDist.TabIndex = 15;
+            this.txtElecDist.TextChanged += new System.EventHandler(this.txtElecDist_TextChanged);
             // 
             // txtColNum
             // 
             this.txtColNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtColNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtColNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtColNum.Location = new System.Drawing.Point(251, 60);
+            this.txtColNum.Location = new System.Drawing.Point(251, 11);
             this.txtColNum.Name = "txtColNum";
             this.txtColNum.Size = new System.Drawing.Size(86, 26);
             this.txtColNum.TabIndex = 15;
+            this.txtColNum.TextChanged += new System.EventHandler(this.txtColNum_TextChanged);
             // 
             // lblElecSupportPointNum
             // 
             this.lblElecSupportPointNum.AutoSize = true;
-            this.lblElecSupportPointNum.Location = new System.Drawing.Point(8, 103);
+            this.lblElecSupportPointNum.Location = new System.Drawing.Point(8, 54);
             this.lblElecSupportPointNum.Name = "lblElecSupportPointNum";
             this.lblElecSupportPointNum.Size = new System.Drawing.Size(90, 21);
             this.lblElecSupportPointNum.TabIndex = 14;
@@ -1398,10 +1432,11 @@
             this.txtElecSupportPointNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtElecSupportPointNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecSupportPointNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecSupportPointNum.Location = new System.Drawing.Point(101, 101);
+            this.txtElecSupportPointNum.Location = new System.Drawing.Point(101, 52);
             this.txtElecSupportPointNum.Name = "txtElecSupportPointNum";
-            this.txtElecSupportPointNum.Size = new System.Drawing.Size(236, 26);
+            this.txtElecSupportPointNum.Size = new System.Drawing.Size(78, 26);
             this.txtElecSupportPointNum.TabIndex = 15;
+            this.txtElecSupportPointNum.TextChanged += new System.EventHandler(this.txtElecSupportPointNum_TextChanged);
             // 
             // btnElecCopy
             // 
@@ -1411,14 +1446,15 @@
             this.btnElecCopy.TabIndex = 23;
             this.btnElecCopy.Text = "复制";
             this.btnElecCopy.UseVisualStyleBackColor = true;
+            this.btnElecCopy.Click += new System.EventHandler(this.btnElecCopy_Click);
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.lblElecCode);
             this.panel11.Controls.Add(this.txtElecCode);
-            this.panel11.Location = new System.Drawing.Point(18, 355);
+            this.panel11.Location = new System.Drawing.Point(18, 367);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(750, 79);
+            this.panel11.Size = new System.Drawing.Size(750, 84);
             this.panel11.TabIndex = 22;
             // 
             // lblElecCode
@@ -1445,6 +1481,10 @@
             // 
             this.panel10.Controls.Add(this.rdoElecOff);
             this.panel10.Controls.Add(this.rdoElecOn);
+            this.panel10.Controls.Add(this.txtElecPower);
+            this.panel10.Controls.Add(this.lblElecPower);
+            this.panel10.Controls.Add(this.txtCap);
+            this.panel10.Controls.Add(this.lblCap);
             this.panel10.Controls.Add(this.txtElecU);
             this.panel10.Controls.Add(this.lblElecU);
             this.panel10.Controls.Add(this.txtElecNull);
@@ -1482,6 +1522,7 @@
             this.rdoElecOff.TabStop = true;
             this.rdoElecOff.Text = "0 断电";
             this.rdoElecOff.UseVisualStyleBackColor = true;
+            this.rdoElecOff.CheckedChanged += new System.EventHandler(this.rdoElecOff_CheckedChanged);
             // 
             // rdoElecOn
             // 
@@ -1495,6 +1536,47 @@
             this.rdoElecOn.TabStop = true;
             this.rdoElecOn.Text = "1 通电";
             this.rdoElecOn.UseVisualStyleBackColor = true;
+            this.rdoElecOn.CheckedChanged += new System.EventHandler(this.rdoElecOn_CheckedChanged);
+            // 
+            // txtElecPower
+            // 
+            this.txtElecPower.BackColor = System.Drawing.SystemColors.Window;
+            this.txtElecPower.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtElecPower.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtElecPower.Location = new System.Drawing.Point(233, 134);
+            this.txtElecPower.Name = "txtElecPower";
+            this.txtElecPower.Size = new System.Drawing.Size(92, 26);
+            this.txtElecPower.TabIndex = 17;
+            this.txtElecPower.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblElecPower
+            // 
+            this.lblElecPower.AutoSize = true;
+            this.lblElecPower.Location = new System.Drawing.Point(183, 135);
+            this.lblElecPower.Name = "lblElecPower";
+            this.lblElecPower.Size = new System.Drawing.Size(42, 21);
+            this.lblElecPower.TabIndex = 16;
+            this.lblElecPower.Text = "功率";
+            // 
+            // txtCap
+            // 
+            this.txtCap.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCap.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtCap.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtCap.Location = new System.Drawing.Point(233, 98);
+            this.txtCap.Name = "txtCap";
+            this.txtCap.Size = new System.Drawing.Size(92, 26);
+            this.txtCap.TabIndex = 17;
+            this.txtCap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblCap
+            // 
+            this.lblCap.AutoSize = true;
+            this.lblCap.Location = new System.Drawing.Point(183, 99);
+            this.lblCap.Name = "lblCap";
+            this.lblCap.Size = new System.Drawing.Size(42, 21);
+            this.lblCap.TabIndex = 16;
+            this.lblCap.Text = "电容";
             // 
             // txtElecU
             // 
@@ -1505,6 +1587,7 @@
             this.txtElecU.Name = "txtElecU";
             this.txtElecU.Size = new System.Drawing.Size(90, 26);
             this.txtElecU.TabIndex = 17;
+            this.txtElecU.TextChanged += new System.EventHandler(this.txtElecU_TextChanged);
             // 
             // lblElecU
             // 
@@ -1525,6 +1608,7 @@
             this.txtElecNull.Name = "txtElecNull";
             this.txtElecNull.Size = new System.Drawing.Size(76, 26);
             this.txtElecNull.TabIndex = 15;
+            this.txtElecNull.TextChanged += new System.EventHandler(this.txtElecNull_TextChanged);
             // 
             // txtElecDelay
             // 
@@ -1536,6 +1620,7 @@
             this.txtElecDelay.Name = "txtElecDelay";
             this.txtElecDelay.Size = new System.Drawing.Size(88, 26);
             this.txtElecDelay.TabIndex = 15;
+            this.txtElecDelay.TextChanged += new System.EventHandler(this.txtElecDelay_TextChanged);
             // 
             // lblElecNull
             // 
@@ -1553,8 +1638,9 @@
             this.txtElecGroupNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtElecGroupNum.Location = new System.Drawing.Point(87, 134);
             this.txtElecGroupNum.Name = "txtElecGroupNum";
-            this.txtElecGroupNum.Size = new System.Drawing.Size(239, 26);
+            this.txtElecGroupNum.Size = new System.Drawing.Size(90, 26);
             this.txtElecGroupNum.TabIndex = 15;
+            this.txtElecGroupNum.TextChanged += new System.EventHandler(this.txtElecGroupNum_TextChanged);
             // 
             // lblElecDelay
             // 
@@ -1572,8 +1658,9 @@
             this.txtElecSize.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtElecSize.Location = new System.Drawing.Point(87, 98);
             this.txtElecSize.Name = "txtElecSize";
-            this.txtElecSize.Size = new System.Drawing.Size(238, 26);
+            this.txtElecSize.Size = new System.Drawing.Size(90, 26);
             this.txtElecSize.TabIndex = 15;
+            this.txtElecSize.TextChanged += new System.EventHandler(this.txtElecSize_TextChanged);
             // 
             // lblElecGroupNum
             // 
@@ -1593,6 +1680,7 @@
             this.txtElecColor.Name = "txtElecColor";
             this.txtElecColor.Size = new System.Drawing.Size(76, 26);
             this.txtElecColor.TabIndex = 15;
+            this.txtElecColor.TextChanged += new System.EventHandler(this.txtElecColor_TextChanged);
             // 
             // txtElecTouchPointNum
             // 
@@ -1603,6 +1691,7 @@
             this.txtElecTouchPointNum.Name = "txtElecTouchPointNum";
             this.txtElecTouchPointNum.Size = new System.Drawing.Size(88, 26);
             this.txtElecTouchPointNum.TabIndex = 15;
+            this.txtElecTouchPointNum.TextChanged += new System.EventHandler(this.txtElecTouchPointNum_TextChanged);
             // 
             // txtElecBlock
             // 
@@ -1613,6 +1702,7 @@
             this.txtElecBlock.Name = "txtElecBlock";
             this.txtElecBlock.Size = new System.Drawing.Size(94, 26);
             this.txtElecBlock.TabIndex = 15;
+            this.txtElecBlock.TextChanged += new System.EventHandler(this.txtElecBlock_TextChanged);
             // 
             // txtElecCapacity
             // 
@@ -1623,6 +1713,7 @@
             this.txtElecCapacity.Name = "txtElecCapacity";
             this.txtElecCapacity.Size = new System.Drawing.Size(90, 26);
             this.txtElecCapacity.TabIndex = 15;
+            this.txtElecCapacity.TextChanged += new System.EventHandler(this.txtElecCapacity_TextChanged);
             // 
             // lblElecColor
             // 
@@ -1669,6 +1760,7 @@
             this.txtElecI.Name = "txtElecI";
             this.txtElecI.Size = new System.Drawing.Size(95, 26);
             this.txtElecI.TabIndex = 15;
+            this.txtElecI.TextChanged += new System.EventHandler(this.txtElecI_TextChanged);
             // 
             // lblElecCapacity
             // 
@@ -1708,6 +1800,7 @@
             this.cmbElecThird.Name = "cmbElecThird";
             this.cmbElecThird.Size = new System.Drawing.Size(247, 29);
             this.cmbElecThird.TabIndex = 3;
+            this.cmbElecThird.SelectedIndexChanged += new System.EventHandler(this.cmbElecThird_SelectedIndexChanged);
             // 
             // cmbElecSecond
             // 
@@ -1716,6 +1809,7 @@
             this.cmbElecSecond.Name = "cmbElecSecond";
             this.cmbElecSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbElecSecond.TabIndex = 3;
+            this.cmbElecSecond.SelectedIndexChanged += new System.EventHandler(this.cmbElecSecond_SelectedIndexChanged);
             // 
             // lblElecThird
             // 
@@ -1751,6 +1845,7 @@
             this.cmbElecFirst.Name = "cmbElecFirst";
             this.cmbElecFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbElecFirst.TabIndex = 0;
+            this.cmbElecFirst.SelectedIndexChanged += new System.EventHandler(this.cmbElecFirst_SelectedIndexChanged);
             // 
             // tabLineComponent
             // 
@@ -3221,6 +3316,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tabElectricComponent.ResumeLayout(false);
+            this.tabElectricComponent.PerformLayout();
             this.panel35.ResumeLayout(false);
             this.panel35.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -3574,6 +3670,12 @@
         private System.Windows.Forms.Label lblElecCapacity;
         private System.Windows.Forms.ComboBox cmbElecThird;
         private System.Windows.Forms.Label lblElecThird;
+        private System.Windows.Forms.TextBox txtCap;
+        private System.Windows.Forms.Label lblCap;
+        private System.Windows.Forms.TextBox txtElecPower;
+        private System.Windows.Forms.Label lblElecPower;
+        private System.Windows.Forms.ComboBox cmbACDC;
+        private System.Windows.Forms.Label lblACDC;
 
 
     }

@@ -69,18 +69,31 @@ namespace UI
 
         private void LoadDataToCmbRawFirst()
         {
-            LevelSearchor.searchAndSetLevel1(this.cmbRawFirst, 1);
+            LevelSearchor.searchAndSetLevel1(this.cmbRawFirst, "1");
         }
         private void LoadDataTocmbStdFirst()
         {
-            LevelSearchor.searchAndSetLevel1(this.cmbStdFirst, 2);
+            LevelSearchor.searchAndSetLevel1(this.cmbStdFirst, "2");
         }
 
         private void LoadDataTocmbElecFirst()
         {
-            LevelSearchor.searchAndSetLevel1(this.cmbElecFirst, 3);
+            LevelSearchor.searchAndSetLevel1(this.cmbElecFirst, "3");
         }
 
+        
+
+        
+
+        
+        
+
+        
+
+        
+
+        
+        
         
 
         

@@ -9,10 +9,10 @@ namespace UI
 {
     class LevelSearchor
     {
-        public static void searchAndSetLevel1(ComboBox cbox, int mainClassID)
+        public static void searchAndSetLevel1(ComboBox cbox, String mainClassID)
         {
             //查询1级类别, mainClassID指明顶级类1-9
-            string strWhere = "MainClassID = " + mainClassID;            
+            string strWhere = "MainClassID = '" + mainClassID + "'";            
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 1);
                         
@@ -22,10 +22,10 @@ namespace UI
             cbox.Text = "";
         }
         
-        public static void searchAndSetLevel2(ComboBox cbox, int mainClassID, int level1ID)
+        public static void searchAndSetLevel2(ComboBox cbox, String mainClassID, String level1ID)
         {
             //查询2级类别, mainClassID指明顶级类1-9
-            string strWhere = "MainClassID = " + mainClassID + " and Level1ID = " + level1ID;
+            string strWhere = "MainClassID = '" + mainClassID + "' and Level1ID = '" + level1ID+"'";
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 2);
 
@@ -35,10 +35,10 @@ namespace UI
             cbox.Text = "";
         }
 
-        public static void searchAndSetLevel3(ComboBox cbox, int mainClassID, int level1ID, int level2ID)
+        public static void searchAndSetLevel3(ComboBox cbox, String mainClassID, String level1ID, String level2ID)
         {
             //查询2级类别, mainClassID指明顶级类1-9
-            string strWhere = "MainClassID = " + mainClassID + " and Level1ID = " + level1ID + " and Level2ID = " + level2ID;
+            string strWhere = "MainClassID = '" + mainClassID + "' and Level1ID = '" + level1ID + "' and Level2ID = '" + level2ID + "'";
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 3);
 

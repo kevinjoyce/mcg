@@ -14,7 +14,7 @@ namespace UI
             setStdComponentDisable();
             if (this.cmbStdFirst.SelectedValue.ToString().Length > 5) return; //处理冲突，启动时会激活该事件报错 
             //设置下级下拉框的级联变化
-            LevelSearchor.searchAndSetLevel2(this.cmbStdSecond, 2, int.Parse(this.cmbStdFirst.SelectedValue.ToString()));
+            LevelSearchor.searchAndSetLevel2(this.cmbStdSecond, "2", this.cmbStdFirst.SelectedValue.ToString());
         }
 
         private void cmbStdSecond_SelectedIndexChanged(object sender, EventArgs e)
