@@ -59,15 +59,14 @@ namespace UI
                     //MessageBox.Show("tabPage5 is Selected");
                     LoadDataTocmbAssistantFirst();
                     break;
+                case 7:
+                    LoadDataTocmbMlineFirst();
+                    break;
                 case 8:
                     //LoadDataTocmbProductionFirst();
                     break;
             }
         }
-
-        
-
-        
 
         private void LoadDataToCmbRawFirst()
         {
@@ -100,8 +99,12 @@ namespace UI
         }
 
         
+        private void LoadDataTocmbMlineFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbMlineFirst, "8");
+        }
 
-
+        
         
     }
 }

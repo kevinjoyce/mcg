@@ -281,19 +281,22 @@
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tabMlineComponent = new System.Windows.Forms.TabPage();
-            this.btnCopyBak = new System.Windows.Forms.Button();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.cmbMlineSecond = new System.Windows.Forms.ComboBox();
+            this.lblMlineFirst = new System.Windows.Forms.Label();
+            this.lblMlineSecond = new System.Windows.Forms.Label();
+            this.cmbMlineFirst = new System.Windows.Forms.ComboBox();
+            this.lblMlineThird = new System.Windows.Forms.Label();
+            this.cmbMlineThird = new System.Windows.Forms.ComboBox();
+            this.btnMlineCopy = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.txtBakCode = new System.Windows.Forms.TextBox();
+            this.txtMlineCode = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.txtBakSerialNum = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.txtBakSize = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.txtBakSubCat = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
+            this.txtMlineIStrength = new System.Windows.Forms.TextBox();
+            this.txtMlineSerialNum = new System.Windows.Forms.TextBox();
+            this.lblMlineIStrength = new System.Windows.Forms.Label();
+            this.lblMlineSerialNum = new System.Windows.Forms.Label();
             this.tabProductionComponent = new System.Windows.Forms.TabPage();
             this.btnCopyProduction = new System.Windows.Forms.Button();
             this.panel32 = new System.Windows.Forms.Panel();
@@ -373,10 +376,9 @@
             this.groupBox12.SuspendLayout();
             this.panel22.SuspendLayout();
             this.tabMlineComponent.SuspendLayout();
+            this.panel26.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel28.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel26.SuspendLayout();
             this.tabProductionComponent.SuspendLayout();
             this.panel32.SuspendLayout();
             this.panel31.SuspendLayout();
@@ -3061,42 +3063,109 @@
             // tabMlineComponent
             // 
             this.tabMlineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabMlineComponent.Controls.Add(this.btnCopyBak);
+            this.tabMlineComponent.Controls.Add(this.panel26);
+            this.tabMlineComponent.Controls.Add(this.btnMlineCopy);
             this.tabMlineComponent.Controls.Add(this.panel29);
             this.tabMlineComponent.Controls.Add(this.panel28);
-            this.tabMlineComponent.Controls.Add(this.panel27);
-            this.tabMlineComponent.Controls.Add(this.panel26);
             this.tabMlineComponent.Location = new System.Drawing.Point(4, 30);
             this.tabMlineComponent.Name = "tabMlineComponent";
             this.tabMlineComponent.Size = new System.Drawing.Size(776, 527);
             this.tabMlineComponent.TabIndex = 7;
             this.tabMlineComponent.Text = "成品母线";
             // 
-            // btnCopyBak
+            // panel26
             // 
-            this.btnCopyBak.Location = new System.Drawing.Point(291, 471);
-            this.btnCopyBak.Name = "btnCopyBak";
-            this.btnCopyBak.Size = new System.Drawing.Size(169, 48);
-            this.btnCopyBak.TabIndex = 27;
-            this.btnCopyBak.Text = "复制";
-            this.btnCopyBak.UseVisualStyleBackColor = true;
+            this.panel26.Controls.Add(this.cmbMlineSecond);
+            this.panel26.Controls.Add(this.lblMlineFirst);
+            this.panel26.Controls.Add(this.lblMlineSecond);
+            this.panel26.Controls.Add(this.cmbMlineFirst);
+            this.panel26.Controls.Add(this.lblMlineThird);
+            this.panel26.Controls.Add(this.cmbMlineThird);
+            this.panel26.Location = new System.Drawing.Point(26, 11);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(351, 194);
+            this.panel26.TabIndex = 28;
+            // 
+            // cmbMlineSecond
+            // 
+            this.cmbMlineSecond.FormattingEnabled = true;
+            this.cmbMlineSecond.Location = new System.Drawing.Point(87, 75);
+            this.cmbMlineSecond.Name = "cmbMlineSecond";
+            this.cmbMlineSecond.Size = new System.Drawing.Size(247, 29);
+            this.cmbMlineSecond.TabIndex = 3;
+            this.cmbMlineSecond.SelectedIndexChanged += new System.EventHandler(this.cmbMlineSecond_SelectedIndexChanged);
+            // 
+            // lblMlineFirst
+            // 
+            this.lblMlineFirst.AutoSize = true;
+            this.lblMlineFirst.Location = new System.Drawing.Point(6, 16);
+            this.lblMlineFirst.Name = "lblMlineFirst";
+            this.lblMlineFirst.Size = new System.Drawing.Size(58, 21);
+            this.lblMlineFirst.TabIndex = 0;
+            this.lblMlineFirst.Text = "第一级";
+            // 
+            // lblMlineSecond
+            // 
+            this.lblMlineSecond.AutoSize = true;
+            this.lblMlineSecond.Location = new System.Drawing.Point(6, 79);
+            this.lblMlineSecond.Name = "lblMlineSecond";
+            this.lblMlineSecond.Size = new System.Drawing.Size(58, 21);
+            this.lblMlineSecond.TabIndex = 1;
+            this.lblMlineSecond.Text = "第二级";
+            // 
+            // cmbMlineFirst
+            // 
+            this.cmbMlineFirst.FormattingEnabled = true;
+            this.cmbMlineFirst.Location = new System.Drawing.Point(87, 16);
+            this.cmbMlineFirst.Name = "cmbMlineFirst";
+            this.cmbMlineFirst.Size = new System.Drawing.Size(247, 29);
+            this.cmbMlineFirst.TabIndex = 0;
+            this.cmbMlineFirst.SelectedIndexChanged += new System.EventHandler(this.cmbMlineFirst_SelectedIndexChanged);
+            // 
+            // lblMlineThird
+            // 
+            this.lblMlineThird.AutoSize = true;
+            this.lblMlineThird.Location = new System.Drawing.Point(6, 142);
+            this.lblMlineThird.Name = "lblMlineThird";
+            this.lblMlineThird.Size = new System.Drawing.Size(58, 21);
+            this.lblMlineThird.TabIndex = 2;
+            this.lblMlineThird.Text = "第三级";
+            // 
+            // cmbMlineThird
+            // 
+            this.cmbMlineThird.FormattingEnabled = true;
+            this.cmbMlineThird.Location = new System.Drawing.Point(87, 134);
+            this.cmbMlineThird.Name = "cmbMlineThird";
+            this.cmbMlineThird.Size = new System.Drawing.Size(247, 29);
+            this.cmbMlineThird.TabIndex = 4;
+            this.cmbMlineThird.SelectedIndexChanged += new System.EventHandler(this.cmbMlineThird_SelectedIndexChanged);
+            // 
+            // btnMlineCopy
+            // 
+            this.btnMlineCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnMlineCopy.Name = "btnMlineCopy";
+            this.btnMlineCopy.Size = new System.Drawing.Size(169, 48);
+            this.btnMlineCopy.TabIndex = 27;
+            this.btnMlineCopy.Text = "复制";
+            this.btnMlineCopy.UseVisualStyleBackColor = true;
+            this.btnMlineCopy.Click += new System.EventHandler(this.btnMlineCopy_Click);
             // 
             // panel29
             // 
-            this.panel29.Controls.Add(this.txtBakCode);
+            this.panel29.Controls.Add(this.txtMlineCode);
             this.panel29.Controls.Add(this.label54);
             this.panel29.Location = new System.Drawing.Point(16, 288);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(738, 87);
             this.panel29.TabIndex = 26;
             // 
-            // txtBakCode
+            // txtMlineCode
             // 
-            this.txtBakCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
-            this.txtBakCode.Location = new System.Drawing.Point(126, 18);
-            this.txtBakCode.Name = "txtBakCode";
-            this.txtBakCode.Size = new System.Drawing.Size(595, 54);
-            this.txtBakCode.TabIndex = 1;
+            this.txtMlineCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtMlineCode.Location = new System.Drawing.Point(126, 18);
+            this.txtMlineCode.Name = "txtMlineCode";
+            this.txtMlineCode.Size = new System.Drawing.Size(595, 54);
+            this.txtMlineCode.TabIndex = 1;
             // 
             // label54
             // 
@@ -3110,78 +3179,49 @@
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.txtBakSerialNum);
-            this.panel28.Controls.Add(this.label53);
-            this.panel28.Location = new System.Drawing.Point(3, 171);
+            this.panel28.Controls.Add(this.txtMlineIStrength);
+            this.panel28.Controls.Add(this.txtMlineSerialNum);
+            this.panel28.Controls.Add(this.lblMlineIStrength);
+            this.panel28.Controls.Add(this.lblMlineSerialNum);
+            this.panel28.Location = new System.Drawing.Point(398, 11);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(751, 78);
+            this.panel28.Size = new System.Drawing.Size(356, 194);
             this.panel28.TabIndex = 1;
             // 
-            // txtBakSerialNum
+            // txtMlineIStrength
             // 
-            this.txtBakSerialNum.Location = new System.Drawing.Point(126, 29);
-            this.txtBakSerialNum.Name = "txtBakSerialNum";
-            this.txtBakSerialNum.Size = new System.Drawing.Size(608, 29);
-            this.txtBakSerialNum.TabIndex = 1;
+            this.txtMlineIStrength.Location = new System.Drawing.Point(114, 14);
+            this.txtMlineIStrength.Name = "txtMlineIStrength";
+            this.txtMlineIStrength.Size = new System.Drawing.Size(220, 29);
+            this.txtMlineIStrength.TabIndex = 1;
+            this.txtMlineIStrength.TextChanged += new System.EventHandler(this.txtMlineIStrength_TextChanged);
             // 
-            // label53
+            // txtMlineSerialNum
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(17, 32);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(58, 21);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "流水号";
+            this.txtMlineSerialNum.Location = new System.Drawing.Point(114, 134);
+            this.txtMlineSerialNum.Name = "txtMlineSerialNum";
+            this.txtMlineSerialNum.Size = new System.Drawing.Size(220, 29);
+            this.txtMlineSerialNum.TabIndex = 1;
+            this.txtMlineSerialNum.Click += new System.EventHandler(this.txtMlineSerialNum_Click);
+            this.txtMlineSerialNum.TextChanged += new System.EventHandler(this.txtMlineSerialNum_TextChanged);
             // 
-            // panel27
+            // lblMlineIStrength
             // 
-            this.panel27.Controls.Add(this.txtBakSize);
-            this.panel27.Controls.Add(this.label52);
-            this.panel27.Location = new System.Drawing.Point(3, 87);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(751, 78);
-            this.panel27.TabIndex = 1;
+            this.lblMlineIStrength.AutoSize = true;
+            this.lblMlineIStrength.Location = new System.Drawing.Point(27, 22);
+            this.lblMlineIStrength.Name = "lblMlineIStrength";
+            this.lblMlineIStrength.Size = new System.Drawing.Size(74, 21);
+            this.lblMlineIStrength.TabIndex = 0;
+            this.lblMlineIStrength.Text = "电流强度";
             // 
-            // txtBakSize
+            // lblMlineSerialNum
             // 
-            this.txtBakSize.Location = new System.Drawing.Point(126, 24);
-            this.txtBakSize.Name = "txtBakSize";
-            this.txtBakSize.Size = new System.Drawing.Size(608, 29);
-            this.txtBakSize.TabIndex = 1;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(11, 32);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(120, 21);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "规格/牌号/工艺";
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.txtBakSubCat);
-            this.panel26.Controls.Add(this.label51);
-            this.panel26.Location = new System.Drawing.Point(8, 18);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(746, 53);
-            this.panel26.TabIndex = 1;
-            // 
-            // txtBakSubCat
-            // 
-            this.txtBakSubCat.Location = new System.Drawing.Point(121, 13);
-            this.txtBakSubCat.Name = "txtBakSubCat";
-            this.txtBakSubCat.Size = new System.Drawing.Size(608, 29);
-            this.txtBakSubCat.TabIndex = 1;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(6, 16);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(42, 21);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "子类";
+            this.lblMlineSerialNum.AutoSize = true;
+            this.lblMlineSerialNum.Location = new System.Drawing.Point(27, 142);
+            this.lblMlineSerialNum.Name = "lblMlineSerialNum";
+            this.lblMlineSerialNum.Size = new System.Drawing.Size(58, 21);
+            this.lblMlineSerialNum.TabIndex = 0;
+            this.lblMlineSerialNum.Text = "流水号";
             // 
             // tabProductionComponent
             // 
@@ -3575,14 +3615,12 @@
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.tabMlineComponent.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
             this.tabProductionComponent.ResumeLayout(false);
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
@@ -3745,19 +3783,13 @@
         private System.Windows.Forms.TextBox txtContractNo;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TabPage tabMlineComponent;
-        private System.Windows.Forms.Button btnCopyBak;
+        private System.Windows.Forms.Button btnMlineCopy;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TextBox txtBakCode;
+        private System.Windows.Forms.TextBox txtMlineCode;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TextBox txtBakSerialNum;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TextBox txtBakSize;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.TextBox txtBakSubCat;
-        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox txtMlineSerialNum;
+        private System.Windows.Forms.Label lblMlineSerialNum;
         private System.Windows.Forms.TabPage tabProductionComponent;
         private System.Windows.Forms.Button btnCopyProduction;
         private System.Windows.Forms.Panel panel32;
@@ -3895,6 +3927,15 @@
         private System.Windows.Forms.RadioButton rdoContractC;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.RadioButton rdoContractB;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.ComboBox cmbMlineSecond;
+        private System.Windows.Forms.Label lblMlineFirst;
+        private System.Windows.Forms.Label lblMlineSecond;
+        private System.Windows.Forms.ComboBox cmbMlineFirst;
+        private System.Windows.Forms.Label lblMlineThird;
+        private System.Windows.Forms.ComboBox cmbMlineThird;
+        private System.Windows.Forms.TextBox txtMlineIStrength;
+        private System.Windows.Forms.Label lblMlineIStrength;
 
 
     }
