@@ -86,11 +86,15 @@
     <Compile Include="MainForm.MlinePage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MainForm.ProductionPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.StdPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MetalFlowNoGenerator.cs" />
     <Compile Include="MlineFlowNoGenerator.cs" />
+    <Compile Include="ProductionFlowNoGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StdFlowNoGenerator.cs" />

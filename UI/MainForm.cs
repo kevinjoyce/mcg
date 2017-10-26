@@ -63,7 +63,7 @@ namespace UI
                     LoadDataTocmbMlineFirst();
                     break;
                 case 8:
-                    //LoadDataTocmbProductionFirst();
+                    LoadDataTocmbProductionFirst();
                     break;
             }
         }
@@ -104,6 +104,12 @@ namespace UI
             LevelSearchor.searchAndSetLevel1(this.cmbMlineFirst, "8");
         }
 
+        private void LoadDataTocmbProductionFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbProductionFirst, "9");
+        }
+
+        
         
         
     }
