@@ -76,7 +76,7 @@ namespace UI
         //一级、二级编码生成
         private void GenerateStdLevelCode() 
         {
-            this.txtStdCode.Text = this.cmbStdSecond.SelectedValue.ToString();
+            this.txtStdCode.Text = "2." + this.cmbStdSecond.SelectedValue.ToString();
         }
 
         private void setStdComponentDisable() 

@@ -397,13 +397,13 @@ namespace UI
 
         private void GenerateElecLevelCode() 
         {
-            this.txtElecCode.Text = "";
+            this.txtElecCode.Text = "3.";
             if(cmbElecThird.Text !="")
-                this.txtElecCode.Text = this.cmbElecThird.SelectedValue.ToString();
+                this.txtElecCode.Text = this.txtElecCode.Text + this.cmbElecThird.SelectedValue.ToString();
             else if(cmbElecSecond.Text != "")
-                this.txtElecCode.Text = this.cmbElecSecond.SelectedValue.ToString();
+                this.txtElecCode.Text = this.txtElecCode.Text + this.cmbElecSecond.SelectedValue.ToString();
             else
-                this.txtElecCode.Text = this.cmbElecFirst.SelectedValue.ToString();
+                this.txtElecCode.Text = this.txtElecCode.Text + this.cmbElecFirst.SelectedValue.ToString();
         }
 
         /*生成编码: 电压，电容*/

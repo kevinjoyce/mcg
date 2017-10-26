@@ -91,7 +91,7 @@ namespace UI
         private void FillNumToTxtCode()
         {
             this.txtCode.Text = "";
-            this.txtCode.Text = this.cmbRawThird.SelectedValue + "."
+            this.txtCode.Text = "1." + this.cmbRawThird.SelectedValue + "."
                 + this.txtRaw.Text + "."
                 + this.txtThick.Text + "."
                 + this.txtSize.Text;
@@ -103,7 +103,7 @@ namespace UI
             this.txtCode.Text = "";
             if (this.cmbRawThird.Text != "")
             {
-                this.txtCode.Text = this.cmbRawThird.SelectedValue.ToString() + ".";
+                this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + ".";
             }
         }
 
@@ -144,17 +144,17 @@ namespace UI
             if (this.cmbRawFirst.SelectedValue.ToString() == "1")
             {
                 //牌号、厚度、长宽代码生成
-                this.txtCode.Text = this.cmbRawThird.SelectedValue.ToString() + "."
+                this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
                     + this.txtRaw.Text + "."
-                    + this.txtThick.Text + "."
+                    + this.txtThick.Text
                     + this.txtSize.Text;
             }
             else
             {
                 //牌号、端面、长度代码生成
-                this.txtCode.Text = this.cmbRawThird.SelectedValue.ToString() + "."
+                this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
                     + this.txtRaw.Text + "."
-                    + this.txtDM.Text + "."
+                    + this.txtDM.Text 
                     + this.txtLength.Text;
             }
         }
@@ -223,11 +223,11 @@ namespace UI
                 tinningOrNot = "0";//不镀锡
             }
 
-            this.txtCode.Text = this.cmbRawThird.SelectedValue.ToString() + "."
+            this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
                     + roundOrRight + "."
                     + tinningOrNot + "."
                     + this.txtNull.Text + "."
-                    + this.txtRoundThick.Text + "."
+                    + this.txtRoundThick.Text 
                     + this.txtRoundWidth.Text;
 
         }

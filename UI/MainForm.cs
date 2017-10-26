@@ -57,7 +57,7 @@ namespace UI
                     break;
                 case 5:
                     //MessageBox.Show("tabPage5 is Selected");
-                    //LoadDataTocmbEquipFirst();
+                    LoadDataTocmbAssistantFirst();
                     break;
                 case 8:
                     //LoadDataTocmbProductionFirst();
@@ -93,7 +93,14 @@ namespace UI
             LevelSearchor.searchAndSetLevel1(this.cmbMetalFirst, "5");
         }
 
+
+        private void LoadDataTocmbAssistantFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbAssistantFirst, "6");
+        }
+
         
+
 
         
     }

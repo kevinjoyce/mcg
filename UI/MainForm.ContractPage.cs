@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace UI
+{
+    partial class MainForm
+    {
+
+
+
+        private void txtContractNo_TextChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        //工艺流程编码生成
+        private void GenerateContractCode()
+        {
+            this.txtContractCode.Text = "7." + this.txtContractNo.Text + "."
+                + Utility.getRadioButtonCode(this.rdoContractC, "C")
+                + Utility.getRadioButtonCode(this.rdoContractNC, "0")
+                + Utility.getRadioButtonCode(this.rdoContractZ, "Z")
+                + Utility.getRadioButtonCode(this.rdoContractNZ, "0")
+                + Utility.getRadioButtonCode(this.rdoContractH, "H")
+                + Utility.getRadioButtonCode(this.rdoContractNH, "0")
+                + Utility.getRadioButtonCode(this.rdoContractM, "M")
+                + Utility.getRadioButtonCode(this.rdoContractNM, "0")
+                + Utility.getRadioButtonCode(this.rdoContractP, "P")
+                + Utility.getRadioButtonCode(this.rdoContractD, "D")
+                + Utility.getRadioButtonCode(this.rdoContractNPD, "0")
+                + "." + this.txtContractSerialNum.Text;
+        }
+
+        private void rdoContractC_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractZ_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractNZ_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractH_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractNH_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractM_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractNM_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractP_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractD_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void rdoContractNPD_CheckedChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void txtContractSerialNum_TextChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void txtContractSerialNum_Click(object sender, EventArgs e)
+        {
+            ContractFlowNoGenerator contractFlowNoGenerator = new ContractFlowNoGenerator();
+            this.txtContractSerialNum.Text = Utility.getFlowNoCode(contractFlowNoGenerator);
+        }
+
+        private void btnContract_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(txtContractCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+    }
+}

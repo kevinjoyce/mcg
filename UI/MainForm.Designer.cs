@@ -223,19 +223,21 @@
             this.cmbMetalFirst = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.tabEquipmentComponent = new System.Windows.Forms.TabPage();
-            this.btnEnquipment = new System.Windows.Forms.Button();
+            this.tabAssistantComponent = new System.Windows.Forms.TabPage();
+            this.btnAssistantCopy = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.txtEquipCode = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
+            this.txtAssistantCode = new System.Windows.Forms.TextBox();
+            this.lblAssistantCode = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.txtEquipSerialNum = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
+            this.txtAssistantNull = new System.Windows.Forms.TextBox();
+            this.lblAssistantNull = new System.Windows.Forms.Label();
+            this.txtAssistantSerialNum = new System.Windows.Forms.TextBox();
+            this.lblAssistantSerialNum = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.cmbEquipSecond = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.cmbEquipFirst = new System.Windows.Forms.ComboBox();
-            this.label30 = new System.Windows.Forms.Label();
+            this.cmbAssistantSecond = new System.Windows.Forms.ComboBox();
+            this.lblAssistantSecond = new System.Windows.Forms.Label();
+            this.cmbAssistantFirst = new System.Windows.Forms.ComboBox();
+            this.lblAssistantFirst = new System.Windows.Forms.Label();
             this.tabContractComponent = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
             this.txtContractCode = new System.Windows.Forms.TextBox();
@@ -246,44 +248,39 @@
             this.label50 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.rdoContractNM = new System.Windows.Forms.RadioButton();
             this.rdoContractM = new System.Windows.Forms.RadioButton();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.rdoContractNH = new System.Windows.Forms.RadioButton();
             this.rdoContractH = new System.Windows.Forms.RadioButton();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.rdoContractNPD = new System.Windows.Forms.RadioButton();
             this.rdoContractD = new System.Windows.Forms.RadioButton();
             this.rdoContractP = new System.Windows.Forms.RadioButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.rdoContractNZ = new System.Windows.Forms.RadioButton();
             this.rdoContractZ = new System.Windows.Forms.RadioButton();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.rdoContractNC = new System.Windows.Forms.RadioButton();
             this.rdoContractC = new System.Windows.Forms.RadioButton();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.rQ = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.rdoContractNJQ = new System.Windows.Forms.RadioButton();
-            this.rdoContractQ = new System.Windows.Forms.RadioButton();
-            this.rdoContractJ = new System.Windows.Forms.RadioButton();
+            this.rdoContractB = new System.Windows.Forms.RadioButton();
             this.label49 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.tabBakComponent = new System.Windows.Forms.TabPage();
+            this.tabMlineComponent = new System.Windows.Forms.TabPage();
             this.btnCopyBak = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.txtBakCode = new System.Windows.Forms.TextBox();
@@ -360,7 +357,7 @@
             this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.tabEquipmentComponent.SuspendLayout();
+            this.tabAssistantComponent.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -375,7 +372,7 @@
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.panel22.SuspendLayout();
-            this.tabBakComponent.SuspendLayout();
+            this.tabMlineComponent.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel27.SuspendLayout();
@@ -395,9 +392,9 @@
             this.tbControlMaterial.Controls.Add(this.tabElectricComponent);
             this.tbControlMaterial.Controls.Add(this.tabLineComponent);
             this.tbControlMaterial.Controls.Add(this.tabMetalComponent);
-            this.tbControlMaterial.Controls.Add(this.tabEquipmentComponent);
+            this.tbControlMaterial.Controls.Add(this.tabAssistantComponent);
             this.tbControlMaterial.Controls.Add(this.tabContractComponent);
-            this.tbControlMaterial.Controls.Add(this.tabBakComponent);
+            this.tbControlMaterial.Controls.Add(this.tabMlineComponent);
             this.tbControlMaterial.Controls.Add(this.tabProductionComponent);
             this.tbControlMaterial.Controls.Add(this.tabSearchComponent);
             this.tbControlMaterial.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2446,124 +2443,148 @@
             this.label23.TabIndex = 0;
             this.label23.Text = "第一级";
             // 
-            // tabEquipmentComponent
+            // tabAssistantComponent
             // 
-            this.tabEquipmentComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabEquipmentComponent.Controls.Add(this.btnEnquipment);
-            this.tabEquipmentComponent.Controls.Add(this.panel21);
-            this.tabEquipmentComponent.Controls.Add(this.panel20);
-            this.tabEquipmentComponent.Controls.Add(this.panel19);
-            this.tabEquipmentComponent.Location = new System.Drawing.Point(4, 30);
-            this.tabEquipmentComponent.Name = "tabEquipmentComponent";
-            this.tabEquipmentComponent.Size = new System.Drawing.Size(776, 527);
-            this.tabEquipmentComponent.TabIndex = 5;
-            this.tabEquipmentComponent.Text = "配线器材";
+            this.tabAssistantComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabAssistantComponent.Controls.Add(this.btnAssistantCopy);
+            this.tabAssistantComponent.Controls.Add(this.panel21);
+            this.tabAssistantComponent.Controls.Add(this.panel20);
+            this.tabAssistantComponent.Controls.Add(this.panel19);
+            this.tabAssistantComponent.Location = new System.Drawing.Point(4, 30);
+            this.tabAssistantComponent.Name = "tabAssistantComponent";
+            this.tabAssistantComponent.Size = new System.Drawing.Size(776, 527);
+            this.tabAssistantComponent.TabIndex = 5;
+            this.tabAssistantComponent.Text = "辅料";
             // 
-            // btnEnquipment
+            // btnAssistantCopy
             // 
-            this.btnEnquipment.Location = new System.Drawing.Point(291, 471);
-            this.btnEnquipment.Name = "btnEnquipment";
-            this.btnEnquipment.Size = new System.Drawing.Size(169, 48);
-            this.btnEnquipment.TabIndex = 29;
-            this.btnEnquipment.Text = "复制";
-            this.btnEnquipment.UseVisualStyleBackColor = true;
+            this.btnAssistantCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnAssistantCopy.Name = "btnAssistantCopy";
+            this.btnAssistantCopy.Size = new System.Drawing.Size(169, 48);
+            this.btnAssistantCopy.TabIndex = 29;
+            this.btnAssistantCopy.Text = "复制";
+            this.btnAssistantCopy.UseVisualStyleBackColor = true;
+            this.btnAssistantCopy.Click += new System.EventHandler(this.btnAssistantCopy_Click);
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.txtEquipCode);
-            this.panel21.Controls.Add(this.label33);
+            this.panel21.Controls.Add(this.txtAssistantCode);
+            this.panel21.Controls.Add(this.lblAssistantCode);
             this.panel21.Location = new System.Drawing.Point(16, 288);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(757, 101);
             this.panel21.TabIndex = 1;
             // 
-            // txtEquipCode
+            // txtAssistantCode
             // 
-            this.txtEquipCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
-            this.txtEquipCode.Location = new System.Drawing.Point(91, 22);
-            this.txtEquipCode.Name = "txtEquipCode";
-            this.txtEquipCode.Size = new System.Drawing.Size(637, 54);
-            this.txtEquipCode.TabIndex = 1;
+            this.txtAssistantCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtAssistantCode.Location = new System.Drawing.Point(91, 22);
+            this.txtAssistantCode.Name = "txtAssistantCode";
+            this.txtAssistantCode.Size = new System.Drawing.Size(637, 54);
+            this.txtAssistantCode.TabIndex = 1;
             // 
-            // label33
+            // lblAssistantCode
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
-            this.label33.Location = new System.Drawing.Point(3, 29);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(82, 41);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "编码";
+            this.lblAssistantCode.AutoSize = true;
+            this.lblAssistantCode.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.lblAssistantCode.Location = new System.Drawing.Point(3, 29);
+            this.lblAssistantCode.Name = "lblAssistantCode";
+            this.lblAssistantCode.Size = new System.Drawing.Size(82, 41);
+            this.lblAssistantCode.TabIndex = 0;
+            this.lblAssistantCode.Text = "编码";
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.txtEquipSerialNum);
-            this.panel20.Controls.Add(this.label32);
-            this.panel20.Location = new System.Drawing.Point(8, 101);
+            this.panel20.Controls.Add(this.txtAssistantNull);
+            this.panel20.Controls.Add(this.lblAssistantNull);
+            this.panel20.Controls.Add(this.txtAssistantSerialNum);
+            this.panel20.Controls.Add(this.lblAssistantSerialNum);
+            this.panel20.Location = new System.Drawing.Point(8, 141);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(757, 74);
             this.panel20.TabIndex = 1;
             // 
-            // txtEquipSerialNum
+            // txtAssistantNull
             // 
-            this.txtEquipSerialNum.Location = new System.Drawing.Point(68, 24);
-            this.txtEquipSerialNum.Name = "txtEquipSerialNum";
-            this.txtEquipSerialNum.Size = new System.Drawing.Size(668, 29);
-            this.txtEquipSerialNum.TabIndex = 1;
+            this.txtAssistantNull.Location = new System.Drawing.Point(68, 27);
+            this.txtAssistantNull.Name = "txtAssistantNull";
+            this.txtAssistantNull.Size = new System.Drawing.Size(262, 29);
+            this.txtAssistantNull.TabIndex = 1;
+            this.txtAssistantNull.TextChanged += new System.EventHandler(this.txtAssistantNull_TextChanged);
             // 
-            // label32
+            // lblAssistantNull
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(8, 31);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(58, 21);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "流水号";
+            this.lblAssistantNull.AutoSize = true;
+            this.lblAssistantNull.Location = new System.Drawing.Point(8, 31);
+            this.lblAssistantNull.Name = "lblAssistantNull";
+            this.lblAssistantNull.Size = new System.Drawing.Size(42, 21);
+            this.lblAssistantNull.TabIndex = 0;
+            this.lblAssistantNull.Text = "空置";
+            // 
+            // txtAssistantSerialNum
+            // 
+            this.txtAssistantSerialNum.Location = new System.Drawing.Point(469, 26);
+            this.txtAssistantSerialNum.Name = "txtAssistantSerialNum";
+            this.txtAssistantSerialNum.Size = new System.Drawing.Size(262, 29);
+            this.txtAssistantSerialNum.TabIndex = 1;
+            this.txtAssistantSerialNum.Click += new System.EventHandler(this.txtAssistantSerialNum_Click);
+            this.txtAssistantSerialNum.TextChanged += new System.EventHandler(this.txtAssistantSerialNum_TextChanged);
+            // 
+            // lblAssistantSerialNum
+            // 
+            this.lblAssistantSerialNum.AutoSize = true;
+            this.lblAssistantSerialNum.Location = new System.Drawing.Point(409, 30);
+            this.lblAssistantSerialNum.Name = "lblAssistantSerialNum";
+            this.lblAssistantSerialNum.Size = new System.Drawing.Size(58, 21);
+            this.lblAssistantSerialNum.TabIndex = 0;
+            this.lblAssistantSerialNum.Text = "流水号";
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.cmbEquipSecond);
-            this.panel19.Controls.Add(this.label31);
-            this.panel19.Controls.Add(this.cmbEquipFirst);
-            this.panel19.Controls.Add(this.label30);
+            this.panel19.Controls.Add(this.cmbAssistantSecond);
+            this.panel19.Controls.Add(this.lblAssistantSecond);
+            this.panel19.Controls.Add(this.cmbAssistantFirst);
+            this.panel19.Controls.Add(this.lblAssistantFirst);
             this.panel19.Location = new System.Drawing.Point(8, 18);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(760, 57);
             this.panel19.TabIndex = 0;
             // 
-            // cmbEquipSecond
+            // cmbAssistantSecond
             // 
-            this.cmbEquipSecond.FormattingEnabled = true;
-            this.cmbEquipSecond.Location = new System.Drawing.Point(469, 8);
-            this.cmbEquipSecond.Name = "cmbEquipSecond";
-            this.cmbEquipSecond.Size = new System.Drawing.Size(262, 29);
-            this.cmbEquipSecond.TabIndex = 1;
+            this.cmbAssistantSecond.FormattingEnabled = true;
+            this.cmbAssistantSecond.Location = new System.Drawing.Point(469, 8);
+            this.cmbAssistantSecond.Name = "cmbAssistantSecond";
+            this.cmbAssistantSecond.Size = new System.Drawing.Size(262, 29);
+            this.cmbAssistantSecond.TabIndex = 1;
+            this.cmbAssistantSecond.SelectedIndexChanged += new System.EventHandler(this.cmbAssisantSecond_SelectedIndexChanged);
             // 
-            // label31
+            // lblAssistantSecond
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(409, 14);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(58, 21);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "第二级";
+            this.lblAssistantSecond.AutoSize = true;
+            this.lblAssistantSecond.Location = new System.Drawing.Point(409, 14);
+            this.lblAssistantSecond.Name = "lblAssistantSecond";
+            this.lblAssistantSecond.Size = new System.Drawing.Size(58, 21);
+            this.lblAssistantSecond.TabIndex = 0;
+            this.lblAssistantSecond.Text = "第二级";
             // 
-            // cmbEquipFirst
+            // cmbAssistantFirst
             // 
-            this.cmbEquipFirst.FormattingEnabled = true;
-            this.cmbEquipFirst.Location = new System.Drawing.Point(68, 11);
-            this.cmbEquipFirst.Name = "cmbEquipFirst";
-            this.cmbEquipFirst.Size = new System.Drawing.Size(262, 29);
-            this.cmbEquipFirst.TabIndex = 1;
+            this.cmbAssistantFirst.FormattingEnabled = true;
+            this.cmbAssistantFirst.Location = new System.Drawing.Point(68, 11);
+            this.cmbAssistantFirst.Name = "cmbAssistantFirst";
+            this.cmbAssistantFirst.Size = new System.Drawing.Size(262, 29);
+            this.cmbAssistantFirst.TabIndex = 1;
+            this.cmbAssistantFirst.SelectedIndexChanged += new System.EventHandler(this.cmbAssitantFirst_SelectedIndexChanged);
             // 
-            // label30
+            // lblAssistantFirst
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 16);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(58, 21);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "第一级";
+            this.lblAssistantFirst.AutoSize = true;
+            this.lblAssistantFirst.Location = new System.Drawing.Point(6, 16);
+            this.lblAssistantFirst.Name = "lblAssistantFirst";
+            this.lblAssistantFirst.Size = new System.Drawing.Size(58, 21);
+            this.lblAssistantFirst.TabIndex = 0;
+            this.lblAssistantFirst.Text = "第一级";
             // 
             // tabContractComponent
             // 
@@ -2577,7 +2598,7 @@
             this.tabContractComponent.Name = "tabContractComponent";
             this.tabContractComponent.Size = new System.Drawing.Size(776, 527);
             this.tabContractComponent.TabIndex = 6;
-            this.tabContractComponent.Text = "合同/零部件";
+            this.tabContractComponent.Text = "合同件";
             // 
             // panel25
             // 
@@ -2614,6 +2635,7 @@
             this.btnContract.TabIndex = 23;
             this.btnContract.Text = "复制";
             this.btnContract.UseVisualStyleBackColor = true;
+            this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
             // 
             // panel24
             // 
@@ -2633,6 +2655,8 @@
             this.txtContractSerialNum.Name = "txtContractSerialNum";
             this.txtContractSerialNum.Size = new System.Drawing.Size(652, 26);
             this.txtContractSerialNum.TabIndex = 13;
+            this.txtContractSerialNum.Click += new System.EventHandler(this.txtContractSerialNum_Click);
+            this.txtContractSerialNum.TextChanged += new System.EventHandler(this.txtContractSerialNum_TextChanged);
             // 
             // label50
             // 
@@ -2659,296 +2683,305 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.label35);
-            this.groupBox7.Controls.Add(this.label36);
+            this.groupBox7.Controls.Add(this.label2);
+            this.groupBox7.Controls.Add(this.label3);
             this.groupBox7.Controls.Add(this.rdoContractNM);
             this.groupBox7.Controls.Add(this.rdoContractM);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox7.Location = new System.Drawing.Point(577, 114);
+            this.groupBox7.Location = new System.Drawing.Point(40, 97);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(162, 51);
-            this.groupBox7.TabIndex = 32;
+            this.groupBox7.Size = new System.Drawing.Size(212, 51);
+            this.groupBox7.TabIndex = 38;
             this.groupBox7.TabStop = false;
             // 
-            // label35
+            // label2
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label35.Location = new System.Drawing.Point(104, 20);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(58, 21);
-            this.label35.TabIndex = 17;
-            this.label35.Text = "不铆接";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label2.Location = new System.Drawing.Point(133, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 21);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "不铆接";
             // 
-            // label36
+            // label3
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label36.Location = new System.Drawing.Point(36, 20);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(42, 21);
-            this.label36.TabIndex = 16;
-            this.label36.Text = "铆接";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label3.Location = new System.Drawing.Point(43, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 21);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "铆接";
             // 
             // rdoContractNM
             // 
             this.rdoContractNM.AutoSize = true;
-            this.rdoContractNM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNM.Location = new System.Drawing.Point(77, 21);
+            this.rdoContractNM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractNM.Location = new System.Drawing.Point(100, 18);
             this.rdoContractNM.Name = "rdoContractNM";
-            this.rdoContractNM.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractNM.Size = new System.Drawing.Size(37, 25);
             this.rdoContractNM.TabIndex = 0;
             this.rdoContractNM.TabStop = true;
             this.rdoContractNM.Text = "0";
             this.rdoContractNM.UseVisualStyleBackColor = true;
+            this.rdoContractNM.CheckedChanged += new System.EventHandler(this.rdoContractNM_CheckedChanged);
             // 
             // rdoContractM
             // 
             this.rdoContractM.AutoSize = true;
-            this.rdoContractM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractM.Location = new System.Drawing.Point(6, 21);
+            this.rdoContractM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractM.Location = new System.Drawing.Point(7, 19);
             this.rdoContractM.Name = "rdoContractM";
-            this.rdoContractM.Size = new System.Drawing.Size(38, 21);
+            this.rdoContractM.Size = new System.Drawing.Size(44, 25);
             this.rdoContractM.TabIndex = 0;
             this.rdoContractM.TabStop = true;
             this.rdoContractM.Text = "M";
             this.rdoContractM.UseVisualStyleBackColor = true;
+            this.rdoContractM.CheckedChanged += new System.EventHandler(this.rdoContractM_CheckedChanged);
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Controls.Add(this.label17);
+            this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.rdoContractNH);
             this.groupBox8.Controls.Add(this.rdoContractH);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox8.Location = new System.Drawing.Point(366, 114);
+            this.groupBox8.Location = new System.Drawing.Point(503, 31);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(171, 51);
-            this.groupBox8.TabIndex = 31;
+            this.groupBox8.Size = new System.Drawing.Size(206, 51);
+            this.groupBox8.TabIndex = 37;
             this.groupBox8.TabStop = false;
             // 
-            // label37
+            // label17
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label37.Location = new System.Drawing.Point(106, 18);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(58, 21);
-            this.label37.TabIndex = 15;
-            this.label37.Text = "不焊接";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label17.Location = new System.Drawing.Point(134, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 21);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "不焊接";
             // 
-            // label38
+            // label18
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label38.Location = new System.Drawing.Point(33, 20);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(42, 21);
-            this.label38.TabIndex = 14;
-            this.label38.Text = "焊接";
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label18.Location = new System.Drawing.Point(42, 20);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 21);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "焊接";
             // 
             // rdoContractNH
             // 
             this.rdoContractNH.AutoSize = true;
-            this.rdoContractNH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNH.Location = new System.Drawing.Point(80, 19);
+            this.rdoContractNH.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractNH.Location = new System.Drawing.Point(102, 18);
             this.rdoContractNH.Name = "rdoContractNH";
-            this.rdoContractNH.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractNH.Size = new System.Drawing.Size(37, 25);
             this.rdoContractNH.TabIndex = 0;
             this.rdoContractNH.TabStop = true;
             this.rdoContractNH.Text = "0";
             this.rdoContractNH.UseVisualStyleBackColor = true;
+            this.rdoContractNH.CheckedChanged += new System.EventHandler(this.rdoContractNH_CheckedChanged);
             // 
             // rdoContractH
             // 
             this.rdoContractH.AutoSize = true;
-            this.rdoContractH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractH.Location = new System.Drawing.Point(6, 19);
+            this.rdoContractH.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractH.Location = new System.Drawing.Point(6, 18);
             this.rdoContractH.Name = "rdoContractH";
-            this.rdoContractH.Size = new System.Drawing.Size(35, 21);
+            this.rdoContractH.Size = new System.Drawing.Size(40, 25);
             this.rdoContractH.TabIndex = 0;
             this.rdoContractH.TabStop = true;
             this.rdoContractH.Text = "H";
             this.rdoContractH.UseVisualStyleBackColor = true;
+            this.rdoContractH.CheckedChanged += new System.EventHandler(this.rdoContractH_CheckedChanged);
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.label39);
-            this.groupBox9.Controls.Add(this.label40);
-            this.groupBox9.Controls.Add(this.label41);
+            this.groupBox9.Controls.Add(this.label19);
+            this.groupBox9.Controls.Add(this.label22);
+            this.groupBox9.Controls.Add(this.label25);
             this.groupBox9.Controls.Add(this.rdoContractNPD);
             this.groupBox9.Controls.Add(this.rdoContractD);
             this.groupBox9.Controls.Add(this.rdoContractP);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox9.Location = new System.Drawing.Point(51, 114);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox9.Location = new System.Drawing.Point(275, 100);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(279, 51);
-            this.groupBox9.TabIndex = 30;
+            this.groupBox9.Size = new System.Drawing.Size(303, 51);
+            this.groupBox9.TabIndex = 36;
             this.groupBox9.TabStop = false;
             // 
-            // label39
+            // label19
             // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label39.Location = new System.Drawing.Point(194, 20);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(74, 21);
-            this.label39.TabIndex = 13;
-            this.label39.Text = "不喷不镀";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label19.Location = new System.Drawing.Point(216, 20);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(74, 21);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "不喷不镀";
             // 
-            // label40
+            // label22
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label40.Location = new System.Drawing.Point(117, 22);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(42, 21);
-            this.label40.TabIndex = 12;
-            this.label40.Text = "电镀";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label22.Location = new System.Drawing.Point(128, 21);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(42, 21);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "电镀";
             // 
-            // label41
+            // label25
             // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label41.Location = new System.Drawing.Point(35, 20);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(42, 21);
-            this.label41.TabIndex = 11;
-            this.label41.Text = "喷涂";
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label25.Location = new System.Drawing.Point(35, 20);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 21);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "喷涂";
             // 
             // rdoContractNPD
             // 
             this.rdoContractNPD.AutoSize = true;
-            this.rdoContractNPD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNPD.Location = new System.Drawing.Point(167, 21);
+            this.rdoContractNPD.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractNPD.Location = new System.Drawing.Point(185, 19);
             this.rdoContractNPD.Name = "rdoContractNPD";
-            this.rdoContractNPD.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractNPD.Size = new System.Drawing.Size(37, 25);
             this.rdoContractNPD.TabIndex = 0;
             this.rdoContractNPD.TabStop = true;
             this.rdoContractNPD.Text = "0";
             this.rdoContractNPD.UseVisualStyleBackColor = true;
+            this.rdoContractNPD.CheckedChanged += new System.EventHandler(this.rdoContractNPD_CheckedChanged);
             // 
             // rdoContractD
             // 
             this.rdoContractD.AutoSize = true;
-            this.rdoContractD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractD.Location = new System.Drawing.Point(87, 20);
+            this.rdoContractD.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractD.Location = new System.Drawing.Point(87, 19);
             this.rdoContractD.Name = "rdoContractD";
-            this.rdoContractD.Size = new System.Drawing.Size(35, 21);
+            this.rdoContractD.Size = new System.Drawing.Size(40, 25);
             this.rdoContractD.TabIndex = 0;
             this.rdoContractD.TabStop = true;
             this.rdoContractD.Text = "D";
             this.rdoContractD.UseVisualStyleBackColor = true;
+            this.rdoContractD.CheckedChanged += new System.EventHandler(this.rdoContractD_CheckedChanged);
             // 
             // rdoContractP
             // 
             this.rdoContractP.AutoSize = true;
-            this.rdoContractP.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractP.Location = new System.Drawing.Point(6, 20);
+            this.rdoContractP.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractP.Location = new System.Drawing.Point(6, 18);
             this.rdoContractP.Name = "rdoContractP";
-            this.rdoContractP.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractP.Size = new System.Drawing.Size(38, 25);
             this.rdoContractP.TabIndex = 0;
             this.rdoContractP.TabStop = true;
             this.rdoContractP.Text = "P";
             this.rdoContractP.UseVisualStyleBackColor = true;
+            this.rdoContractP.CheckedChanged += new System.EventHandler(this.rdoContractP_CheckedChanged);
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.label42);
-            this.groupBox10.Controls.Add(this.label43);
+            this.groupBox10.Controls.Add(this.label26);
+            this.groupBox10.Controls.Add(this.label27);
             this.groupBox10.Controls.Add(this.rdoContractNZ);
             this.groupBox10.Controls.Add(this.rdoContractZ);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox10.Location = new System.Drawing.Point(577, 43);
+            this.groupBox10.Location = new System.Drawing.Point(290, 28);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(162, 54);
-            this.groupBox10.TabIndex = 28;
+            this.groupBox10.Size = new System.Drawing.Size(169, 54);
+            this.groupBox10.TabIndex = 34;
             this.groupBox10.TabStop = false;
             // 
-            // label42
+            // label26
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label42.Location = new System.Drawing.Point(104, 22);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(58, 21);
-            this.label42.TabIndex = 10;
-            this.label42.Text = "不折弯";
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label26.Location = new System.Drawing.Point(106, 22);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(58, 21);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "不折弯";
             // 
-            // label43
+            // label27
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label43.Location = new System.Drawing.Point(36, 22);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(42, 21);
-            this.label43.TabIndex = 9;
-            this.label43.Text = "折弯";
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label27.Location = new System.Drawing.Point(36, 22);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(42, 21);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "折弯";
             // 
             // rdoContractNZ
             // 
             this.rdoContractNZ.AutoSize = true;
-            this.rdoContractNZ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoContractNZ.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoContractNZ.Location = new System.Drawing.Point(78, 21);
             this.rdoContractNZ.Name = "rdoContractNZ";
-            this.rdoContractNZ.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractNZ.Size = new System.Drawing.Size(37, 25);
             this.rdoContractNZ.TabIndex = 0;
             this.rdoContractNZ.TabStop = true;
             this.rdoContractNZ.Text = "0";
             this.rdoContractNZ.UseVisualStyleBackColor = true;
+            this.rdoContractNZ.CheckedChanged += new System.EventHandler(this.rdoContractNZ_CheckedChanged);
             // 
             // rdoContractZ
             // 
             this.rdoContractZ.AutoSize = true;
-            this.rdoContractZ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoContractZ.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoContractZ.Location = new System.Drawing.Point(6, 20);
             this.rdoContractZ.Name = "rdoContractZ";
-            this.rdoContractZ.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractZ.Size = new System.Drawing.Size(38, 25);
             this.rdoContractZ.TabIndex = 0;
             this.rdoContractZ.TabStop = true;
             this.rdoContractZ.Text = "Z";
             this.rdoContractZ.UseVisualStyleBackColor = true;
+            this.rdoContractZ.CheckedChanged += new System.EventHandler(this.rdoContractZ_CheckedChanged);
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.label44);
-            this.groupBox11.Controls.Add(this.label45);
+            this.groupBox11.Controls.Add(this.label28);
+            this.groupBox11.Controls.Add(this.label30);
             this.groupBox11.Controls.Add(this.rdoContractNC);
             this.groupBox11.Controls.Add(this.rdoContractC);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox11.Location = new System.Drawing.Point(366, 41);
+            this.groupBox11.Location = new System.Drawing.Point(40, 28);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(171, 54);
-            this.groupBox11.TabIndex = 29;
+            this.groupBox11.Size = new System.Drawing.Size(212, 54);
+            this.groupBox11.TabIndex = 35;
             this.groupBox11.TabStop = false;
             // 
-            // label44
+            // label28
             // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label44.Location = new System.Drawing.Point(113, 22);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(42, 21);
-            this.label44.TabIndex = 8;
-            this.label44.Text = "不冲";
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label28.Location = new System.Drawing.Point(149, 25);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(42, 21);
+            this.label28.TabIndex = 8;
+            this.label28.Text = "不冲";
             // 
-            // label45
+            // label30
             // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.label45.Location = new System.Drawing.Point(36, 22);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(42, 21);
-            this.label45.TabIndex = 7;
-            this.label45.Text = "冲压";
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label30.Location = new System.Drawing.Point(36, 22);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(42, 21);
+            this.label30.TabIndex = 7;
+            this.label30.Text = "冲压";
             // 
             // rdoContractNC
             // 
             this.rdoContractNC.AutoSize = true;
-            this.rdoContractNC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNC.Location = new System.Drawing.Point(84, 23);
+            this.rdoContractNC.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractNC.Location = new System.Drawing.Point(110, 23);
             this.rdoContractNC.Name = "rdoContractNC";
-            this.rdoContractNC.Size = new System.Drawing.Size(33, 21);
+            this.rdoContractNC.Size = new System.Drawing.Size(37, 25);
             this.rdoContractNC.TabIndex = 0;
             this.rdoContractNC.TabStop = true;
             this.rdoContractNC.Text = "0";
@@ -2957,91 +2990,37 @@
             // rdoContractC
             // 
             this.rdoContractC.AutoSize = true;
-            this.rdoContractC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractC.Location = new System.Drawing.Point(6, 24);
+            this.rdoContractC.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoContractC.Location = new System.Drawing.Point(6, 20);
             this.rdoContractC.Name = "rdoContractC";
-            this.rdoContractC.Size = new System.Drawing.Size(34, 21);
+            this.rdoContractC.Size = new System.Drawing.Size(39, 25);
             this.rdoContractC.TabIndex = 0;
             this.rdoContractC.TabStop = true;
             this.rdoContractC.Text = "C";
             this.rdoContractC.UseVisualStyleBackColor = true;
+            this.rdoContractC.CheckedChanged += new System.EventHandler(this.rdoContractC_CheckedChanged);
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.label46);
-            this.groupBox12.Controls.Add(this.rQ);
-            this.groupBox12.Controls.Add(this.label48);
-            this.groupBox12.Controls.Add(this.rdoContractNJQ);
-            this.groupBox12.Controls.Add(this.rdoContractQ);
-            this.groupBox12.Controls.Add(this.rdoContractJ);
-            this.groupBox12.Location = new System.Drawing.Point(51, 41);
+            this.groupBox12.Controls.Add(this.rdoContractB);
+            this.groupBox12.Location = new System.Drawing.Point(598, 97);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(279, 54);
-            this.groupBox12.TabIndex = 3;
+            this.groupBox12.Size = new System.Drawing.Size(111, 54);
+            this.groupBox12.TabIndex = 33;
             this.groupBox12.TabStop = false;
             // 
-            // label46
+            // rdoContractB
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(196, 21);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(74, 21);
-            this.label46.TabIndex = 6;
-            this.label46.Text = "不切不锯";
-            // 
-            // rQ
-            // 
-            this.rQ.AutoSize = true;
-            this.rQ.Location = new System.Drawing.Point(119, 21);
-            this.rQ.Name = "rQ";
-            this.rQ.Size = new System.Drawing.Size(42, 21);
-            this.rQ.TabIndex = 5;
-            this.rQ.Text = "切锯";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(36, 22);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(42, 21);
-            this.label48.TabIndex = 4;
-            this.label48.Text = "剪板";
-            // 
-            // rdoContractNJQ
-            // 
-            this.rdoContractNJQ.AutoSize = true;
-            this.rdoContractNJQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNJQ.Location = new System.Drawing.Point(167, 21);
-            this.rdoContractNJQ.Name = "rdoContractNJQ";
-            this.rdoContractNJQ.Size = new System.Drawing.Size(33, 21);
-            this.rdoContractNJQ.TabIndex = 2;
-            this.rdoContractNJQ.TabStop = true;
-            this.rdoContractNJQ.Text = "0";
-            this.rdoContractNJQ.UseVisualStyleBackColor = true;
-            // 
-            // rdoContractQ
-            // 
-            this.rdoContractQ.AutoSize = true;
-            this.rdoContractQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractQ.Location = new System.Drawing.Point(87, 22);
-            this.rdoContractQ.Name = "rdoContractQ";
-            this.rdoContractQ.Size = new System.Drawing.Size(36, 21);
-            this.rdoContractQ.TabIndex = 3;
-            this.rdoContractQ.TabStop = true;
-            this.rdoContractQ.Text = "Q";
-            this.rdoContractQ.UseVisualStyleBackColor = true;
-            // 
-            // rdoContractJ
-            // 
-            this.rdoContractJ.AutoSize = true;
-            this.rdoContractJ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractJ.Location = new System.Drawing.Point(6, 24);
-            this.rdoContractJ.Name = "rdoContractJ";
-            this.rdoContractJ.Size = new System.Drawing.Size(31, 21);
-            this.rdoContractJ.TabIndex = 1;
-            this.rdoContractJ.TabStop = true;
-            this.rdoContractJ.Text = "J";
-            this.rdoContractJ.UseVisualStyleBackColor = true;
+            this.rdoContractB.AutoSize = true;
+            this.rdoContractB.Enabled = false;
+            this.rdoContractB.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoContractB.Location = new System.Drawing.Point(6, 20);
+            this.rdoContractB.Name = "rdoContractB";
+            this.rdoContractB.Size = new System.Drawing.Size(102, 25);
+            this.rdoContractB.TabIndex = 1;
+            this.rdoContractB.TabStop = true;
+            this.rdoContractB.Text = "B（备用）";
+            this.rdoContractB.UseVisualStyleBackColor = true;
             // 
             // label49
             // 
@@ -3064,9 +3043,11 @@
             // txtContractNo
             // 
             this.txtContractNo.Location = new System.Drawing.Point(85, 13);
+            this.txtContractNo.MaxLength = 6;
             this.txtContractNo.Name = "txtContractNo";
             this.txtContractNo.Size = new System.Drawing.Size(646, 29);
             this.txtContractNo.TabIndex = 1;
+            this.txtContractNo.TextChanged += new System.EventHandler(this.txtContractNo_TextChanged);
             // 
             // label34
             // 
@@ -3077,19 +3058,19 @@
             this.label34.TabIndex = 0;
             this.label34.Text = "合同号";
             // 
-            // tabBakComponent
+            // tabMlineComponent
             // 
-            this.tabBakComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabBakComponent.Controls.Add(this.btnCopyBak);
-            this.tabBakComponent.Controls.Add(this.panel29);
-            this.tabBakComponent.Controls.Add(this.panel28);
-            this.tabBakComponent.Controls.Add(this.panel27);
-            this.tabBakComponent.Controls.Add(this.panel26);
-            this.tabBakComponent.Location = new System.Drawing.Point(4, 30);
-            this.tabBakComponent.Name = "tabBakComponent";
-            this.tabBakComponent.Size = new System.Drawing.Size(776, 527);
-            this.tabBakComponent.TabIndex = 7;
-            this.tabBakComponent.Text = "备用";
+            this.tabMlineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabMlineComponent.Controls.Add(this.btnCopyBak);
+            this.tabMlineComponent.Controls.Add(this.panel29);
+            this.tabMlineComponent.Controls.Add(this.panel28);
+            this.tabMlineComponent.Controls.Add(this.panel27);
+            this.tabMlineComponent.Controls.Add(this.panel26);
+            this.tabMlineComponent.Location = new System.Drawing.Point(4, 30);
+            this.tabMlineComponent.Name = "tabMlineComponent";
+            this.tabMlineComponent.Size = new System.Drawing.Size(776, 527);
+            this.tabMlineComponent.TabIndex = 7;
+            this.tabMlineComponent.Text = "成品母线";
             // 
             // btnCopyBak
             // 
@@ -3213,7 +3194,7 @@
             this.tabProductionComponent.Name = "tabProductionComponent";
             this.tabProductionComponent.Size = new System.Drawing.Size(776, 527);
             this.tabProductionComponent.TabIndex = 8;
-            this.tabProductionComponent.Text = "成品";
+            this.tabProductionComponent.Text = "成品柜机";
             // 
             // btnCopyProduction
             // 
@@ -3565,7 +3546,7 @@
             this.panel16.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            this.tabEquipmentComponent.ResumeLayout(false);
+            this.tabAssistantComponent.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.panel20.ResumeLayout(false);
@@ -3593,7 +3574,7 @@
             this.groupBox12.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            this.tabBakComponent.ResumeLayout(false);
+            this.tabMlineComponent.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel28.ResumeLayout(false);
@@ -3737,19 +3718,19 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblMetalLength;
-        private System.Windows.Forms.TabPage tabEquipmentComponent;
-        private System.Windows.Forms.Button btnEnquipment;
+        private System.Windows.Forms.TabPage tabAssistantComponent;
+        private System.Windows.Forms.Button btnAssistantCopy;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.TextBox txtEquipCode;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox txtAssistantCode;
+        private System.Windows.Forms.Label lblAssistantCode;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TextBox txtEquipSerialNum;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox txtAssistantSerialNum;
+        private System.Windows.Forms.Label lblAssistantSerialNum;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.ComboBox cmbEquipSecond;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox cmbEquipFirst;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox cmbAssistantSecond;
+        private System.Windows.Forms.Label lblAssistantSecond;
+        private System.Windows.Forms.ComboBox cmbAssistantFirst;
+        private System.Windows.Forms.Label lblAssistantFirst;
         private System.Windows.Forms.TabPage tabContractComponent;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.TextBox txtContractCode;
@@ -3759,45 +3740,11 @@
         private System.Windows.Forms.TextBox txtContractSerialNum;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.RadioButton rdoContractNM;
-        private System.Windows.Forms.RadioButton rdoContractM;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.RadioButton rdoContractNH;
-        private System.Windows.Forms.RadioButton rdoContractH;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.RadioButton rdoContractNPD;
-        private System.Windows.Forms.RadioButton rdoContractD;
-        private System.Windows.Forms.RadioButton rdoContractP;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.RadioButton rdoContractNZ;
-        private System.Windows.Forms.RadioButton rdoContractZ;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.RadioButton rdoContractNC;
-        private System.Windows.Forms.RadioButton rdoContractC;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label rQ;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.RadioButton rdoContractNJQ;
-        private System.Windows.Forms.RadioButton rdoContractQ;
-        private System.Windows.Forms.RadioButton rdoContractJ;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.TextBox txtContractNo;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TabPage tabBakComponent;
+        private System.Windows.Forms.TabPage tabMlineComponent;
         private System.Windows.Forms.Button btnCopyBak;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.TextBox txtBakCode;
@@ -3917,6 +3864,37 @@
         private System.Windows.Forms.TextBox txtMetalSurface;
         private System.Windows.Forms.Label lblMetalStrength;
         private System.Windows.Forms.Label lblMetalSurface;
+        private System.Windows.Forms.TextBox txtAssistantNull;
+        private System.Windows.Forms.Label lblAssistantNull;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton rdoContractNM;
+        private System.Windows.Forms.RadioButton rdoContractM;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.RadioButton rdoContractNH;
+        private System.Windows.Forms.RadioButton rdoContractH;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.RadioButton rdoContractNPD;
+        private System.Windows.Forms.RadioButton rdoContractD;
+        private System.Windows.Forms.RadioButton rdoContractP;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.RadioButton rdoContractNZ;
+        private System.Windows.Forms.RadioButton rdoContractZ;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.RadioButton rdoContractNC;
+        private System.Windows.Forms.RadioButton rdoContractC;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.RadioButton rdoContractB;
 
 
     }

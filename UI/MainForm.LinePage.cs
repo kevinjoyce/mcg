@@ -104,9 +104,9 @@ namespace UI
         private void GenerateLineLevelCode()
         {
             if (cmbLineSecond.Text != "")
-                this.txtLineCode.Text = this.cmbLineSecond.SelectedValue.ToString();
+                this.txtLineCode.Text = "4." + this.cmbLineSecond.SelectedValue.ToString();
             else
-                this.txtLineCode.Text = this.cmbLineFirst.SelectedValue.ToString();
+                this.txtLineCode.Text = "4." + this.cmbLineFirst.SelectedValue.ToString();
         }
 
         //全部锁定
