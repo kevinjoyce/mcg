@@ -190,27 +190,39 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cmbLineFirst = new System.Windows.Forms.ComboBox();
             this.tabMetalComponent = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtMetalSerialNum = new System.Windows.Forms.TextBox();
+            this.lblLineSerialNum = new System.Windows.Forms.Label();
+            this.btnMetalCopy = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
             this.txtMetalCode = new System.Windows.Forms.TextBox();
+            this.txtMetalStrength = new System.Windows.Forms.TextBox();
+            this.txtMetalSize = new System.Windows.Forms.TextBox();
+            this.txtMetalSurface = new System.Windows.Forms.TextBox();
+            this.txtMetalLength = new System.Windows.Forms.TextBox();
+            this.txtMetalNull = new System.Windows.Forms.TextBox();
+            this.lblMetalStrength = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.lblMetalContract = new System.Windows.Forms.Label();
             this.lblMetalSection = new System.Windows.Forms.Label();
-            this.txtMentalContract = new System.Windows.Forms.TextBox();
-            this.txtMentalSection = new System.Windows.Forms.TextBox();
+            this.txtMetalContract = new System.Windows.Forms.TextBox();
+            this.txtMetalSection = new System.Windows.Forms.TextBox();
+            this.lblMetalSize = new System.Windows.Forms.Label();
+            this.lblMetalNull = new System.Windows.Forms.Label();
+            this.lblMetalSurface = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.lblMetalProvider = new System.Windows.Forms.Label();
             this.lblMetalI = new System.Windows.Forms.Label();
-            this.txtMentalProvider = new System.Windows.Forms.TextBox();
-            this.txtMentalI = new System.Windows.Forms.TextBox();
+            this.txtMetalProvider = new System.Windows.Forms.TextBox();
+            this.txtMetalI = new System.Windows.Forms.TextBox();
+            this.lblMetalLength = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.cmbMetalThird = new System.Windows.Forms.ComboBox();
             this.cmbMetalSecond = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmbMetalFirst = new System.Windows.Forms.ComboBox();
-            this.txtMetalGBCode = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.lblMetalNull = new System.Windows.Forms.Label();
             this.tabEquipmentComponent = new System.Windows.Forms.TabPage();
             this.btnEnquipment = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
@@ -314,10 +326,6 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearchCode = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbMetalThird = new System.Windows.Forms.ComboBox();
-            this.txtMetalSerialNum = new System.Windows.Forms.TextBox();
-            this.lblLineSerialNum = new System.Windows.Forms.Label();
             this.tbControlMaterial.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel34.SuspendLayout();
@@ -2108,12 +2116,20 @@
             this.tabMetalComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tabMetalComponent.Controls.Add(this.txtMetalSerialNum);
             this.tabMetalComponent.Controls.Add(this.lblLineSerialNum);
-            this.tabMetalComponent.Controls.Add(this.button4);
+            this.tabMetalComponent.Controls.Add(this.btnMetalCopy);
             this.tabMetalComponent.Controls.Add(this.panel18);
-            this.tabMetalComponent.Controls.Add(this.txtMetalGBCode);
+            this.tabMetalComponent.Controls.Add(this.txtMetalStrength);
+            this.tabMetalComponent.Controls.Add(this.txtMetalSize);
+            this.tabMetalComponent.Controls.Add(this.txtMetalSurface);
+            this.tabMetalComponent.Controls.Add(this.txtMetalLength);
+            this.tabMetalComponent.Controls.Add(this.txtMetalNull);
+            this.tabMetalComponent.Controls.Add(this.lblMetalStrength);
             this.tabMetalComponent.Controls.Add(this.panel17);
-            this.tabMetalComponent.Controls.Add(this.panel16);
+            this.tabMetalComponent.Controls.Add(this.lblMetalSize);
             this.tabMetalComponent.Controls.Add(this.lblMetalNull);
+            this.tabMetalComponent.Controls.Add(this.lblMetalSurface);
+            this.tabMetalComponent.Controls.Add(this.panel16);
+            this.tabMetalComponent.Controls.Add(this.lblMetalLength);
             this.tabMetalComponent.Controls.Add(this.panel15);
             this.tabMetalComponent.Location = new System.Drawing.Point(4, 30);
             this.tabMetalComponent.Name = "tabMetalComponent";
@@ -2121,14 +2137,36 @@
             this.tabMetalComponent.TabIndex = 4;
             this.tabMetalComponent.Text = "五金";
             // 
-            // button4
+            // txtMetalSerialNum
             // 
-            this.button4.Location = new System.Drawing.Point(291, 471);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(169, 48);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "复制";
-            this.button4.UseVisualStyleBackColor = true;
+            this.txtMetalSerialNum.BackColor = System.Drawing.SystemColors.Window;
+            this.txtMetalSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtMetalSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtMetalSerialNum.Location = new System.Drawing.Point(107, 244);
+            this.txtMetalSerialNum.Name = "txtMetalSerialNum";
+            this.txtMetalSerialNum.Size = new System.Drawing.Size(205, 26);
+            this.txtMetalSerialNum.TabIndex = 29;
+            this.txtMetalSerialNum.Click += new System.EventHandler(this.txtMetalSerialNum_Click);
+            this.txtMetalSerialNum.TextChanged += new System.EventHandler(this.txtMetalSerialNum_TextChanged);
+            // 
+            // lblLineSerialNum
+            // 
+            this.lblLineSerialNum.AutoSize = true;
+            this.lblLineSerialNum.Location = new System.Drawing.Point(14, 246);
+            this.lblLineSerialNum.Name = "lblLineSerialNum";
+            this.lblLineSerialNum.Size = new System.Drawing.Size(58, 21);
+            this.lblLineSerialNum.TabIndex = 28;
+            this.lblLineSerialNum.Text = "流水号";
+            // 
+            // btnMetalCopy
+            // 
+            this.btnMetalCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnMetalCopy.Name = "btnMetalCopy";
+            this.btnMetalCopy.Size = new System.Drawing.Size(169, 48);
+            this.btnMetalCopy.TabIndex = 27;
+            this.btnMetalCopy.Text = "复制";
+            this.btnMetalCopy.UseVisualStyleBackColor = true;
+            this.btnMetalCopy.Click += new System.EventHandler(this.btnMetalCopy_Click);
             // 
             // panel18
             // 
@@ -2157,15 +2195,69 @@
             this.txtMetalCode.Size = new System.Drawing.Size(637, 54);
             this.txtMetalCode.TabIndex = 1;
             // 
+            // txtMetalStrength
+            // 
+            this.txtMetalStrength.Location = new System.Drawing.Point(542, 236);
+            this.txtMetalStrength.MaxLength = 3;
+            this.txtMetalStrength.Name = "txtMetalStrength";
+            this.txtMetalStrength.Size = new System.Drawing.Size(59, 29);
+            this.txtMetalStrength.TabIndex = 1;
+            this.txtMetalStrength.TextChanged += new System.EventHandler(this.txtMetalStrength_TextChanged);
+            // 
+            // txtMetalSize
+            // 
+            this.txtMetalSize.Location = new System.Drawing.Point(542, 201);
+            this.txtMetalSize.MaxLength = 3;
+            this.txtMetalSize.Name = "txtMetalSize";
+            this.txtMetalSize.Size = new System.Drawing.Size(59, 29);
+            this.txtMetalSize.TabIndex = 1;
+            this.txtMetalSize.TextChanged += new System.EventHandler(this.txtMetalSize_TextChanged);
+            // 
+            // txtMetalSurface
+            // 
+            this.txtMetalSurface.Location = new System.Drawing.Point(690, 236);
+            this.txtMetalSurface.MaxLength = 1;
+            this.txtMetalSurface.Name = "txtMetalSurface";
+            this.txtMetalSurface.Size = new System.Drawing.Size(59, 29);
+            this.txtMetalSurface.TabIndex = 1;
+            this.txtMetalSurface.TextChanged += new System.EventHandler(this.txtMetalSurface_TextChanged);
+            // 
+            // txtMetalLength
+            // 
+            this.txtMetalLength.Location = new System.Drawing.Point(690, 201);
+            this.txtMetalLength.MaxLength = 3;
+            this.txtMetalLength.Name = "txtMetalLength";
+            this.txtMetalLength.Size = new System.Drawing.Size(59, 29);
+            this.txtMetalLength.TabIndex = 1;
+            this.txtMetalLength.TextChanged += new System.EventHandler(this.txtMetalLength_TextChanged);
+            // 
+            // txtMetalNull
+            // 
+            this.txtMetalNull.Location = new System.Drawing.Point(107, 208);
+            this.txtMetalNull.MaxLength = 3;
+            this.txtMetalNull.Name = "txtMetalNull";
+            this.txtMetalNull.Size = new System.Drawing.Size(205, 29);
+            this.txtMetalNull.TabIndex = 1;
+            this.txtMetalNull.TextChanged += new System.EventHandler(this.txtMetalNull_TextChanged);
+            // 
+            // lblMetalStrength
+            // 
+            this.lblMetalStrength.AutoSize = true;
+            this.lblMetalStrength.Location = new System.Drawing.Point(467, 241);
+            this.lblMetalStrength.Name = "lblMetalStrength";
+            this.lblMetalStrength.Size = new System.Drawing.Size(74, 21);
+            this.lblMetalStrength.TabIndex = 0;
+            this.lblMetalStrength.Text = "抗拉强度";
+            // 
             // panel17
             // 
             this.panel17.Controls.Add(this.lblMetalContract);
             this.panel17.Controls.Add(this.lblMetalSection);
-            this.panel17.Controls.Add(this.txtMentalContract);
-            this.panel17.Controls.Add(this.txtMentalSection);
-            this.panel17.Location = new System.Drawing.Point(450, 120);
+            this.panel17.Controls.Add(this.txtMetalContract);
+            this.panel17.Controls.Add(this.txtMetalSection);
+            this.panel17.Location = new System.Drawing.Point(447, 110);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(326, 79);
+            this.panel17.Size = new System.Drawing.Size(329, 79);
             this.panel17.TabIndex = 1;
             // 
             // lblMetalContract
@@ -2186,26 +2278,57 @@
             this.lblMetalSection.TabIndex = 0;
             this.lblMetalSection.Text = "节数";
             // 
-            // txtMentalContract
+            // txtMetalContract
             // 
-            this.txtMentalContract.Location = new System.Drawing.Point(96, 45);
-            this.txtMentalContract.Name = "txtMentalContract";
-            this.txtMentalContract.Size = new System.Drawing.Size(208, 29);
-            this.txtMentalContract.TabIndex = 1;
+            this.txtMetalContract.Location = new System.Drawing.Point(96, 45);
+            this.txtMetalContract.MaxLength = 6;
+            this.txtMetalContract.Name = "txtMetalContract";
+            this.txtMetalContract.Size = new System.Drawing.Size(208, 29);
+            this.txtMetalContract.TabIndex = 1;
+            this.txtMetalContract.TextChanged += new System.EventHandler(this.txtMetalContract_TextChanged);
             // 
-            // txtMentalSection
+            // txtMetalSection
             // 
-            this.txtMentalSection.Location = new System.Drawing.Point(95, 9);
-            this.txtMentalSection.Name = "txtMentalSection";
-            this.txtMentalSection.Size = new System.Drawing.Size(208, 29);
-            this.txtMentalSection.TabIndex = 1;
+            this.txtMetalSection.Location = new System.Drawing.Point(95, 9);
+            this.txtMetalSection.MaxLength = 3;
+            this.txtMetalSection.Name = "txtMetalSection";
+            this.txtMetalSection.Size = new System.Drawing.Size(208, 29);
+            this.txtMetalSection.TabIndex = 1;
+            this.txtMetalSection.TextChanged += new System.EventHandler(this.txtMetalSection_TextChanged);
+            // 
+            // lblMetalSize
+            // 
+            this.lblMetalSize.AutoSize = true;
+            this.lblMetalSize.Location = new System.Drawing.Point(467, 206);
+            this.lblMetalSize.Name = "lblMetalSize";
+            this.lblMetalSize.Size = new System.Drawing.Size(74, 21);
+            this.lblMetalSize.TabIndex = 0;
+            this.lblMetalSize.Text = "螺纹尺寸";
+            // 
+            // lblMetalNull
+            // 
+            this.lblMetalNull.AutoSize = true;
+            this.lblMetalNull.Location = new System.Drawing.Point(14, 214);
+            this.lblMetalNull.Name = "lblMetalNull";
+            this.lblMetalNull.Size = new System.Drawing.Size(42, 21);
+            this.lblMetalNull.TabIndex = 0;
+            this.lblMetalNull.Text = "空置";
+            // 
+            // lblMetalSurface
+            // 
+            this.lblMetalSurface.AutoSize = true;
+            this.lblMetalSurface.Location = new System.Drawing.Point(610, 241);
+            this.lblMetalSurface.Name = "lblMetalSurface";
+            this.lblMetalSurface.Size = new System.Drawing.Size(74, 21);
+            this.lblMetalSurface.TabIndex = 0;
+            this.lblMetalSurface.Text = "表面处理";
             // 
             // panel16
             // 
             this.panel16.Controls.Add(this.lblMetalProvider);
             this.panel16.Controls.Add(this.lblMetalI);
-            this.panel16.Controls.Add(this.txtMentalProvider);
-            this.panel16.Controls.Add(this.txtMentalI);
+            this.panel16.Controls.Add(this.txtMetalProvider);
+            this.panel16.Controls.Add(this.txtMetalI);
             this.panel16.Location = new System.Drawing.Point(447, 16);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(326, 87);
@@ -2229,19 +2352,32 @@
             this.lblMetalI.TabIndex = 0;
             this.lblMetalI.Text = "电流";
             // 
-            // txtMentalProvider
+            // txtMetalProvider
             // 
-            this.txtMentalProvider.Location = new System.Drawing.Point(97, 48);
-            this.txtMentalProvider.Name = "txtMentalProvider";
-            this.txtMentalProvider.Size = new System.Drawing.Size(208, 29);
-            this.txtMentalProvider.TabIndex = 1;
+            this.txtMetalProvider.Location = new System.Drawing.Point(97, 48);
+            this.txtMetalProvider.MaxLength = 3;
+            this.txtMetalProvider.Name = "txtMetalProvider";
+            this.txtMetalProvider.Size = new System.Drawing.Size(208, 29);
+            this.txtMetalProvider.TabIndex = 1;
+            this.txtMetalProvider.TextChanged += new System.EventHandler(this.txtMetalProvider_TextChanged);
             // 
-            // txtMentalI
+            // txtMetalI
             // 
-            this.txtMentalI.Location = new System.Drawing.Point(96, 8);
-            this.txtMentalI.Name = "txtMentalI";
-            this.txtMentalI.Size = new System.Drawing.Size(208, 29);
-            this.txtMentalI.TabIndex = 1;
+            this.txtMetalI.Location = new System.Drawing.Point(96, 8);
+            this.txtMetalI.MaxLength = 3;
+            this.txtMetalI.Name = "txtMetalI";
+            this.txtMetalI.Size = new System.Drawing.Size(208, 29);
+            this.txtMetalI.TabIndex = 1;
+            this.txtMetalI.TextChanged += new System.EventHandler(this.txtMetalI_TextChanged);
+            // 
+            // lblMetalLength
+            // 
+            this.lblMetalLength.AutoSize = true;
+            this.lblMetalLength.Location = new System.Drawing.Point(610, 204);
+            this.lblMetalLength.Name = "lblMetalLength";
+            this.lblMetalLength.Size = new System.Drawing.Size(42, 21);
+            this.lblMetalLength.TabIndex = 0;
+            this.lblMetalLength.Text = "长度";
             // 
             // panel15
             // 
@@ -2256,6 +2392,15 @@
             this.panel15.Size = new System.Drawing.Size(326, 181);
             this.panel15.TabIndex = 0;
             // 
+            // cmbMetalThird
+            // 
+            this.cmbMetalThird.FormattingEnabled = true;
+            this.cmbMetalThird.Location = new System.Drawing.Point(96, 145);
+            this.cmbMetalThird.Name = "cmbMetalThird";
+            this.cmbMetalThird.Size = new System.Drawing.Size(208, 29);
+            this.cmbMetalThird.TabIndex = 2;
+            this.cmbMetalThird.SelectedIndexChanged += new System.EventHandler(this.cmbMetalThird_SelectedIndexChanged);
+            // 
             // cmbMetalSecond
             // 
             this.cmbMetalSecond.FormattingEnabled = true;
@@ -2263,6 +2408,16 @@
             this.cmbMetalSecond.Name = "cmbMetalSecond";
             this.cmbMetalSecond.Size = new System.Drawing.Size(208, 29);
             this.cmbMetalSecond.TabIndex = 2;
+            this.cmbMetalSecond.SelectedIndexChanged += new System.EventHandler(this.cmbMetalSecond_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 148);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "第三级";
             // 
             // cmbMetalFirst
             // 
@@ -2271,13 +2426,7 @@
             this.cmbMetalFirst.Name = "cmbMetalFirst";
             this.cmbMetalFirst.Size = new System.Drawing.Size(208, 29);
             this.cmbMetalFirst.TabIndex = 2;
-            // 
-            // txtMetalGBCode
-            // 
-            this.txtMetalGBCode.Location = new System.Drawing.Point(541, 223);
-            this.txtMetalGBCode.Name = "txtMetalGBCode";
-            this.txtMetalGBCode.Size = new System.Drawing.Size(208, 29);
-            this.txtMetalGBCode.TabIndex = 1;
+            this.cmbMetalFirst.SelectedIndexChanged += new System.EventHandler(this.cmbMetalFirst_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -2296,15 +2445,6 @@
             this.label23.Size = new System.Drawing.Size(58, 21);
             this.label23.TabIndex = 0;
             this.label23.Text = "第一级";
-            // 
-            // lblMetalNull
-            // 
-            this.lblMetalNull.AutoSize = true;
-            this.lblMetalNull.Location = new System.Drawing.Point(451, 226);
-            this.lblMetalNull.Name = "lblMetalNull";
-            this.lblMetalNull.Size = new System.Drawing.Size(42, 21);
-            this.lblMetalNull.TabIndex = 0;
-            this.lblMetalNull.Text = "空置";
             // 
             // tabEquipmentComponent
             // 
@@ -3350,42 +3490,6 @@
             this.label59.TabIndex = 0;
             this.label59.Text = "编码";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 148);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "第三级";
-            // 
-            // cmbMetalThird
-            // 
-            this.cmbMetalThird.FormattingEnabled = true;
-            this.cmbMetalThird.Location = new System.Drawing.Point(96, 145);
-            this.cmbMetalThird.Name = "cmbMetalThird";
-            this.cmbMetalThird.Size = new System.Drawing.Size(208, 29);
-            this.cmbMetalThird.TabIndex = 2;
-            // 
-            // txtMetalSerialNum
-            // 
-            this.txtMetalSerialNum.BackColor = System.Drawing.SystemColors.Window;
-            this.txtMetalSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtMetalSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtMetalSerialNum.Location = new System.Drawing.Point(107, 229);
-            this.txtMetalSerialNum.Name = "txtMetalSerialNum";
-            this.txtMetalSerialNum.Size = new System.Drawing.Size(236, 26);
-            this.txtMetalSerialNum.TabIndex = 29;
-            // 
-            // lblLineSerialNum
-            // 
-            this.lblLineSerialNum.AutoSize = true;
-            this.lblLineSerialNum.Location = new System.Drawing.Point(14, 231);
-            this.lblLineSerialNum.Name = "lblLineSerialNum";
-            this.lblLineSerialNum.Size = new System.Drawing.Size(58, 21);
-            this.lblLineSerialNum.TabIndex = 28;
-            this.lblLineSerialNum.Text = "流水号";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -3612,27 +3716,27 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbLineFirst;
         private System.Windows.Forms.TabPage tabMetalComponent;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMetalCopy;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox txtMetalCode;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label lblMetalContract;
         private System.Windows.Forms.Label lblMetalSection;
-        private System.Windows.Forms.TextBox txtMentalContract;
-        private System.Windows.Forms.TextBox txtMentalSection;
+        private System.Windows.Forms.TextBox txtMetalContract;
+        private System.Windows.Forms.TextBox txtMetalSection;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label lblMetalProvider;
         private System.Windows.Forms.Label lblMetalI;
-        private System.Windows.Forms.TextBox txtMentalProvider;
-        private System.Windows.Forms.TextBox txtMentalI;
+        private System.Windows.Forms.TextBox txtMetalProvider;
+        private System.Windows.Forms.TextBox txtMetalI;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.ComboBox cmbMetalSecond;
         private System.Windows.Forms.ComboBox cmbMetalFirst;
-        private System.Windows.Forms.TextBox txtMetalGBCode;
+        private System.Windows.Forms.TextBox txtMetalNull;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label lblMetalNull;
+        private System.Windows.Forms.Label lblMetalLength;
         private System.Windows.Forms.TabPage tabEquipmentComponent;
         private System.Windows.Forms.Button btnEnquipment;
         private System.Windows.Forms.Panel panel21;
@@ -3805,6 +3909,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMetalSerialNum;
         private System.Windows.Forms.Label lblLineSerialNum;
+        private System.Windows.Forms.TextBox txtMetalSize;
+        private System.Windows.Forms.TextBox txtMetalLength;
+        private System.Windows.Forms.Label lblMetalSize;
+        private System.Windows.Forms.Label lblMetalNull;
+        private System.Windows.Forms.TextBox txtMetalStrength;
+        private System.Windows.Forms.TextBox txtMetalSurface;
+        private System.Windows.Forms.Label lblMetalStrength;
+        private System.Windows.Forms.Label lblMetalSurface;
 
 
     }
