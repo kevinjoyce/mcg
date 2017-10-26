@@ -59,6 +59,7 @@
     <Compile Include="ElecFlowNoGenerator.cs" />
     <Compile Include="IFlowNoGenerator.cs" />
     <Compile Include="LevelSearchor.cs" />
+    <Compile Include="LineFlowNoGenerator.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +67,9 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.ElecPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.LinePage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.StdPage.cs">

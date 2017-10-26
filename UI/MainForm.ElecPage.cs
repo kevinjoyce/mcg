@@ -799,6 +799,10 @@ namespace UI
             GenerateAllCode();
         }
 
+        /*
+         * 根据界面元素是否处于Enable状态，决定产生何种样式的代码
+         * */
+
         private void GenerateAllCode()
         {
             //电压、电容

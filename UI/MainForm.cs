@@ -49,7 +49,7 @@ namespace UI
                     break;
                 case 3:
                     //MessageBox.Show("tabPage4 is Selected");
-                    //LoadDataTocmbLineFirst();
+                    LoadDataTocmbLineFirst();
                     break;
                 case 4:
                     //MessageBox.Show("tabPage5 is Selected");
@@ -81,26 +81,21 @@ namespace UI
             LevelSearchor.searchAndSetLevel1(this.cmbElecFirst, "3");
         }
 
-        
+        private void LoadDataTocmbLineFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbLineFirst, "4");
+        }
 
-        
+        private void txtElecSerialNum_Click(object sender, EventArgs e)
+        {
 
-        
-        
+        }
 
-        
+        private void txtElecSerialNum_TextChanged(object sender, EventArgs e)
+        {
 
-        
+        }
 
-        
-        
-        
-
-        
-
-        
-        
-        
         
 
 
