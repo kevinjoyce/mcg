@@ -19,7 +19,8 @@ namespace UI
 
 			//设置下级下拉框的级联变化
             LevelSearchor.searchAndSetLevel2(this.cmbRawSecond, "1", this.cmbRawFirst.SelectedValue.ToString());
-            SetTxtCodeNull();
+            //SetTxtCodeNull();
+            GenerateLevelCode();
         }
 
         private void cmbRawSecond_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,7 +44,8 @@ namespace UI
                 this.cmbRawFirst.SelectedValue.ToString(),
                 this.cmbRawSecond.SelectedValue.ToString());
 
-            SetTxtCodeNull();
+            //SetTxtCodeNull();
+            GenerateLevelCode();
         }
 
         private void cmbRawThird_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,8 +95,11 @@ namespace UI
             this.txtCode.Text = "";
             this.txtCode.Text = "1." + this.cmbRawThird.SelectedValue + "."
                 + this.txtRaw.Text + "."
+                + this.GenerateRawLenWidth();
+            /*
                 + this.txtThick.Text + "."
                 + this.txtSize.Text;
+             * */
         }
 
         private void GenerateLevelCode() 
@@ -104,6 +109,13 @@ namespace UI
             if (this.cmbRawThird.Text != "")
             {
                 this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + ".";
+            }
+            else if (this.cmbRawSecond.Text != "")
+            {
+                this.txtCode.Text = "1." + this.cmbRawSecond.SelectedValue.ToString() + ".";
+            }else if(this.cmbRawFirst.Text != "")
+            {
+                this.txtCode.Text = "1." + this.cmbRawFirst.SelectedValue.ToString() + ".";
             }
         }
 
@@ -144,10 +156,13 @@ namespace UI
             if (this.cmbRawFirst.SelectedValue.ToString() == "1")
             {
                 //牌号、厚度、长宽代码生成
-                this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
+                this.txtCode.Text = "1." + this.cmbRawThird.SelectedValue.ToString() + "."
                     + this.txtRaw.Text + "."
+                    + this.GenerateRawLenWidth();
+                    /*
                     + this.txtThick.Text
                     + this.txtSize.Text;
+                     * */
             }
             else
             {
@@ -157,6 +172,24 @@ namespace UI
                     + this.txtDM.Text 
                     + this.txtLength.Text;
             }
+        }
+
+        private String GenerateRawLenWidth() 
+        {
+            String code;
+            switch (this.cmbRawLenWidth.SelectedIndex) 
+            {
+                case 0: code = "001"; break;
+                case 1: code = "002"; break;
+                case 2: code = "003"; break;
+                case 3: code = "004"; break;
+                case 4: code = "005"; break;
+                case 5: code = "006"; break;
+                case 6: code = "007"; break;
+                case 7: code = "008"; break;
+                default: code = "009"; break;
+            }
+            return code;
         }
 
         private void rdoRoundAngle_CheckedChanged(object sender, EventArgs e)
@@ -224,8 +257,8 @@ namespace UI
             }
 
             this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
-                    + roundOrRight + "."
-                    + tinningOrNot + "."
+                    + roundOrRight
+                    + tinningOrNot
                     + this.txtNull.Text + "."
                     + this.txtRoundThick.Text 
                     + this.txtRoundWidth.Text;
@@ -239,6 +272,11 @@ namespace UI
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtCode.Text);
             MessageBox.Show("编码复制成功");
         }
@@ -295,15 +333,18 @@ namespace UI
 		//设置厚度和长宽（字段3）可用
         private void SetTxtThickAndTxtSizeEnabled()
         {
-            this.txtThick.Enabled = true;
-            this.txtSize.Enabled = true;
+            this.cmbRawLenWidth.Enabled = true;
+
+            //this.txtThick.Enabled = true;
+            //this.txtSize.Enabled = true;
         }
 
         //设置厚度和长宽（字段3）不可用
         private void SetTxtThickAndTxtSizeDisabled()
         {
-            this.txtThick.Text = "";
-            this.txtSize.Text = "";
+            //this.txtThick.Text = "";
+            //this.txtSize.Text = "";
+            this.cmbRawLenWidth.Enabled = false;
             this.txtThick.Enabled = false;
             this.txtSize.Enabled = false;
         }
@@ -379,5 +420,24 @@ namespace UI
         {
             //LoadDataToCmbRawFirst();
         }
+
+        private void initRawPage() 
+        {
+            this.cmbRawFirst.Text = "";
+            this.cmbRawSecond.Text = "";
+            this.cmbRawThird.Text = "";
+            this.txtRaw.Text = "";
+            this.txtDM.Text = "";
+            this.txtLength.Text = "";
+            this.cmbRawLenWidth.Text = "";
+            this.txtRoundThick.Text = "";
+            this.txtRoundWidth.Text = "";
+            this.rdoTinning.Checked = false;
+            this.rdoNoTinning.Checked = false;
+            this.rdoRightAngle.Checked = false;
+            this.rdoRoundAngle.Checked = false;
+            this.txtCode.Text = "";
+        }
+
     }
 }

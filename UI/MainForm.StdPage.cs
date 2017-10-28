@@ -15,6 +15,7 @@ namespace UI
             if (this.cmbStdFirst.SelectedValue.ToString().Length > 5) return; //处理冲突，启动时会激活该事件报错 
             //设置下级下拉框的级联变化
             LevelSearchor.searchAndSetLevel2(this.cmbStdSecond, "2", this.cmbStdFirst.SelectedValue.ToString());
+            GenerateStdLevelCode();
         }
 
         private void cmbStdSecond_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,9 +44,11 @@ namespace UI
         //流水号填好后的编码生成
         private void GenerateStdFlowNo() 
         {
+            if (this.cmbStdFirst.Text == "") return;
             GenerateStdLevelCode();
             GenerateStdWorkFlowCode();
-            this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdSerialNum.Text;
+            if(this.txtStdSerialNum.Text!="")
+                this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdSerialNum.Text;
         }
 
         private void txtStdSerialNum_Click(object sender, EventArgs e)
@@ -76,7 +79,10 @@ namespace UI
         //一级、二级编码生成
         private void GenerateStdLevelCode() 
         {
-            this.txtStdCode.Text = "2." + this.cmbStdSecond.SelectedValue.ToString();
+            if(this.cmbStdSecond.Text !="")
+                this.txtStdCode.Text = "2." + this.cmbStdSecond.SelectedValue.ToString();
+            else if(this.cmbStdFirst.Text != "")
+                this.txtStdCode.Text = "2." + this.cmbStdFirst.SelectedValue.ToString();
         }
 
         private void setStdComponentDisable() 
@@ -163,8 +169,37 @@ namespace UI
 
         private void btnCopyStandard_Click(object sender, EventArgs e)
         {
+                  
+        
+            if (!Utility.IsCorrectMaterialCode(txtStdCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
+        
             Clipboard.SetDataObject(txtStdCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void initStdPage() 
+        {
+            this.cmbStdFirst.Text = "";
+            this.cmbStdSecond.Text = "";
+            this.txtStdCode.Text = "";
+            this.txtStdDM.Text = "";
+            this.txtStdLength.Text = "";
+            this.txtStdSerialNum.Text = "";
+            this.rdoC.Checked = false;
+            this.rdoNC.Checked = false;
+            this.rdoNH.Checked = false;
+            this.rdoM.Checked = false;
+            this.rdoNM.Checked = false;
+            this.rdoH.Checked = false;
+            this.rdoP.Checked = false;
+            this.rdoNPD.Checked = false;
+            this.rdoD.Checked = false;
+            this.rdoZ.Checked = false;
+            this.rdoNZ.Checked = false;
         }
 
     }

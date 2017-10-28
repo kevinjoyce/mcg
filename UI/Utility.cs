@@ -26,6 +26,7 @@ namespace UI
             return flowNoGenerator.getFlowNo();
         }
 
+
         public static String GetCombineComponetCode(Object [] objs, int cnt)
         {
             string code = "";
@@ -53,6 +54,21 @@ namespace UI
                 }
             }
             return code;
+        }
+
+        public static bool IsCorrectMaterialCode(String strMaterialCode)
+        {
+            bool bVerifyResult = true;
+            strMaterialCode = strMaterialCode.Trim();
+            string[] sArray = strMaterialCode.Split('.');
+            foreach (string strSplit in sArray)
+            {
+                if (0 == strSplit.Length)
+                {
+                    bVerifyResult = false;
+                }
+            }
+            return bVerifyResult;
         }
     }
 }

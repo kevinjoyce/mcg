@@ -98,8 +98,31 @@ namespace UI
 
         private void btnContract_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtContractCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtContractCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void initContractPage()
+        {
+            this.txtContractNo.Text = "";
+            this.txtContractCode.Text = "";
+            this.txtContractSerialNum.Text = "";
+            this.rdoContractC.Checked = false;
+            this.rdoContractNC.Checked = false;
+            this.rdoContractNH.Checked = false;
+            this.rdoContractM.Checked = false;
+            this.rdoContractNM.Checked = false;
+            this.rdoContractH.Checked = false;
+            this.rdoContractP.Checked = false;
+            this.rdoContractNPD.Checked = false;
+            this.rdoContractD.Checked = false;
+            this.rdoContractZ.Checked = false;
+            this.rdoContractNZ.Checked = false;
         }
     }
 }

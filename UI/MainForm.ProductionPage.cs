@@ -121,9 +121,23 @@ namespace UI
 
         private void btnCopyProduction_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtProductionCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtProductionCode.Text);
             MessageBox.Show("编码复制成功");
         }
 
+        private void initProductionPage()
+        {
+            this.cmbProductionFirst.Text = "";
+            this.cmbProductionSecond.Text = "";
+            this.cmbProductionThird.Text = "";
+            this.txtProductionCode.Text = "";
+            this.txtProductionSerialNum.Text = "";
+            this.txtProductionContract.Text = "";
+        }
     }
 }

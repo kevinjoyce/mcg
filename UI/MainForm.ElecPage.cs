@@ -26,7 +26,7 @@ namespace UI
         
         private void cmbElecSecond_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            this.setElecComponentDisalbe();
             if (this.cmbElecSecond.SelectedValue.ToString().Length > 5) return; //处理冲突，启动时会激活该事件报错                         
 
             //级联变化
@@ -35,6 +35,8 @@ namespace UI
                 this.cmbElecFirst.SelectedValue.ToString(),
                 this.cmbElecSecond.SelectedValue.ToString());
 
+            //根据选择，决定激活哪些控件
+            SetEnableAdjustToInput();
             //实时生成编码
             GenerateAllCode();
         }
@@ -871,8 +873,40 @@ namespace UI
 
         private void btnElecCopy_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtElecCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtElecCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void initElecPage() 
+        {
+            this.cmbElecFirst.Text = "";
+            this.cmbElecSecond.Text = "";
+            this.cmbElecThird.Text = "";
+            this.txtElecU.Text = "";
+            this.txtElecI.Text = "";
+            this.txtElecCapacity.Text = "";
+            this.txtElecBlock.Text = "";
+            this.txtElecSize.Text = "";
+            this.txtElecGroupNum.Text = "";
+            this.txtElecPower.Text = "";
+            this.txtElecDelay.Text = "";
+            this.txtElecNull.Text = "";
+            this.txtElecTouchPointNum.Text = "";
+            this.txtCap.Text = "";
+            this.txtElecColor.Text = "";
+            this.txtElecDist.Text = "";
+            this.txtColNum.Text = "";
+            this.txtElecSupportPointNum.Text = "";
+            this.cmbACDC.Text = "";
+            this.txtElecSerialNum.Text = "";
+            this.txtElecCode.Text = "";
+            this.rdoElecOn.Checked = false;
+            this.rdoElecOff.Checked = false;
         }
     }
 }

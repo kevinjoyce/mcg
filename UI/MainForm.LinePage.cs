@@ -93,8 +93,8 @@ namespace UI
             GenerateLineLevelCode();
             this.txtLineCode.Text = this.txtLineCode.Text
                 + "."
-                + this.txtLineColor.Text
-                + this.txtLineU.Text
+                + (this.cmbLineColor.SelectedIndex == -1 ? "" : this.cmbLineColor.SelectedIndex.ToString())
+                + (this.cmbLineU.SelectedIndex == -1 ? "" : this.cmbLineU.SelectedIndex.ToString())
                 + this.txtLineSquare.Text
                 + "."
                 + this.txtLineSerialNum.Text;
@@ -105,7 +105,7 @@ namespace UI
         {
             if (cmbLineSecond.Text != "")
                 this.txtLineCode.Text = "4." + this.cmbLineSecond.SelectedValue.ToString();
-            else
+            else if(cmbLineFirst.Text != "")
                 this.txtLineCode.Text = "4." + this.cmbLineFirst.SelectedValue.ToString();
         }
 
@@ -123,6 +123,8 @@ namespace UI
             this.txtLineIn.Enabled = false;
             this.txtLineCon.Enabled = false;
             this.txtLineLength.Enabled = false;
+
+
         }
 
         private void SetColorUDisable()
@@ -131,6 +133,9 @@ namespace UI
             this.txtLineColor.Enabled = false;
             this.txtLineU.Enabled = false;
             this.txtLineSquare.Enabled = false;
+
+            this.cmbLineU.Enabled = false;
+            this.cmbLineColor.Enabled = false;
         }
         /********Enable************/
         private void SetInConnEnable()
@@ -147,6 +152,9 @@ namespace UI
             this.txtLineColor.Enabled = true;
             this.txtLineU.Enabled = true;
             this.txtLineSquare.Enabled = true;
+
+            this.cmbLineU.Enabled = true;
+            this.cmbLineColor.Enabled = true;
         }
 
         private void txtLineColor_TextChanged(object sender, EventArgs e)
@@ -192,10 +200,26 @@ namespace UI
 
         private void btnCopyLine_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtLineCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtLineCode.Text);
             MessageBox.Show("编码复制成功");
         }
 
-        
+        private void initLinePage() 
+        {
+            this.cmbLineFirst.Text = "";
+            this.cmbLineSecond.Text = "";
+            this.cmbLineColor.Text = "";
+            this.cmbLineU.Text = "";
+            this.txtLineCode.Text = "";
+            this.txtLineIn.Text = "";
+            this.txtLineLength.Text = "";
+            this.txtLineSerialNum.Text = "";
+            this.txtLineSquare.Text = "";
+        }
     }
 }

@@ -10,7 +10,8 @@ namespace UI
     {
         public String getFlowNo() 
         {
-            return DateTime.Now.ToFileTimeUtc().ToString();
+            Random ran = new Random();
+            return ran.Next(1000, 9999).ToString();
         }
     }
 }

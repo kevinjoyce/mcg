@@ -108,8 +108,20 @@ namespace UI
 
         private void btnAssistantCopy_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtAssistantCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtAssistantCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void initAssistantPage() 
+        {
+            this.txtAssistantCode.Text = "";
+            this.txtAssistantSerialNum.Text = "";
+            this.txtAssistantNull.Text = "";
         }
     }
 }

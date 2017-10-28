@@ -120,9 +120,23 @@ namespace UI
 
         private void btnMlineCopy_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtMlineCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtMlineCode.Text);
             MessageBox.Show("编码复制成功");
         }
 
+        private void initMlinePage() 
+        {
+            this.cmbMlineFirst.Text = "";
+            this.cmbMlineSecond.Text = "";
+            this.cmbMlineThird.Text = "";
+            this.txtMlineCode.Text = "";
+            this.txtMlineSerialNum.Text = "";
+            this.txtMlineIStrength.Text = "";
+        }
     }
 }

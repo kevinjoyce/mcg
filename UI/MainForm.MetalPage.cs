@@ -169,7 +169,9 @@ namespace UI
                 + this.txtMetalLength.Text
                 + "."
                 + this.txtMetalStrength.Text
-                + this.txtMetalSurface.Text;
+                + this.GenerateCmbSurface();
+
+            //    + this.txtMetalSurface.Text;
             /*
             this.txtMetalSize.Enabled = false;
             this.txtMetalLength.Enabled = false;
@@ -259,6 +261,7 @@ namespace UI
             this.txtMetalLength.Enabled = false;
             this.txtMetalStrength.Enabled = false;
             this.txtMetalSurface.Enabled = false;
+            this.cmbMetalSurface.Enabled = false;
         }
 
         private void SetMetalNullProviderDisable()
@@ -318,34 +321,41 @@ namespace UI
             this.txtMetalLength.Enabled = true;
             this.txtMetalStrength.Enabled = true;
             this.txtMetalSurface.Enabled = true;
+            this.cmbMetalSurface.Enabled = true;
+            this.txtMetalSerialNum.Enabled = false;
         }
 
         private void SetMetalNullProviderEnable()
         {
             this.txtMetalNull.Enabled = true;
             this.txtMetalProvider.Enabled = true;
+            this.txtMetalSerialNum.Enabled = true;
         }
 
         private void SetMetalContractNoEnable()
         {
             this.txtMetalContract.Enabled = true;
+            this.txtMetalSerialNum.Enabled = true;
         }
 
         private void SetMetalSectionCountProviderEnable()
         {
             this.txtMetalSection.Enabled = true;
             this.txtMetalProvider.Enabled = true;
+            this.txtMetalSerialNum.Enabled = true;
         }
 
         private void SetMetalIProviderEnable()
         {
             this.txtMetalI.Enabled = true;
             this.txtMetalProvider.Enabled = true;
+            this.txtMetalSerialNum.Enabled = true;
         }
 
         private void SetMetalNullEnable()
         {
             this.txtMetalNull.Enabled = true;
+            this.txtMetalSerialNum.Enabled = true;
         }
 
         private void txtMetalSerialNum_TextChanged(object sender, EventArgs e)
@@ -407,8 +417,51 @@ namespace UI
 
         private void btnMetalCopy_Click(object sender, EventArgs e)
         {
+            if (!Utility.IsCorrectMaterialCode(txtMetalCode.Text))
+            {
+                MessageBox.Show("编码错误，请检查输入");
+                return;
+            }
             Clipboard.SetDataObject(txtMetalCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void initMetalPage() 
+        {
+            this.cmbMetalFirst.Text = "";
+            this.cmbMetalSecond.Text = "";
+            this.cmbMetalThird.Text = "";
+            this.txtMetalI.Text = "";
+            this.txtMetalProvider.Text = "";
+            this.txtMetalContract.Text = "";
+            this.txtMetalSection.Text = "";
+            this.txtMetalSize.Text = "";
+            this.txtMetalLength.Text = "";
+            this.txtMetalStrength.Text = "";
+            this.txtMetalSurface.Text = "";
+            this.txtMetalNull.Text = "";
+            this.txtMetalSerialNum.Text = "";
+            this.txtMetalCode.Text = "";
+            this.cmbMetalSurface.Text = "";
+        }
+
+        private String GenerateCmbSurface()
+        {
+            String code = "";
+            switch (this.cmbMetalSurface.SelectedIndex)
+            {
+                case 0: code = "1"; break;
+                case 1: code = "2"; break;
+                case 2: code = "3"; break;
+                case 3: code = "4"; break;
+                case 4: code = "5"; break;
+                case 5: code = "6"; break;
+                case 6: code = "7"; break;
+                case 7: code = "8"; break;
+                case 8: code = "A"; break;
+                case 9: code = "9"; break;
+            }
+            return code;
         }
     }
 }
