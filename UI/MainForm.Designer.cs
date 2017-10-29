@@ -1437,26 +1437,29 @@
             // txtColNum
             // 
             this.txtColNum.Location = new System.Drawing.Point(251, 9);
-            this.txtColNum.MaxLength = 3;
+            this.txtColNum.MaxLength = 1;
             this.txtColNum.Name = "txtColNum";
             this.txtColNum.Size = new System.Drawing.Size(90, 29);
             this.txtColNum.TabIndex = 25;
+            this.txtColNum.TextChanged += new System.EventHandler(this.txtColNum_TextChanged);
             // 
             // txtElecSupportPointNum
             // 
             this.txtElecSupportPointNum.Location = new System.Drawing.Point(101, 49);
-            this.txtElecSupportPointNum.MaxLength = 3;
+            this.txtElecSupportPointNum.MaxLength = 2;
             this.txtElecSupportPointNum.Name = "txtElecSupportPointNum";
             this.txtElecSupportPointNum.Size = new System.Drawing.Size(90, 29);
             this.txtElecSupportPointNum.TabIndex = 25;
+            this.txtElecSupportPointNum.TextChanged += new System.EventHandler(this.txtElecSupportPointNum_TextChanged);
             // 
             // txtElecDist
             // 
             this.txtElecDist.Location = new System.Drawing.Point(101, 9);
-            this.txtElecDist.MaxLength = 3;
+            this.txtElecDist.MaxLength = 1;
             this.txtElecDist.Name = "txtElecDist";
             this.txtElecDist.Size = new System.Drawing.Size(90, 29);
             this.txtElecDist.TabIndex = 25;
+            this.txtElecDist.TextChanged += new System.EventHandler(this.txtElecDist_TextChanged);
             // 
             // btnElecCopy
             // 
@@ -1537,6 +1540,7 @@
             this.txtElecColor.Name = "txtElecColor";
             this.txtElecColor.Size = new System.Drawing.Size(90, 29);
             this.txtElecColor.TabIndex = 25;
+            this.txtElecColor.TextChanged += new System.EventHandler(this.txtElecColor_TextChanged);
             // 
             // txtElecNull
             // 
@@ -1545,6 +1549,7 @@
             this.txtElecNull.Name = "txtElecNull";
             this.txtElecNull.Size = new System.Drawing.Size(90, 29);
             this.txtElecNull.TabIndex = 25;
+            this.txtElecNull.TextChanged += new System.EventHandler(this.txtElecNull_TextChanged);
             // 
             // txtElecPower
             // 
@@ -1553,6 +1558,7 @@
             this.txtElecPower.Name = "txtElecPower";
             this.txtElecPower.Size = new System.Drawing.Size(90, 29);
             this.txtElecPower.TabIndex = 25;
+            this.txtElecPower.TextChanged += new System.EventHandler(this.txtElecPower_TextChanged);
             // 
             // txtCap
             // 
@@ -1561,6 +1567,7 @@
             this.txtCap.Name = "txtCap";
             this.txtCap.Size = new System.Drawing.Size(90, 29);
             this.txtCap.TabIndex = 25;
+            this.txtCap.TextChanged += new System.EventHandler(this.txtCap_TextChanged);
             // 
             // txtElecBlock
             // 
@@ -1569,6 +1576,7 @@
             this.txtElecBlock.Name = "txtElecBlock";
             this.txtElecBlock.Size = new System.Drawing.Size(90, 29);
             this.txtElecBlock.TabIndex = 25;
+            this.txtElecBlock.TextChanged += new System.EventHandler(this.txtElecBlock_TextChanged);
             // 
             // txtElecTouchPointNum
             // 
@@ -1577,14 +1585,16 @@
             this.txtElecTouchPointNum.Name = "txtElecTouchPointNum";
             this.txtElecTouchPointNum.Size = new System.Drawing.Size(90, 29);
             this.txtElecTouchPointNum.TabIndex = 25;
+            this.txtElecTouchPointNum.TextChanged += new System.EventHandler(this.txtElecTouchPointNum_TextChanged);
             // 
             // txtElecDelay
             // 
             this.txtElecDelay.Location = new System.Drawing.Point(89, 218);
-            this.txtElecDelay.MaxLength = 3;
+            this.txtElecDelay.MaxLength = 1;
             this.txtElecDelay.Name = "txtElecDelay";
             this.txtElecDelay.Size = new System.Drawing.Size(90, 29);
             this.txtElecDelay.TabIndex = 25;
+            this.txtElecDelay.TextChanged += new System.EventHandler(this.txtElecDelay_TextChanged);
             // 
             // txtElecGroupNum
             // 
@@ -1593,6 +1603,7 @@
             this.txtElecGroupNum.Name = "txtElecGroupNum";
             this.txtElecGroupNum.Size = new System.Drawing.Size(90, 29);
             this.txtElecGroupNum.TabIndex = 25;
+            this.txtElecGroupNum.TextChanged += new System.EventHandler(this.txtElecGroupNum_TextChanged);
             // 
             // txtElecSize
             // 
@@ -1601,6 +1612,7 @@
             this.txtElecSize.Name = "txtElecSize";
             this.txtElecSize.Size = new System.Drawing.Size(90, 29);
             this.txtElecSize.TabIndex = 25;
+            this.txtElecSize.TextChanged += new System.EventHandler(this.txtElecSize_TextChanged);
             // 
             // txtElecCapacity
             // 
@@ -1609,6 +1621,7 @@
             this.txtElecCapacity.Name = "txtElecCapacity";
             this.txtElecCapacity.Size = new System.Drawing.Size(90, 29);
             this.txtElecCapacity.TabIndex = 25;
+            this.txtElecCapacity.TextChanged += new System.EventHandler(this.txtElecCapacity_TextChanged);
             // 
             // txtElecI
             // 
@@ -1617,6 +1630,7 @@
             this.txtElecI.Name = "txtElecI";
             this.txtElecI.Size = new System.Drawing.Size(90, 29);
             this.txtElecI.TabIndex = 25;
+            this.txtElecI.TextChanged += new System.EventHandler(this.txtElecI_TextChanged);
             // 
             // txtElecU
             // 
@@ -1625,6 +1639,7 @@
             this.txtElecU.Name = "txtElecU";
             this.txtElecU.Size = new System.Drawing.Size(90, 29);
             this.txtElecU.TabIndex = 25;
+            this.txtElecU.TextChanged += new System.EventHandler(this.txtElecU_TextChanged);
             // 
             // rdoElecOff
             // 

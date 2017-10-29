@@ -747,7 +747,7 @@ namespace UI
                 GenerateUOnOffDelayNullCode();
 
             //空置
-            if (this.txtElecNull.Enabled)
+            if (this.txtElecNull.Enabled && this.cmbElecFirst.Text == "互感/变压器")
                 GenerateNullCode();
 
             //空置，阻值
@@ -838,7 +838,7 @@ namespace UI
                 GenerateUOnOffDelayNullCode();
 
             //空置
-            if (this.txtElecNull.Enabled)
+            if (this.txtElecNull.Enabled && this.cmbElecFirst.Text == "互感/变压器")
                 GenerateNullCode();
 
             //空置, 阻值
@@ -862,6 +862,18 @@ namespace UI
             //交直流
             if (this.txtElecU.Enabled && this.cmbACDC.Enabled)
                 GenerateACDCCode();
+
+            //变送器
+            if (this.cmbElecFirst.Text == "变送器")
+                GenerateBsqCode();
+        }
+
+        private void GenerateBsqCode()
+        {
+            GenerateElecLevelCode();
+            this.txtElecCode.Text = this.txtElecCode.Text
+                + "."
+                + this.txtElecSerialNum.Text;
         }
 
         //产生流水号

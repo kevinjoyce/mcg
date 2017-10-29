@@ -20,6 +20,7 @@ namespace UI
             cbox.DisplayMember = "Level1Name";
             cbox.ValueMember = "Level1ID";
             cbox.Text = "";
+
         }
         
         public static void searchAndSetLevel2(ComboBox cbox, String mainClassID, String level1ID)
@@ -33,6 +34,7 @@ namespace UI
             cbox.DisplayMember = "Level2Name";
             cbox.ValueMember = "Level2ID";
             cbox.Text = "";
+
         }
 
         public static void searchAndSetLevel3(ComboBox cbox, String mainClassID, String level1ID, String level2ID)
@@ -46,6 +48,20 @@ namespace UI
             cbox.DisplayMember = "Level3Name";
             cbox.ValueMember = "Level3ID";
             cbox.Text = "";
+
+            setCmbState(cbox);
+        }
+        //没数据就disable，否则enable
+        public static void setCmbState(ComboBox cbox) 
+        {
+            if (cbox.Items.Count == 1)
+            {
+                cbox.Enabled = false;
+            }
+            else
+            {
+                cbox.Enabled = true;
+            }
         }
 
         //去重

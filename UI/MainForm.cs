@@ -153,6 +153,85 @@ namespace UI
             GenerateMetalCode();
         }
 
+        //private void txtElecU_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecI_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecCapacity_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecBlock_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecSize_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void txtCap_TextChanged(object sender, EventArgs e)
+        {
+            //电压、电容
+            if (this.txtElecU.Enabled && this.txtCap.Enabled)
+                GenerateUCapCode();
+        }
+
+        //private void txtElecGroupNum_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void txtElecPower_TextChanged(object sender, EventArgs e)
+        {
+            if (this.txtElecU.Enabled && this.txtElecPower.Enabled)
+                GenerateUPowerCode();
+        }
+
+        //private void txtElecDelay_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecNull_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecTouchPointNum_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecColor_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecDist_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtColNum_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecSupportPointNum_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        
         
 
         
