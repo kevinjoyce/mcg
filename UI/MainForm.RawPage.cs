@@ -158,6 +158,7 @@ namespace UI
                 //牌号、厚度、长宽代码生成
                 this.txtCode.Text = "1." + this.cmbRawThird.SelectedValue.ToString() + "."
                     + this.txtRaw.Text + "."
+                    + this.txtThick.Text
                     + this.GenerateRawLenWidth();
                     /*
                     + this.txtThick.Text
@@ -169,7 +170,8 @@ namespace UI
                 //牌号、端面、长度代码生成
                 this.txtCode.Text = "1."+this.cmbRawThird.SelectedValue.ToString() + "."
                     + this.txtRaw.Text + "."
-                    + this.txtDM.Text 
+                    + GenerateDMCode()
+                    //+ this.txtDM.Text 
                     + this.txtLength.Text;
             }
         }
@@ -191,7 +193,19 @@ namespace UI
             }
             return code;
         }
-
+        private String GenerateDMCode()
+        {
+            String code;
+            switch (this.cmbDM.SelectedIndex)
+            {
+                case 0: code = "0C"; break;
+                case 1: code = "SH"; break;
+                case 2: code = "DH"; break;
+                case 3: code = "8M"; break;
+                default: code = "09"; break;
+            }
+            return code;
+        }
         private void rdoRoundAngle_CheckedChanged(object sender, EventArgs e)
         {
             GenerateCodeRound();
@@ -335,14 +349,14 @@ namespace UI
         {
             this.cmbRawLenWidth.Enabled = true;
 
-            //this.txtThick.Enabled = true;
+            this.txtThick.Enabled = true;
             //this.txtSize.Enabled = true;
         }
 
         //设置厚度和长宽（字段3）不可用
         private void SetTxtThickAndTxtSizeDisabled()
         {
-            //this.txtThick.Text = "";
+            this.txtThick.Text = "";
             //this.txtSize.Text = "";
             this.cmbRawLenWidth.Enabled = false;
             this.txtThick.Enabled = false;
@@ -352,7 +366,8 @@ namespace UI
 		//设置端面和宽度（字段3）可用
         private void SetTxtDMAndTxtLengthEnabled()
         {
-            this.txtDM.Enabled = true;
+            //this.txtDM.Enabled = true;
+            this.cmbDM.Enabled = true;
             this.txtLength.Enabled = true;
         }
 
@@ -361,7 +376,8 @@ namespace UI
         {
             this.txtDM.Text = "";
             this.txtLength.Text = "";
-            this.txtDM.Enabled = false;
+            //this.txtDM.Enabled = false;
+            this.cmbDM.Enabled = false;
             this.txtLength.Enabled = false;
         }
 

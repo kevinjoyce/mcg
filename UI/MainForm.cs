@@ -77,6 +77,7 @@ namespace UI
                     SetAssistantComponetDisable();
                     break;
                 case 6:
+                    LoadDataTocmbContractFirst();
                     initContractPage();
                     initContractPage();                    
                     break;
@@ -125,6 +126,10 @@ namespace UI
             LevelSearchor.searchAndSetLevel1(this.cmbAssistantFirst, "6");
         }
 
+        private void LoadDataTocmbContractFirst()
+        {
+            LevelSearchor.searchAndSetLevel1(this.cmbContractFirst, "7");
+        }
         
         private void LoadDataTocmbMlineFirst()
         {
@@ -195,6 +200,69 @@ namespace UI
             if (this.txtElecU.Enabled && this.txtElecPower.Enabled)
                 GenerateUPowerCode();
         }
+
+        //private void rdoContractCQ_C_CheckedChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void cmbACDC_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtElecColor_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        
+
+        
+
+        
+
+        
+
+        //private void txtThick_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void txtDM_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void rdoNPD_CheckedChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void rdoD_CheckedChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void rdoP_CheckedChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void cmbStdSecond_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void cmbStdFirst_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void cmbACDC_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
 
         //private void txtElecDelay_TextChanged(object sender, EventArgs e)
         //{

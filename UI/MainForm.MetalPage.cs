@@ -266,7 +266,7 @@ namespace UI
 
         private void SetMetalNullProviderDisable()
         {
-            this.txtMetalNull.Enabled = false;
+            //this.txtMetalNull.Enabled = false;
             this.txtMetalProvider.Enabled = false;
         }
 
@@ -289,7 +289,7 @@ namespace UI
 
         private void SetMetalNullDisable()
         {
-            this.txtMetalNull.Enabled = false;
+            //this.txtMetalNull.Enabled = false;
         }
 
 
@@ -439,7 +439,7 @@ namespace UI
             this.txtMetalLength.Text = "";
             this.txtMetalStrength.Text = "";
             this.txtMetalSurface.Text = "";
-            this.txtMetalNull.Text = "";
+            this.txtMetalNull.Text = "0";
             this.txtMetalSerialNum.Text = "";
             this.txtMetalCode.Text = "";
             this.cmbMetalSurface.Text = "";

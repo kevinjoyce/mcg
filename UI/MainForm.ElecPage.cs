@@ -219,7 +219,8 @@ namespace UI
         private void SetTouchColorDisable()
         {
             this.txtElecTouchPointNum.Enabled = false;
-            this.txtElecColor.Enabled = false;
+            this.cmbElecColor.Enabled = false;
+            //this.txtElecColor.Enabled = false;
             this.txtElecSerialNum.Enabled = false;
         }
 
@@ -324,7 +325,8 @@ namespace UI
         private void SetTouchColorEnable()
         {
             this.txtElecTouchPointNum.Enabled = true;
-            this.txtElecColor.Enabled = true;
+            //this.txtElecColor.Enabled = true;
+            this.cmbElecColor.Enabled = true;
             this.txtElecSerialNum.Enabled = true;
         }
 
@@ -546,7 +548,8 @@ namespace UI
             this.txtElecCode.Text = this.txtElecCode.Text
                 + "."
                 + this.txtElecTouchPointNum.Text
-                + this.txtElecColor.Text
+                //+ this.txtElecColor.Text
+                + this.cmbElecColor.Text
                 + "."
                 + this.txtElecSerialNum.Text;
             /*
@@ -765,18 +768,26 @@ namespace UI
         private void txtElecTouchPointNum_TextChanged(object sender, EventArgs e)
         {
             //触点，颜色
-            if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            //if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            if (this.txtElecTouchPointNum.Enabled && this.cmbElecColor.Enabled)
                 GenerateTouchColorCode();
         }
 
         private void txtElecColor_TextChanged(object sender, EventArgs e)
         {
             //触点，颜色
-            if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            //if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            if (this.txtElecTouchPointNum.Enabled && this.cmbElecColor.Enabled)
                 GenerateTouchColorCode();
         }
 
+        private void cmbElecColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+            //触点，颜色
+            if (this.txtElecTouchPointNum.Enabled && this.cmbElecColor.Enabled)
+                GenerateTouchColorCode();
+        }
 
         private void txtElecSupportPointNum_TextChanged(object sender, EventArgs e)
         {
@@ -846,7 +857,8 @@ namespace UI
                 GenerateNullBlockCode();
 
             //触点，颜色
-            if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            //if (this.txtElecTouchPointNum.Enabled && this.txtElecColor.Enabled)
+            if (this.txtElecTouchPointNum.Enabled && this.cmbElecColor.Enabled)
                 GenerateTouchColorCode();
 
             //电压、功率
@@ -907,10 +919,11 @@ namespace UI
             this.txtElecGroupNum.Text = "";
             this.txtElecPower.Text = "";
             this.txtElecDelay.Text = "";
-            this.txtElecNull.Text = "";
+            //this.txtElecNull.Text = "";
             this.txtElecTouchPointNum.Text = "";
             this.txtCap.Text = "";
-            this.txtElecColor.Text = "";
+            //this.txtElecColor.Text = "";
+            this.cmbElecColor.Text = "";
             this.txtElecDist.Text = "";
             this.txtColNum.Text = "";
             this.txtElecSupportPointNum.Text = "";

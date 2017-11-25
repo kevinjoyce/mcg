@@ -42,6 +42,7 @@ namespace UI
             //查询2级类别, mainClassID指明顶级类1-9
             string strWhere = "MainClassID = '" + mainClassID + "' and Level1ID = '" + level1ID + "' and Level2ID = '" + level2ID + "'";
             MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
+            
             List<MaterialCodeGenerator.Model.MaterialCode> list = listLevelDistinct(table.GetModelList(strWhere), 3);
 
             cbox.DataSource = list;
@@ -56,7 +57,11 @@ namespace UI
         {
             if (cbox.Items.Count == 1)
             {
-                cbox.Enabled = false;
+                cbox.SelectedIndex = 0;
+                if(cbox.SelectedValue.ToString().Length ==0)
+                    cbox.Enabled = false;
+                else
+                    cbox.Enabled = true;
             }
             else
             {

@@ -73,7 +73,10 @@ namespace UI
                 + Utility.getRadioButtonCode(this.rdoNM, "0")
                 + Utility.getRadioButtonCode(this.rdoP, "P")
                 + Utility.getRadioButtonCode(this.rdoD, "D")
-                + Utility.getRadioButtonCode(this.rdoNPD, "0");
+                + Utility.getRadioButtonCode(this.rdoNPD, "0")
+                + Utility.getRadioButtonCode(this.rdoCQ_C, "C")
+                + Utility.getRadioButtonCode(this.rdoCQ_Q, "Q")
+                + Utility.getRadioButtonCode(this.rdoCQ_NO, "0");
         }
 
         //一级、二级编码生成
