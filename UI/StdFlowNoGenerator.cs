@@ -11,7 +11,8 @@ namespace UI
         public String getFlowNo() 
         {
             Random ran = new Random();
-            return ran.Next(1000, 9999).ToString();
+            //return ran.Next(1000, 9999).ToString();
+            return "";
         }
     }
 }

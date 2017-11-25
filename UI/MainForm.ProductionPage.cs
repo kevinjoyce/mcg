@@ -34,7 +34,7 @@ namespace UI
 
             //级联变化
             LevelSearchor.searchAndSetLevel3(this.cmbProductionThird,
-                "8",
+                "9",
                 this.cmbProductionFirst.SelectedValue.ToString(),
                 this.cmbProductionSecond.SelectedValue.ToString());
 

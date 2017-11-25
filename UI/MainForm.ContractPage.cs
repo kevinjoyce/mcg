@@ -42,7 +42,7 @@ namespace UI
         private void GenerateContractCode()
         {
             this.txtContractCode.Text = "7."
-                + this.ContractLevelCode()
+                + this.ContractLevelCode()+"."
                 + this.txtContractNo.Text + "."
                 + Utility.getRadioButtonCode(this.rdoContractC, "C")
                 + Utility.getRadioButtonCode(this.rdoContractNC, "0")
