@@ -30,6 +30,7 @@
         {
             this.tbControlMaterial = new System.Windows.Forms.TabControl();
             this.tabRawMaterial = new System.Windows.Forms.TabPage();
+            this.btnRawClear = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.rdoNoTinning = new System.Windows.Forms.RadioButton();
@@ -69,6 +70,7 @@
             this.btnCopy = new System.Windows.Forms.Button();
             this.txtSize = new System.Windows.Forms.TextBox();
             this.tabStandardComponent = new System.Windows.Forms.TabPage();
+            this.btnStdClear = new System.Windows.Forms.Button();
             this.btnCopyStandard = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtStdDM = new System.Windows.Forms.TextBox();
@@ -124,6 +126,7 @@
             this.lblStdSecnd = new System.Windows.Forms.Label();
             this.cmbStdFirst = new System.Windows.Forms.ComboBox();
             this.tabElectricComponent = new System.Windows.Forms.TabPage();
+            this.btnElecClear = new System.Windows.Forms.Button();
             this.txtElecColor = new System.Windows.Forms.TextBox();
             this.txtElecSerialNum = new System.Windows.Forms.TextBox();
             this.lblElecSeiralNum = new System.Windows.Forms.Label();
@@ -175,6 +178,7 @@
             this.lblElecSecond = new System.Windows.Forms.Label();
             this.cmbElecFirst = new System.Windows.Forms.ComboBox();
             this.tabLineComponent = new System.Windows.Forms.TabPage();
+            this.btnLineClear = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.txtLineU = new System.Windows.Forms.TextBox();
             this.btnCopyLine = new System.Windows.Forms.Button();
@@ -202,6 +206,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cmbLineFirst = new System.Windows.Forms.ComboBox();
             this.tabMetalComponent = new System.Windows.Forms.TabPage();
+            this.btnMetalClear = new System.Windows.Forms.Button();
             this.cmbMetalSurface = new System.Windows.Forms.ComboBox();
             this.txtMetalSerialNum = new System.Windows.Forms.TextBox();
             this.lblLineSerialNum = new System.Windows.Forms.Label();
@@ -237,6 +242,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.tabAssistantComponent = new System.Windows.Forms.TabPage();
+            this.btnAssistantClear = new System.Windows.Forms.Button();
             this.btnAssistantCopy = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.txtAssistantCode = new System.Windows.Forms.TextBox();
@@ -252,6 +258,7 @@
             this.cmbAssistantFirst = new System.Windows.Forms.ComboBox();
             this.lblAssistantFirst = new System.Windows.Forms.Label();
             this.tabContractComponent = new System.Windows.Forms.TabPage();
+            this.btnContractClear = new System.Windows.Forms.Button();
             this.panel31 = new System.Windows.Forms.Panel();
             this.cmbContractSecond = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
@@ -262,8 +269,12 @@
             this.label47 = new System.Windows.Forms.Label();
             this.btnContract = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
+            this.txtPno = new System.Windows.Forms.TextBox();
             this.txtContractSerialNum = new System.Windows.Forms.TextBox();
+            this.txtCNo = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.panel23 = new System.Windows.Forms.Panel();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.label35 = new System.Windows.Forms.Label();
@@ -306,6 +317,7 @@
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tabMlineComponent = new System.Windows.Forms.TabPage();
+            this.btnMlineClear = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
             this.cmbMlineSecond = new System.Windows.Forms.ComboBox();
             this.lblMlineFirst = new System.Windows.Forms.Label();
@@ -323,6 +335,7 @@
             this.lblMlineIStrength = new System.Windows.Forms.Label();
             this.lblMlineSerialNum = new System.Windows.Forms.Label();
             this.tabProductionComponent = new System.Windows.Forms.TabPage();
+            this.btnProduction = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.cmbProductionSecond = new System.Windows.Forms.ComboBox();
             this.lblProductionFirst = new System.Windows.Forms.Label();
@@ -339,6 +352,10 @@
             this.panel32 = new System.Windows.Forms.Panel();
             this.txtProductionCode = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
+            this.tabCodeReverseComponent = new System.Windows.Forms.TabPage();
+            this.lblCodeInfo = new System.Windows.Forms.Label();
+            this.btnCodeReverse = new System.Windows.Forms.Button();
+            this.txtCodeReverse = new System.Windows.Forms.TextBox();
             this.tbControlMaterial.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel34.SuspendLayout();
@@ -399,6 +416,7 @@
             this.panel27.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel32.SuspendLayout();
+            this.tabCodeReverseComponent.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbControlMaterial
@@ -412,6 +430,7 @@
             this.tbControlMaterial.Controls.Add(this.tabContractComponent);
             this.tbControlMaterial.Controls.Add(this.tabMlineComponent);
             this.tbControlMaterial.Controls.Add(this.tabProductionComponent);
+            this.tbControlMaterial.Controls.Add(this.tabCodeReverseComponent);
             this.tbControlMaterial.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbControlMaterial.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbControlMaterial.Location = new System.Drawing.Point(0, 0);
@@ -424,6 +443,7 @@
             // tabRawMaterial
             // 
             this.tabRawMaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabRawMaterial.Controls.Add(this.btnRawClear);
             this.tabRawMaterial.Controls.Add(this.panel34);
             this.tabRawMaterial.Controls.Add(this.txtDM);
             this.tabRawMaterial.Controls.Add(this.panel6);
@@ -438,6 +458,16 @@
             this.tabRawMaterial.Size = new System.Drawing.Size(776, 527);
             this.tabRawMaterial.TabIndex = 0;
             this.tabRawMaterial.Text = "原材料";
+            // 
+            // btnRawClear
+            // 
+            this.btnRawClear.Location = new System.Drawing.Point(425, 471);
+            this.btnRawClear.Name = "btnRawClear";
+            this.btnRawClear.Size = new System.Drawing.Size(171, 48);
+            this.btnRawClear.TabIndex = 20;
+            this.btnRawClear.Text = "清空";
+            this.btnRawClear.UseVisualStyleBackColor = true;
+            this.btnRawClear.Click += new System.EventHandler(this.btnRawClear_Click);
             // 
             // panel34
             // 
@@ -616,6 +646,7 @@
             this.txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtCode.Location = new System.Drawing.Point(91, 24);
             this.txtCode.Name = "txtCode";
+            this.txtCode.ReadOnly = true;
             this.txtCode.Size = new System.Drawing.Size(652, 47);
             this.txtCode.TabIndex = 12;
             // 
@@ -736,6 +767,7 @@
             // txtRaw
             // 
             this.txtRaw.Location = new System.Drawing.Point(101, 3);
+            this.txtRaw.MaxLength = 6;
             this.txtRaw.Name = "txtRaw";
             this.txtRaw.Size = new System.Drawing.Size(247, 29);
             this.txtRaw.TabIndex = 6;
@@ -820,7 +852,7 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnCopy.Location = new System.Drawing.Point(200, 471);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(169, 48);
             this.btnCopy.TabIndex = 13;
@@ -841,6 +873,7 @@
             // tabStandardComponent
             // 
             this.tabStandardComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabStandardComponent.Controls.Add(this.btnStdClear);
             this.tabStandardComponent.Controls.Add(this.btnCopyStandard);
             this.tabStandardComponent.Controls.Add(this.panel8);
             this.tabStandardComponent.Controls.Add(this.panel7);
@@ -853,9 +886,19 @@
             this.tabStandardComponent.TabIndex = 1;
             this.tabStandardComponent.Text = "钣金标准件";
             // 
+            // btnStdClear
+            // 
+            this.btnStdClear.Location = new System.Drawing.Point(425, 471);
+            this.btnStdClear.Name = "btnStdClear";
+            this.btnStdClear.Size = new System.Drawing.Size(171, 48);
+            this.btnStdClear.TabIndex = 22;
+            this.btnStdClear.Text = "清空";
+            this.btnStdClear.UseVisualStyleBackColor = true;
+            this.btnStdClear.Click += new System.EventHandler(this.btnStdClear_Click);
+            // 
             // btnCopyStandard
             // 
-            this.btnCopyStandard.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyStandard.Location = new System.Drawing.Point(200, 471);
             this.btnCopyStandard.Name = "btnCopyStandard";
             this.btnCopyStandard.Size = new System.Drawing.Size(169, 48);
             this.btnCopyStandard.TabIndex = 21;
@@ -918,6 +961,7 @@
             this.txtStdSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtStdSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtStdSerialNum.Location = new System.Drawing.Point(95, 12);
+            this.txtStdSerialNum.MaxLength = 4;
             this.txtStdSerialNum.Name = "txtStdSerialNum";
             this.txtStdSerialNum.Size = new System.Drawing.Size(256, 26);
             this.txtStdSerialNum.TabIndex = 13;
@@ -959,6 +1003,7 @@
             this.txtStdCode.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtStdCode.Location = new System.Drawing.Point(91, 9);
             this.txtStdCode.Name = "txtStdCode";
+            this.txtStdCode.ReadOnly = true;
             this.txtStdCode.Size = new System.Drawing.Size(639, 41);
             this.txtStdCode.TabIndex = 12;
             // 
@@ -1462,6 +1507,7 @@
             // tabElectricComponent
             // 
             this.tabElectricComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabElectricComponent.Controls.Add(this.btnElecClear);
             this.tabElectricComponent.Controls.Add(this.txtElecColor);
             this.tabElectricComponent.Controls.Add(this.txtElecSerialNum);
             this.tabElectricComponent.Controls.Add(this.lblElecSeiralNum);
@@ -1475,6 +1521,16 @@
             this.tabElectricComponent.Size = new System.Drawing.Size(776, 527);
             this.tabElectricComponent.TabIndex = 2;
             this.tabElectricComponent.Text = "电气元件";
+            // 
+            // btnElecClear
+            // 
+            this.btnElecClear.Location = new System.Drawing.Point(425, 471);
+            this.btnElecClear.Name = "btnElecClear";
+            this.btnElecClear.Size = new System.Drawing.Size(171, 48);
+            this.btnElecClear.TabIndex = 26;
+            this.btnElecClear.Text = "清空";
+            this.btnElecClear.UseVisualStyleBackColor = true;
+            this.btnElecClear.Click += new System.EventHandler(this.btnElecClear_Click);
             // 
             // txtElecColor
             // 
@@ -1492,6 +1548,7 @@
             this.txtElecSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtElecSerialNum.Location = new System.Drawing.Point(109, 278);
+            this.txtElecSerialNum.MaxLength = 4;
             this.txtElecSerialNum.Name = "txtElecSerialNum";
             this.txtElecSerialNum.Size = new System.Drawing.Size(236, 26);
             this.txtElecSerialNum.TabIndex = 13;
@@ -1592,7 +1649,7 @@
             // txtElecDist
             // 
             this.txtElecDist.Location = new System.Drawing.Point(101, 9);
-            this.txtElecDist.MaxLength = 1;
+            this.txtElecDist.MaxLength = 2;
             this.txtElecDist.Name = "txtElecDist";
             this.txtElecDist.Size = new System.Drawing.Size(90, 29);
             this.txtElecDist.TabIndex = 25;
@@ -1600,7 +1657,7 @@
             // 
             // btnElecCopy
             // 
-            this.btnElecCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnElecCopy.Location = new System.Drawing.Point(200, 471);
             this.btnElecCopy.Name = "btnElecCopy";
             this.btnElecCopy.Size = new System.Drawing.Size(169, 48);
             this.btnElecCopy.TabIndex = 23;
@@ -1634,6 +1691,7 @@
             this.txtElecCode.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtElecCode.Location = new System.Drawing.Point(91, 24);
             this.txtElecCode.Name = "txtElecCode";
+            this.txtElecCode.ReadOnly = true;
             this.txtElecCode.Size = new System.Drawing.Size(633, 47);
             this.txtElecCode.TabIndex = 12;
             // 
@@ -1687,7 +1745,7 @@
             // txtElecNull
             // 
             this.txtElecNull.Location = new System.Drawing.Point(233, 217);
-            this.txtElecNull.MaxLength = 3;
+            this.txtElecNull.MaxLength = 2;
             this.txtElecNull.Name = "txtElecNull";
             this.txtElecNull.Size = new System.Drawing.Size(90, 29);
             this.txtElecNull.TabIndex = 25;
@@ -1733,7 +1791,7 @@
             // txtElecDelay
             // 
             this.txtElecDelay.Location = new System.Drawing.Point(89, 218);
-            this.txtElecDelay.MaxLength = 1;
+            this.txtElecDelay.MaxLength = 3;
             this.txtElecDelay.Name = "txtElecDelay";
             this.txtElecDelay.Size = new System.Drawing.Size(90, 29);
             this.txtElecDelay.TabIndex = 25;
@@ -1751,7 +1809,7 @@
             // txtElecSize
             // 
             this.txtElecSize.Location = new System.Drawing.Point(87, 97);
-            this.txtElecSize.MaxLength = 3;
+            this.txtElecSize.MaxLength = 6;
             this.txtElecSize.Name = "txtElecSize";
             this.txtElecSize.Size = new System.Drawing.Size(90, 29);
             this.txtElecSize.TabIndex = 25;
@@ -1990,6 +2048,7 @@
             // tabLineComponent
             // 
             this.tabLineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabLineComponent.Controls.Add(this.btnLineClear);
             this.tabLineComponent.Controls.Add(this.label20);
             this.tabLineComponent.Controls.Add(this.txtLineU);
             this.tabLineComponent.Controls.Add(this.btnCopyLine);
@@ -2003,6 +2062,16 @@
             this.tabLineComponent.Size = new System.Drawing.Size(776, 527);
             this.tabLineComponent.TabIndex = 3;
             this.tabLineComponent.Text = "线缆";
+            // 
+            // btnLineClear
+            // 
+            this.btnLineClear.Location = new System.Drawing.Point(425, 471);
+            this.btnLineClear.Name = "btnLineClear";
+            this.btnLineClear.Size = new System.Drawing.Size(171, 48);
+            this.btnLineClear.TabIndex = 26;
+            this.btnLineClear.Text = "清空";
+            this.btnLineClear.UseVisualStyleBackColor = true;
+            this.btnLineClear.Click += new System.EventHandler(this.btnLineClear_Click);
             // 
             // label20
             // 
@@ -2025,7 +2094,7 @@
             // 
             // btnCopyLine
             // 
-            this.btnCopyLine.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyLine.Location = new System.Drawing.Point(200, 471);
             this.btnCopyLine.Name = "btnCopyLine";
             this.btnCopyLine.Size = new System.Drawing.Size(169, 48);
             this.btnCopyLine.TabIndex = 25;
@@ -2036,6 +2105,7 @@
             // txtLineSerialNum
             // 
             this.txtLineSerialNum.Location = new System.Drawing.Point(108, 227);
+            this.txtLineSerialNum.MaxLength = 4;
             this.txtLineSerialNum.Name = "txtLineSerialNum";
             this.txtLineSerialNum.Size = new System.Drawing.Size(644, 29);
             this.txtLineSerialNum.TabIndex = 4;
@@ -2078,6 +2148,7 @@
             this.txtLineCode.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtLineCode.Location = new System.Drawing.Point(91, 24);
             this.txtLineCode.Name = "txtLineCode";
+            this.txtLineCode.ReadOnly = true;
             this.txtLineCode.Size = new System.Drawing.Size(633, 47);
             this.txtLineCode.TabIndex = 14;
             // 
@@ -2277,6 +2348,7 @@
             // tabMetalComponent
             // 
             this.tabMetalComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabMetalComponent.Controls.Add(this.btnMetalClear);
             this.tabMetalComponent.Controls.Add(this.cmbMetalSurface);
             this.tabMetalComponent.Controls.Add(this.txtMetalSerialNum);
             this.tabMetalComponent.Controls.Add(this.lblLineSerialNum);
@@ -2300,6 +2372,16 @@
             this.tabMetalComponent.Size = new System.Drawing.Size(776, 527);
             this.tabMetalComponent.TabIndex = 4;
             this.tabMetalComponent.Text = "五金";
+            // 
+            // btnMetalClear
+            // 
+            this.btnMetalClear.Location = new System.Drawing.Point(425, 471);
+            this.btnMetalClear.Name = "btnMetalClear";
+            this.btnMetalClear.Size = new System.Drawing.Size(171, 48);
+            this.btnMetalClear.TabIndex = 31;
+            this.btnMetalClear.Text = "清空";
+            this.btnMetalClear.UseVisualStyleBackColor = true;
+            this.btnMetalClear.Click += new System.EventHandler(this.btnMetalClear_Click);
             // 
             // cmbMetalSurface
             // 
@@ -2338,6 +2420,7 @@
             this.txtMetalSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtMetalSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtMetalSerialNum.Location = new System.Drawing.Point(107, 271);
+            this.txtMetalSerialNum.MaxLength = 4;
             this.txtMetalSerialNum.Name = "txtMetalSerialNum";
             this.txtMetalSerialNum.Size = new System.Drawing.Size(205, 26);
             this.txtMetalSerialNum.TabIndex = 29;
@@ -2355,7 +2438,7 @@
             // 
             // btnMetalCopy
             // 
-            this.btnMetalCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnMetalCopy.Location = new System.Drawing.Point(200, 471);
             this.btnMetalCopy.Name = "btnMetalCopy";
             this.btnMetalCopy.Size = new System.Drawing.Size(169, 48);
             this.btnMetalCopy.TabIndex = 27;
@@ -2387,6 +2470,7 @@
             this.txtMetalCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
             this.txtMetalCode.Location = new System.Drawing.Point(96, 19);
             this.txtMetalCode.Name = "txtMetalCode";
+            this.txtMetalCode.ReadOnly = true;
             this.txtMetalCode.Size = new System.Drawing.Size(637, 54);
             this.txtMetalCode.TabIndex = 1;
             // 
@@ -2645,6 +2729,7 @@
             // tabAssistantComponent
             // 
             this.tabAssistantComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabAssistantComponent.Controls.Add(this.btnAssistantClear);
             this.tabAssistantComponent.Controls.Add(this.btnAssistantCopy);
             this.tabAssistantComponent.Controls.Add(this.panel21);
             this.tabAssistantComponent.Controls.Add(this.panel20);
@@ -2655,9 +2740,19 @@
             this.tabAssistantComponent.TabIndex = 5;
             this.tabAssistantComponent.Text = "辅料";
             // 
+            // btnAssistantClear
+            // 
+            this.btnAssistantClear.Location = new System.Drawing.Point(425, 471);
+            this.btnAssistantClear.Name = "btnAssistantClear";
+            this.btnAssistantClear.Size = new System.Drawing.Size(171, 48);
+            this.btnAssistantClear.TabIndex = 30;
+            this.btnAssistantClear.Text = "清空";
+            this.btnAssistantClear.UseVisualStyleBackColor = true;
+            this.btnAssistantClear.Click += new System.EventHandler(this.btnAssistantClear_Click);
+            // 
             // btnAssistantCopy
             // 
-            this.btnAssistantCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnAssistantCopy.Location = new System.Drawing.Point(200, 471);
             this.btnAssistantCopy.Name = "btnAssistantCopy";
             this.btnAssistantCopy.Size = new System.Drawing.Size(169, 48);
             this.btnAssistantCopy.TabIndex = 29;
@@ -2679,6 +2774,7 @@
             this.txtAssistantCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
             this.txtAssistantCode.Location = new System.Drawing.Point(91, 22);
             this.txtAssistantCode.Name = "txtAssistantCode";
+            this.txtAssistantCode.ReadOnly = true;
             this.txtAssistantCode.Size = new System.Drawing.Size(637, 54);
             this.txtAssistantCode.TabIndex = 1;
             // 
@@ -2706,6 +2802,7 @@
             // txtAssistantNull
             // 
             this.txtAssistantNull.Location = new System.Drawing.Point(68, 27);
+            this.txtAssistantNull.MaxLength = 3;
             this.txtAssistantNull.Name = "txtAssistantNull";
             this.txtAssistantNull.Size = new System.Drawing.Size(262, 29);
             this.txtAssistantNull.TabIndex = 1;
@@ -2723,6 +2820,7 @@
             // txtAssistantSerialNum
             // 
             this.txtAssistantSerialNum.Location = new System.Drawing.Point(469, 26);
+            this.txtAssistantSerialNum.MaxLength = 4;
             this.txtAssistantSerialNum.Name = "txtAssistantSerialNum";
             this.txtAssistantSerialNum.Size = new System.Drawing.Size(262, 29);
             this.txtAssistantSerialNum.TabIndex = 1;
@@ -2788,6 +2886,7 @@
             // tabContractComponent
             // 
             this.tabContractComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabContractComponent.Controls.Add(this.btnContractClear);
             this.tabContractComponent.Controls.Add(this.panel31);
             this.tabContractComponent.Controls.Add(this.panel25);
             this.tabContractComponent.Controls.Add(this.btnContract);
@@ -2799,6 +2898,16 @@
             this.tabContractComponent.Size = new System.Drawing.Size(776, 527);
             this.tabContractComponent.TabIndex = 6;
             this.tabContractComponent.Text = "合同件";
+            // 
+            // btnContractClear
+            // 
+            this.btnContractClear.Location = new System.Drawing.Point(425, 471);
+            this.btnContractClear.Name = "btnContractClear";
+            this.btnContractClear.Size = new System.Drawing.Size(171, 48);
+            this.btnContractClear.TabIndex = 27;
+            this.btnContractClear.Text = "清空";
+            this.btnContractClear.UseVisualStyleBackColor = true;
+            this.btnContractClear.Click += new System.EventHandler(this.btnContractClear_Click);
             // 
             // panel31
             // 
@@ -2861,6 +2970,7 @@
             this.txtContractCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
             this.txtContractCode.Location = new System.Drawing.Point(85, 3);
             this.txtContractCode.Name = "txtContractCode";
+            this.txtContractCode.ReadOnly = true;
             this.txtContractCode.Size = new System.Drawing.Size(654, 54);
             this.txtContractCode.TabIndex = 1;
             // 
@@ -2876,7 +2986,7 @@
             // 
             // btnContract
             // 
-            this.btnContract.Location = new System.Drawing.Point(291, 471);
+            this.btnContract.Location = new System.Drawing.Point(200, 471);
             this.btnContract.Name = "btnContract";
             this.btnContract.Size = new System.Drawing.Size(169, 48);
             this.btnContract.TabIndex = 23;
@@ -2886,33 +2996,74 @@
             // 
             // panel24
             // 
+            this.panel24.Controls.Add(this.txtPno);
             this.panel24.Controls.Add(this.txtContractSerialNum);
+            this.panel24.Controls.Add(this.txtCNo);
             this.panel24.Controls.Add(this.label50);
+            this.panel24.Controls.Add(this.label40);
+            this.panel24.Controls.Add(this.label41);
             this.panel24.Location = new System.Drawing.Point(8, 326);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(747, 48);
             this.panel24.TabIndex = 21;
+            // 
+            // txtPno
+            // 
+            this.txtPno.Location = new System.Drawing.Point(297, 9);
+            this.txtPno.MaxLength = 1;
+            this.txtPno.Name = "txtPno";
+            this.txtPno.Size = new System.Drawing.Size(42, 29);
+            this.txtPno.TabIndex = 14;
+            this.txtPno.TextChanged += new System.EventHandler(this.txtPno_TextChanged);
             // 
             // txtContractSerialNum
             // 
             this.txtContractSerialNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtContractSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtContractSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtContractSerialNum.Location = new System.Drawing.Point(85, 12);
+            this.txtContractSerialNum.Location = new System.Drawing.Point(462, 9);
+            this.txtContractSerialNum.MaxLength = 4;
             this.txtContractSerialNum.Name = "txtContractSerialNum";
-            this.txtContractSerialNum.Size = new System.Drawing.Size(652, 26);
+            this.txtContractSerialNum.Size = new System.Drawing.Size(282, 26);
             this.txtContractSerialNum.TabIndex = 13;
             this.txtContractSerialNum.Click += new System.EventHandler(this.txtContractSerialNum_Click);
             this.txtContractSerialNum.TextChanged += new System.EventHandler(this.txtContractSerialNum_TextChanged);
             // 
+            // txtCNo
+            // 
+            this.txtCNo.Location = new System.Drawing.Point(123, 12);
+            this.txtCNo.MaxLength = 1;
+            this.txtCNo.Name = "txtCNo";
+            this.txtCNo.Size = new System.Drawing.Size(42, 29);
+            this.txtCNo.TabIndex = 14;
+            this.txtCNo.TextChanged += new System.EventHandler(this.txtCNo_TextChanged);
+            // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(6, 19);
+            this.label50.Location = new System.Drawing.Point(383, 16);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(58, 21);
             this.label50.TabIndex = 10;
             this.label50.Text = "流水号";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(45, 17);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(58, 21);
+            this.label40.TabIndex = 10;
+            this.label40.Text = "组件号";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(212, 17);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(58, 21);
+            this.label41.TabIndex = 10;
+            this.label41.Text = "部件号";
             // 
             // panel23
             // 
@@ -3393,6 +3544,7 @@
             // tabMlineComponent
             // 
             this.tabMlineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabMlineComponent.Controls.Add(this.btnMlineClear);
             this.tabMlineComponent.Controls.Add(this.panel26);
             this.tabMlineComponent.Controls.Add(this.btnMlineCopy);
             this.tabMlineComponent.Controls.Add(this.panel29);
@@ -3402,6 +3554,16 @@
             this.tabMlineComponent.Size = new System.Drawing.Size(776, 527);
             this.tabMlineComponent.TabIndex = 7;
             this.tabMlineComponent.Text = "成品母线";
+            // 
+            // btnMlineClear
+            // 
+            this.btnMlineClear.Location = new System.Drawing.Point(425, 471);
+            this.btnMlineClear.Name = "btnMlineClear";
+            this.btnMlineClear.Size = new System.Drawing.Size(171, 48);
+            this.btnMlineClear.TabIndex = 29;
+            this.btnMlineClear.Text = "清空";
+            this.btnMlineClear.UseVisualStyleBackColor = true;
+            this.btnMlineClear.Click += new System.EventHandler(this.btnMlineClear_Click);
             // 
             // panel26
             // 
@@ -3472,7 +3634,7 @@
             // 
             // btnMlineCopy
             // 
-            this.btnMlineCopy.Location = new System.Drawing.Point(291, 471);
+            this.btnMlineCopy.Location = new System.Drawing.Point(200, 471);
             this.btnMlineCopy.Name = "btnMlineCopy";
             this.btnMlineCopy.Size = new System.Drawing.Size(169, 48);
             this.btnMlineCopy.TabIndex = 27;
@@ -3494,6 +3656,7 @@
             this.txtMlineCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
             this.txtMlineCode.Location = new System.Drawing.Point(126, 18);
             this.txtMlineCode.Name = "txtMlineCode";
+            this.txtMlineCode.ReadOnly = true;
             this.txtMlineCode.Size = new System.Drawing.Size(595, 54);
             this.txtMlineCode.TabIndex = 1;
             // 
@@ -3529,6 +3692,7 @@
             // txtMlineSerialNum
             // 
             this.txtMlineSerialNum.Location = new System.Drawing.Point(114, 134);
+            this.txtMlineSerialNum.MaxLength = 4;
             this.txtMlineSerialNum.Name = "txtMlineSerialNum";
             this.txtMlineSerialNum.Size = new System.Drawing.Size(220, 29);
             this.txtMlineSerialNum.TabIndex = 1;
@@ -3556,6 +3720,7 @@
             // tabProductionComponent
             // 
             this.tabProductionComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabProductionComponent.Controls.Add(this.btnProduction);
             this.tabProductionComponent.Controls.Add(this.panel27);
             this.tabProductionComponent.Controls.Add(this.panel30);
             this.tabProductionComponent.Controls.Add(this.btnCopyProduction);
@@ -3565,6 +3730,16 @@
             this.tabProductionComponent.Size = new System.Drawing.Size(776, 527);
             this.tabProductionComponent.TabIndex = 8;
             this.tabProductionComponent.Text = "成品柜机";
+            // 
+            // btnProduction
+            // 
+            this.btnProduction.Location = new System.Drawing.Point(425, 471);
+            this.btnProduction.Name = "btnProduction";
+            this.btnProduction.Size = new System.Drawing.Size(171, 48);
+            this.btnProduction.TabIndex = 32;
+            this.btnProduction.Text = "清空";
+            this.btnProduction.UseVisualStyleBackColor = true;
+            this.btnProduction.Click += new System.EventHandler(this.btnProduction_Click);
             // 
             // panel27
             // 
@@ -3656,6 +3831,7 @@
             // txtProductionSerialNum
             // 
             this.txtProductionSerialNum.Location = new System.Drawing.Point(114, 134);
+            this.txtProductionSerialNum.MaxLength = 4;
             this.txtProductionSerialNum.Name = "txtProductionSerialNum";
             this.txtProductionSerialNum.Size = new System.Drawing.Size(220, 29);
             this.txtProductionSerialNum.TabIndex = 1;
@@ -3682,7 +3858,7 @@
             // 
             // btnCopyProduction
             // 
-            this.btnCopyProduction.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyProduction.Location = new System.Drawing.Point(200, 471);
             this.btnCopyProduction.Name = "btnCopyProduction";
             this.btnCopyProduction.Size = new System.Drawing.Size(169, 48);
             this.btnCopyProduction.TabIndex = 29;
@@ -3704,6 +3880,7 @@
             this.txtProductionCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
             this.txtProductionCode.Location = new System.Drawing.Point(92, 22);
             this.txtProductionCode.Name = "txtProductionCode";
+            this.txtProductionCode.ReadOnly = true;
             this.txtProductionCode.Size = new System.Drawing.Size(646, 54);
             this.txtProductionCode.TabIndex = 1;
             // 
@@ -3716,6 +3893,45 @@
             this.label58.Size = new System.Drawing.Size(82, 41);
             this.label58.TabIndex = 0;
             this.label58.Text = "编码";
+            // 
+            // tabCodeReverseComponent
+            // 
+            this.tabCodeReverseComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabCodeReverseComponent.Controls.Add(this.lblCodeInfo);
+            this.tabCodeReverseComponent.Controls.Add(this.btnCodeReverse);
+            this.tabCodeReverseComponent.Controls.Add(this.txtCodeReverse);
+            this.tabCodeReverseComponent.Location = new System.Drawing.Point(4, 30);
+            this.tabCodeReverseComponent.Name = "tabCodeReverseComponent";
+            this.tabCodeReverseComponent.Size = new System.Drawing.Size(776, 527);
+            this.tabCodeReverseComponent.TabIndex = 9;
+            this.tabCodeReverseComponent.Text = "编码反查";
+            // 
+            // lblCodeInfo
+            // 
+            this.lblCodeInfo.AutoSize = true;
+            this.lblCodeInfo.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblCodeInfo.Location = new System.Drawing.Point(28, 108);
+            this.lblCodeInfo.Name = "lblCodeInfo";
+            this.lblCodeInfo.Size = new System.Drawing.Size(0, 31);
+            this.lblCodeInfo.TabIndex = 2;
+            // 
+            // btnCodeReverse
+            // 
+            this.btnCodeReverse.Location = new System.Drawing.Point(629, 25);
+            this.btnCodeReverse.Name = "btnCodeReverse";
+            this.btnCodeReverse.Size = new System.Drawing.Size(130, 54);
+            this.btnCodeReverse.TabIndex = 1;
+            this.btnCodeReverse.Text = "反查";
+            this.btnCodeReverse.UseVisualStyleBackColor = true;
+            this.btnCodeReverse.Click += new System.EventHandler(this.btnCodeReverse_Click);
+            // 
+            // txtCodeReverse
+            // 
+            this.txtCodeReverse.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtCodeReverse.Location = new System.Drawing.Point(28, 25);
+            this.txtCodeReverse.Name = "txtCodeReverse";
+            this.txtCodeReverse.Size = new System.Drawing.Size(579, 54);
+            this.txtCodeReverse.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -3841,6 +4057,8 @@
             this.panel30.PerformLayout();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
+            this.tabCodeReverseComponent.ResumeLayout(false);
+            this.tabCodeReverseComponent.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -4158,6 +4376,23 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.ComboBox cmbContractFirst;
+        private System.Windows.Forms.TextBox txtPno;
+        private System.Windows.Forms.TextBox txtCNo;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button btnRawClear;
+        private System.Windows.Forms.Button btnStdClear;
+        private System.Windows.Forms.Button btnElecClear;
+        private System.Windows.Forms.Button btnLineClear;
+        private System.Windows.Forms.Button btnMetalClear;
+        private System.Windows.Forms.Button btnAssistantClear;
+        private System.Windows.Forms.Button btnContractClear;
+        private System.Windows.Forms.Button btnMlineClear;
+        private System.Windows.Forms.Button btnProduction;
+        private System.Windows.Forms.TabPage tabCodeReverseComponent;
+        private System.Windows.Forms.Button btnCodeReverse;
+        private System.Windows.Forms.TextBox txtCodeReverse;
+        private System.Windows.Forms.Label lblCodeInfo;
 
 
     }

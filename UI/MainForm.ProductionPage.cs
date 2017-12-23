@@ -130,6 +130,11 @@ namespace UI
             MessageBox.Show("编码复制成功");
         }
 
+        private void btnProduction_Click(object sender, EventArgs e)
+        {
+            initProductionPage();
+        }
+
         private void initProductionPage()
         {
             this.cmbProductionFirst.Text = "";

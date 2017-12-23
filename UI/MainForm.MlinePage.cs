@@ -128,7 +128,10 @@ namespace UI
             Clipboard.SetDataObject(txtMlineCode.Text);
             MessageBox.Show("编码复制成功");
         }
-
+        private void btnMlineClear_Click(object sender, EventArgs e)
+        {
+            initMlinePage();
+        }
         private void initMlinePage() 
         {
             this.cmbMlineFirst.Text = "";

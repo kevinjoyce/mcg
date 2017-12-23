@@ -117,6 +117,10 @@ namespace UI
             MessageBox.Show("编码复制成功");
         }
 
+        private void btnAssistantClear_Click(object sender, EventArgs e)
+        {
+            initAssistantPage();
+        }
         private void initAssistantPage() 
         {
             this.txtAssistantCode.Text = "";

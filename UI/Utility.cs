@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI.Searchors;
 
 namespace UI
 {
@@ -26,6 +27,9 @@ namespace UI
             return flowNoGenerator.getFlowNo();
         }
 
+        public static Dictionary<string, string> GetCodeInfo(ICodeReverser codeReverser, string code) {
+            return codeReverser.GetCodeFields(code);
+        }
 
         public static String GetCombineComponetCode(Object [] objs, int cnt)
         {

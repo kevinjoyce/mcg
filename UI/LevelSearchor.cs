@@ -69,6 +69,45 @@ namespace UI
             }
         }
 
+        //查询一级大类
+        public static string GetFields1(string code) {
+            
+            switch (code) {
+                case "1":
+                    return "原材料";
+                case "2":
+                    return "钣金标准件";
+                case "3":
+                    return "电器元件";
+                case "4":
+                    return "线缆";
+                case "5":
+                    return "五金";
+                case "6":
+                    return "辅料";
+                case "7":
+                    return "合同件";
+                case "8":
+                    return "成品母线";
+                case "9":
+                    return "成品机柜";
+                default:
+                    return "";
+            }
+        }
+        //查询一级大类下的级别
+        public static string GetFields2(string mainClassID, string subClassID)
+        {
+
+            string strWhere = "MainClassID = '" + mainClassID + "' and (Level1ID = '" + subClassID + "' or Level2ID = '" + subClassID + "' or Level3ID = '"+subClassID+"')";
+            MaterialCodeGenerator.BLL.MaterialCode table = new MaterialCodeGenerator.BLL.MaterialCode();
+            List<MaterialCodeGenerator.Model.MaterialCode> list = table.GetModelList(strWhere);
+            if (list.Count > 0)
+                return "  " + list[0].Level1Name + "  " + list[0].Level2Name + "  " + list[0].Level3Name;
+            else
+                return "";
+        }
+
         //去重
         public static List<MaterialCodeGenerator.Model.MaterialCode> listLevelDistinct(List<MaterialCodeGenerator.Model.MaterialCode> list, int level)
         {

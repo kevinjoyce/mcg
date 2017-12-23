@@ -47,8 +47,11 @@ namespace UI
             if (this.cmbStdFirst.Text == "") return;
             GenerateStdLevelCode();
             GenerateStdWorkFlowCode();
-            if(this.txtStdSerialNum.Text!="")
-                this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdSerialNum.Text;
+            if (this.txtStdSerialNum.Text != "")
+                if (this.cmbStdSecond.SelectedValue.ToString() == "11" || this.cmbStdSecond.SelectedValue.ToString() == "12")
+                    this.txtStdCode.Text = this.txtStdCode.Text;
+                else
+                    this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdSerialNum.Text;
         }
 
         private void txtStdSerialNum_Click(object sender, EventArgs e)
@@ -182,6 +185,11 @@ namespace UI
         
             Clipboard.SetDataObject(txtStdCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void btnStdClear_Click(object sender, EventArgs e)
+        {
+            initStdPage(); 
         }
 
         private void initStdPage() 

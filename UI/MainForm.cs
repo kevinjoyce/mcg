@@ -201,6 +201,36 @@ namespace UI
                 GenerateUPowerCode();
         }
 
+        private void btnCodeReverse_Click(object sender, EventArgs e)
+        {
+            string[] codeArr = this.txtCodeReverse.Text.Split('.');
+            lblCodeInfo.Text = LevelSearchor.GetFields1(codeArr[0]);
+            lblCodeInfo.Text = lblCodeInfo.Text + LevelSearchor.GetFields2(codeArr[0], codeArr[1]);
+        }
+
+       
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        
+
         //private void rdoContractCQ_C_CheckedChanged(object sender, EventArgs e)
         //{
 

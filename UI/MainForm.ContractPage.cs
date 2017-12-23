@@ -58,7 +58,7 @@ namespace UI
                 + Utility.getRadioButtonCode(this.rdoContractCQ_C, "C")
                 + Utility.getRadioButtonCode(this.rdoContractCQ_Q, "Q")
                 + Utility.getRadioButtonCode(this.rdoContractCQ_NO, "0")
-                + "." + this.txtContractSerialNum.Text;
+                + "." + this.txtCNo.Text + this.txtPno.Text + this.txtContractSerialNum.Text;
         }
 
         private void rdoContractC_CheckedChanged(object sender, EventArgs e)
@@ -129,6 +129,15 @@ namespace UI
         {
             GenerateContractCode();
         }
+        private void txtCNo_TextChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
+
+        private void txtPno_TextChanged(object sender, EventArgs e)
+        {
+            GenerateContractCode();
+        }
         private void txtContractSerialNum_Click(object sender, EventArgs e)
         {
             ContractFlowNoGenerator contractFlowNoGenerator = new ContractFlowNoGenerator();
@@ -144,6 +153,11 @@ namespace UI
             }
             Clipboard.SetDataObject(txtContractCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void btnContractClear_Click(object sender, EventArgs e)
+        {
+            initContractPage();
         }
 
         private void initContractPage()

@@ -61,11 +61,12 @@ namespace UI
             if (this.txtMetalSize.Enabled
                 && txtMetalLength.Enabled
                 && txtMetalStrength.Enabled
-                && txtMetalSurface.Enabled)
+                && cmbMetalSurface.Enabled
+                && txtMetalNull.Enabled)
                 GenerateMetalSizeLengthCode();
 
             //空置
-            if (txtMetalNull.Enabled)
+            if (txtMetalNull.Enabled && this.cmbMetalFirst.SelectedValue.ToString() == "8")
                 GenerateMetalNullCode();
 
             //电流，供应商
@@ -169,7 +170,8 @@ namespace UI
                 + this.txtMetalLength.Text
                 + "."
                 + this.txtMetalStrength.Text
-                + this.GenerateCmbSurface();
+                + this.GenerateCmbSurface()
+                + this.txtMetalNull.Text;
 
             //    + this.txtMetalSurface.Text;
             /*
@@ -289,7 +291,7 @@ namespace UI
 
         private void SetMetalNullDisable()
         {
-            //this.txtMetalNull.Enabled = false;
+            this.txtMetalNull.Enabled = false;
         }
 
 
@@ -424,6 +426,11 @@ namespace UI
             }
             Clipboard.SetDataObject(txtMetalCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void btnMetalClear_Click(object sender, EventArgs e)
+        {
+            initMetalPage();
         }
 
         private void initMetalPage() 

@@ -144,6 +144,12 @@ namespace UI
             GenerateCodeRaw();
         }
 
+        private void btnRawClear_Click(object sender, EventArgs e)
+        {
+            initRawPage(); 
+        }
+
+
         private void GenerateCodeRaw()
         {
 

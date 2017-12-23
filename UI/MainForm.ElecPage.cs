@@ -106,7 +106,7 @@ namespace UI
 
             //仪表等：空置
             if (this.cmbElecFirst.SelectedValue.ToString() == "P" ||
-                this.cmbElecFirst.SelectedValue.ToString() == "SA" ||
+                this.cmbElecSecond.SelectedValue.ToString() == "SA" ||
                 this.cmbElecFirst.SelectedValue.ToString() == "T" ||
                 this.cmbElecFirst.SelectedValue.ToString() == "LT" ||
                 this.cmbElecFirst.SelectedValue.ToString() == "HEO" ||
@@ -129,7 +129,7 @@ namespace UI
             }
 
             //开关：触点，颜色等
-            if (this.cmbElecFirst.SelectedValue.ToString() == "S")
+            if (this.cmbElecFirst.SelectedValue.ToString() == "S" && this.cmbElecSecond.SelectedValue.ToString() != "SA")
             {
                 this.SetTouchColorEnable();
             }
@@ -167,7 +167,7 @@ namespace UI
         }
 
                 
-        //激活所有空间可用录入
+        //激活所有控件可用录入
         private void setElecComponentEnable()
         {
             SetUCapEnable();
@@ -749,8 +749,8 @@ namespace UI
                 && this.txtElecNull.Enabled)
                 GenerateUOnOffDelayNullCode();
 
-            //空置
-            if (this.txtElecNull.Enabled && this.cmbElecFirst.Text == "互感/变压器")
+            //空置+流水号
+            if (this.txtElecNull.Enabled && this.txtElecSerialNum.Enabled)
                 GenerateNullCode();
 
             //空置，阻值
@@ -848,8 +848,8 @@ namespace UI
                 && this.txtElecNull.Enabled)
                 GenerateUOnOffDelayNullCode();
 
-            //空置
-            if (this.txtElecNull.Enabled && this.cmbElecFirst.Text == "互感/变压器")
+            //空置+流水号
+            if (this.txtElecNull.Enabled && this.txtElecSerialNum.Enabled)
                 GenerateNullCode();
 
             //空置, 阻值
@@ -904,6 +904,11 @@ namespace UI
             }
             Clipboard.SetDataObject(txtElecCode.Text);
             MessageBox.Show("编码复制成功");
+        }
+
+        private void btnElecClear_Click(object sender, EventArgs e)
+        {
+            initElecPage();
         }
 
         private void initElecPage() 

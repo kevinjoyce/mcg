@@ -209,6 +209,11 @@ namespace UI
             MessageBox.Show("编码复制成功");
         }
 
+        private void btnLineClear_Click(object sender, EventArgs e)
+        {
+            initLinePage();
+        }
+
         private void initLinePage() 
         {
             this.cmbLineFirst.Text = "";
