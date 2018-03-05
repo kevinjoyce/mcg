@@ -61,8 +61,8 @@ namespace UI
             if (this.txtMetalSize.Enabled
                 && txtMetalLength.Enabled
                 && txtMetalStrength.Enabled
-                && cmbMetalSurface.Enabled
-                && txtMetalNull.Enabled)
+                && cmbMetalSurface.Enabled)
+                //&& txtMetalNull.Enabled)
                 GenerateMetalSizeLengthCode();
 
             //空置
@@ -170,8 +170,8 @@ namespace UI
                 + this.txtMetalLength.Text
                 + "."
                 + this.txtMetalStrength.Text
-                + this.GenerateCmbSurface()
-                + this.txtMetalNull.Text;
+                + this.GenerateCmbSurface();
+                //+ this.txtMetalNull.Text;
 
             //    + this.txtMetalSurface.Text;
             /*

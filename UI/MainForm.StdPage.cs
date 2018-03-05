@@ -27,6 +27,9 @@ namespace UI
             {
                 setStdComponentEnable();
             }
+            else {
+                this.txtStdSerialNum.Enabled = true;
+            }
 
             GenerateStdLevelCode();
         }
@@ -38,6 +41,7 @@ namespace UI
             GenerateStdLevelCode();
             GenerateStdWorkFlowCode();
             GenerateStdFlowNo();
+            
             this.txtStdCode.Text = this.txtStdCode.Text + "." + this.txtStdDM.Text + "." + this.txtStdLength.Text;
         }
 
@@ -93,6 +97,7 @@ namespace UI
 
         private void setStdComponentDisable() 
         {
+            this.txtStdSerialNum.Enabled = false;
             this.txtStdDM.Enabled = false;
             this.txtStdLength.Enabled = false;
         }
